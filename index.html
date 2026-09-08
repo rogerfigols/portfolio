@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roger Fígols Soler · Enginyer de Disseny Industrial & Enginyer Industrial</title>
-  <meta name="description" content="Portfolio professional i currículum interactiu de Roger Fígols Soler. Enginyer de Disseny Industrial i Desenvolupament de Producte, Enginyer Industrial (UPC).">
+  <meta name="description" content="Portfolio professional i currículum de Roger Fígols Soler. Enginyer de Disseny Industrial i Desenvolupament de Producte, Enginyer Industrial (UPC).">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,10 @@
 </head>
 <body>
 
-  <!-- TOP HEADER / NAV -->
+  <!-- TOP HEADER / NAV (MINIMALIST) -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="#" class="brand-logo">
-        <span class="logo-box">RF</span>
-        <span class="logo-name">Roger Fígols</span>
-      </a>
+      <a href="#" class="brand-name">Roger Fígols Soler</a>
 
       <!-- Desktop Navigation Links -->
       <nav class="nav-links">
@@ -32,11 +29,11 @@
         <a href="#contacte" class="nav-link">Contacte</a>
       </nav>
 
-      <!-- Action Button -->
+      <!-- Minimal Action Link -->
       <div class="nav-cta-wrapper">
-        <button id="open-cv-modal" class="btn-cv-header">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          <span>CV en PDF</span>
+        <button id="open-cv-modal" class="nav-cv-link">
+          <span>CV (PDF)</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
         </button>
       </div>
     </div>
@@ -49,17 +46,6 @@
       <div class="hero-grid">
         <!-- Left / Presentation & Bio -->
         <div class="hero-content">
-          <div class="hero-meta-row">
-            <span class="badge-status">
-              <span class="pulse-dot"></span>
-              Disponible per a nous reptes & projectes
-            </span>
-            <span class="badge-location">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Barcelona / Vilafranca del Penedès
-            </span>
-          </div>
-
           <h1 class="hero-name">Roger Fígols Soler</h1>
           <p class="hero-title">Enginyer de Disseny Industrial & Desenvolupament de Producte · Enginyer Industrial</p>
           
@@ -72,7 +58,7 @@
           <!-- CTAs & Contact -->
           <div class="hero-actions">
             <a href="#projectes" class="btn-primary">
-              <span>🚀 Explorar Projectes</span>
+              <span>Explorar Projectes</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
             <button class="btn-secondary open-cv-modal-trigger">
@@ -88,14 +74,10 @@
           </div>
         </div>
 
-        <!-- Right / Portrait Card -->
+        <!-- Right / Portrait (Clean photo only) -->
         <div class="hero-portrait-col">
-          <div class="portrait-card">
+          <div class="portrait-wrap">
             <img src="assets/photo.jpg" alt="Roger Fígols Soler" class="portrait-img">
-            <div class="portrait-caption">
-              <div class="caption-name">Roger Fígols Soler</div>
-              <div class="caption-sub">Product Design & Industrial Eng. (UPC)</div>
-            </div>
           </div>
         </div>
       </div>
@@ -107,11 +89,10 @@
   <section id="trajectoria" class="section-block bg-white">
     <div class="section-inner">
       
+      <!-- Minimalist Header Row: Clean Title + Filters -->
       <div class="section-header-row">
         <div>
-          <span class="section-kicker">Línia Temporal Interactiva</span>
-          <h2 class="section-heading">Trajectòria Professional & Fites</h2>
-          <p class="section-desc">Fes clic a qualsevol fita per desplegar els detalls tècnics, context i mètriques.</p>
+          <h2 class="section-heading">Trajectòria</h2>
         </div>
 
         <!-- Filters -->
@@ -132,7 +113,6 @@
           <div class="timeline-card active-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header">
               <div>
-                <span class="pill-badge pill-calyu">Startup & Product Lead</span>
                 <h3 class="timeline-role">Co-Fundador & Cap de Producte · <span class="text-accent">CALYU</span></h3>
                 <div class="timeline-place">Terrassa (Híbrid) · Startup de gestió per a pisos compartits</div>
               </div>
@@ -144,7 +124,7 @@
 
             <div class="timeline-drawer">
               <ul class="detail-list">
-                <li><strong>Desenvolupament integral de producte</strong>: Definició de l'arquitectura de funcionalitats, flujos d'usuari per a despeses compartides, tasques domèstiques i gamificació (iOS i Android).</li>
+                <li><strong>Desenvolupament integral de producte</strong>: Definició de l'arquitectura de funcionalitats, fluxos d'usuari per a despeses compartides, tasques domèstiques i gamificació (iOS i Android).</li>
                 <li><strong>Metodologia Lean Startup (Eric Ries)</strong>: Validació àgil mitjançant el bucle <em>Construir-Mesurar-Aprendre</em>, testeig continu d'usabilitat i llançament amb més de 100 <em>early adopters</em>.</li>
                 <li><strong>Acceleració & Ecosistema Emprenedor</strong>: Projecte incubat al prestigiós programa <strong>Emprèn UPC</strong> i seleccionat com a finalista per presentar al <strong>Demo Day Santander X Explorer UPC</strong>.</li>
               </ul>
@@ -163,7 +143,6 @@
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header">
               <div>
-                <span class="pill-badge pill-luxury">Luxe & Manufactura</span>
                 <h3 class="timeline-role">Enginyer de Millora Contínua (Pràctiques) · <span class="text-accent">Louis Vuitton</span></h3>
                 <div class="timeline-place">Santa Perpètua de Mogoda · Planta de manufactura de marroquineria de luxe</div>
               </div>
@@ -190,7 +169,6 @@
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header">
               <div>
-                <span class="pill-badge pill-academic">Formació Oficial UPC</span>
                 <h3 class="timeline-role">Màster en Enginyeria Industrial · <span class="text-accent">UPC ESEIAAT</span></h3>
                 <div class="timeline-place">Terrassa · Especialització en Gestió, Organització i Tecnologia</div>
               </div>
@@ -212,7 +190,6 @@
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header">
               <div>
-                <span class="pill-badge pill-academic">Graduació Oficial UPC</span>
                 <h3 class="timeline-role">Grau en Enginyeria de Disseny Industrial i Desenvolupament de Producte</h3>
                 <div class="timeline-place">UPC – ESEIAAT (Terrassa)</div>
               </div>
@@ -234,7 +211,6 @@
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header">
               <div>
-                <span class="pill-badge pill-cad">Oficina Tècnica & CAD</span>
                 <h3 class="timeline-role">Enginyer en Pràctiques (Oficina Tècnica) · <span class="text-accent">CELO S.A.</span></h3>
                 <div class="timeline-place">Castellar del Vallès · Sistemes de fixació i caragoleria tècnica industrial</div>
               </div>
@@ -259,7 +235,6 @@
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header">
               <div>
-                <span class="pill-badge pill-ops">Planta Industrial</span>
                 <h3 class="timeline-role">Operari de Línia de Producció · <span class="text-accent">Industrias Català (Incasa)</span></h3>
                 <div class="timeline-place">Vilafranca del Penedès · Sector químic i higiènic</div>
               </div>
@@ -281,7 +256,6 @@
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header">
               <div>
-                <span class="pill-badge pill-neutral">Atenció & Equip</span>
                 <h3 class="timeline-role">Ajudant de Recepció i Cambrer · <span class="text-accent">Hotel Estel</span></h3>
                 <div class="timeline-place">Berga · Sector hoteler i restauració</div>
               </div>
@@ -302,14 +276,12 @@
     </div>
   </section>
 
-  <!-- SKILLS & TOOLKIT SECTION -->
+  <!-- SKILLS SECTION -->
   <section id="competencies" class="section-block bg-slate-50">
     <div class="section-inner">
       
       <div class="section-header-block">
-        <span class="section-kicker">Capacitats Tècniques</span>
-        <h2 class="section-heading">Eines, Software & Metodologia</h2>
-        <p class="section-desc">El ventall d'eines que aplico en el desenvolupament de productes físics i digitals.</p>
+        <h2 class="section-heading">Competències</h2>
       </div>
 
       <div class="skills-grid">
@@ -317,7 +289,6 @@
         <!-- Card 1 -->
         <div class="skill-card">
           <div class="skill-card-top">
-            <span class="skill-card-icon">📐</span>
             <div>
               <h3 class="skill-card-title">CAD / CAM & Modelat 3D</h3>
               <p class="skill-card-sub">Enginyeria de precisió, plànols i fabricació</p>
@@ -336,9 +307,8 @@
         <!-- Card 2 -->
         <div class="skill-card">
           <div class="skill-card-top">
-            <span class="skill-card-icon">⚡</span>
             <div>
-              <h3 class="skill-card-title">IA & Eines Digitals d'Última Generació</h3>
+              <h3 class="skill-card-title">IA & Eines Digitals</h3>
               <p class="skill-card-sub">Acceleració de codi i optimització de processos</p>
             </div>
           </div>
@@ -357,10 +327,9 @@
         <!-- Card 3 -->
         <div class="skill-card">
           <div class="skill-card-top">
-            <span class="skill-card-icon">⚙️</span>
             <div>
-              <h3 class="skill-card-title">Metodologia Industrial & Eficiència</h3>
-              <p class="skill-card-sub">Cultura Lean aplicada a la planta i a la startup</p>
+              <h3 class="skill-card-title">Metodologia Industrial</h3>
+              <p class="skill-card-sub">Cultura Lean aplicada a planta i startup</p>
             </div>
           </div>
           <div class="skill-tag-group">
@@ -375,7 +344,6 @@
         <!-- Card 4 -->
         <div class="skill-card">
           <div class="skill-card-top">
-            <span class="skill-card-icon">🖨️</span>
             <div>
               <h3 class="skill-card-title">Prototipatge & Idiomes</h3>
               <p class="skill-card-sub">Validació física i comunicació internacional</p>
@@ -400,9 +368,7 @@
     <div class="section-inner max-w-wide">
       
       <div class="section-header-block">
-        <span class="section-kicker">Catàleg de Treballs</span>
-        <h2 class="section-heading">Projectes Destacats</h2>
-        <p class="section-desc">Selecció de productes desenvolupats, models CAD 3D, casos d'estudi d'enginyeria i plataformes digitals.</p>
+        <h2 class="section-heading">Projectes</h2>
       </div>
 
       <div class="projects-grid">
@@ -448,7 +414,7 @@
             </div>
             <div class="project-footer">
               <a href="#trajectoria" class="project-link">
-                <span>Veure Fita a la Línia Temporal</span>
+                <span>Veure a Trajectòria</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
             </div>
@@ -520,7 +486,7 @@
             </div>
             <div class="project-footer">
               <a href="#trajectoria" class="project-link">
-                <span>Veure Detalls a Trajectòria</span>
+                <span>Veure a Trajectòria</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
             </div>
@@ -535,8 +501,8 @@
   <!-- FOOTER & CONTACT -->
   <footer id="contacte" class="site-footer">
     <div class="footer-inner">
-      <h2 class="footer-title">Creem solucions d'impacte?</h2>
-      <p class="footer-desc">Si tens un repte d'enginyeria, un projecte de disseny o una iniciativa ambiciosa on vulguis sumar, parlem-ne.</p>
+      <h2 class="footer-title">Contacte</h2>
+      <p class="footer-desc">Tens un projecte o iniciativa d'enginyeria on vulguis sumar? Parlem-ne.</p>
 
       <div class="footer-buttons">
         <a href="mailto:r.figols.soler@gmail.com" class="btn-primary">
@@ -545,13 +511,13 @@
         </a>
         <a href="https://www.linkedin.com/in/roger-f-8a282818b" target="_blank" rel="noreferrer" class="btn-secondary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          <span>Connectar a LinkedIn</span>
+          <span>LinkedIn</span>
         </a>
       </div>
 
       <div class="footer-bottom-bar">
-        <div>© 2026 Roger Fígols Soler · Dissenyat amb precisió tècnica</div>
-        <a href="#" class="back-to-top">Tornar a dalt ↑</a>
+        <div>© 2026 Roger Fígols Soler · Enginyer Industrial & Disseny de Producte</div>
+        <a href="#" class="back-to-top">Dalt ↑</a>
       </div>
     </div>
   </footer>
@@ -561,10 +527,10 @@
     <div class="modal-card">
       <div class="modal-header">
         <div class="modal-title-row">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           <h3 class="modal-title">Descarregar CV Oficial</h3>
         </div>
-        <button id="close-cv-modal" class="modal-close-btn">✕</button>
+        <button id="close-cv-modal" class="modal-close-btn" aria-label="Tancar">&times;</button>
       </div>
 
       <p class="modal-subtitle">Format estàndard 1 pàgina A4 d'alta precisió. Tria el teu idioma:</p>
@@ -578,7 +544,7 @@
               <div class="lang-desc">Versió original oficial (PDF 1 pàgina A4)</div>
             </div>
           </div>
-          <span class="download-arrow">⬇</span>
+          <span class="download-arrow">↓</span>
         </a>
 
         <a href="assets/cv_es.pdf" download="CV_Roger_Figols_ES.pdf" class="modal-download-row">
@@ -589,7 +555,7 @@
               <div class="lang-desc">Versión en español (PDF 1 página A4)</div>
             </div>
           </div>
-          <span class="download-arrow">⬇</span>
+          <span class="download-arrow">↓</span>
         </a>
 
         <a href="assets/cv_en.pdf" download="CV_Roger_Figols_EN.pdf" class="modal-download-row">
@@ -600,7 +566,7 @@
               <div class="lang-desc">Professional English edition (PDF 1 page A4)</div>
             </div>
           </div>
-          <span class="download-arrow">⬇</span>
+          <span class="download-arrow">↓</span>
         </a>
       </div>
     </div>
