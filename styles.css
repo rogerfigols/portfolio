@@ -284,7 +284,7 @@ svg {
 }
 
 .max-w-timeline {
-  max-width: 1100px;
+  max-width: 1140px;
 }
 
 .section-header-row {
@@ -375,21 +375,21 @@ svg {
 /* Left Item */
 .timeline-item.item-left {
   left: 0;
-  padding-right: 42px;
+  padding-right: 36px;
 }
 
 /* Right Item */
 .timeline-item.item-right {
   left: 50%;
-  padding-left: 42px;
+  padding-left: 36px;
 }
 
-/* Precision Dots on Central Spine */
+/* Precision Dots on Central Spine - 100% Uniform Minimal Technical */
 .timeline-dot {
   position: absolute;
-  top: 20px;
-  width: 10px;
-  height: 10px;
+  top: 4px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background: #FFFFFF;
   border: 2px solid #94A3B8;
@@ -405,12 +405,61 @@ svg {
   left: -5px;
 }
 
-.timeline-dot.dot-active,
-.timeline-item:hover .timeline-dot {
+.timeline-item:hover .timeline-dot,
+.timeline-item:has(.active-card) .timeline-dot {
   background: var(--accent);
   border-color: var(--accent);
   box-shadow: 0 0 0 4px rgba(15, 76, 129, 0.16);
-  transform: scale(1.2);
+  transform: scale(1.25);
+}
+
+/* Date Display Above Card - Anchored to Spine with Schematic Connector Line */
+.timeline-date-above {
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeline-item.item-left .timeline-date-above {
+  justify-content: flex-end;
+  padding-right: 2px;
+}
+
+.timeline-item.item-left .timeline-date-above::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 1.5px;
+  background: #CBD5E1;
+  transition: background 0.2s ease;
+}
+
+.timeline-item.item-right .timeline-date-above {
+  justify-content: flex-start;
+  padding-left: 2px;
+}
+
+.timeline-item.item-right .timeline-date-above::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 1.5px;
+  background: #CBD5E1;
+  transition: background 0.2s ease;
+}
+
+.timeline-item:hover .timeline-date-above::after,
+.timeline-item:hover .timeline-date-above::before,
+.timeline-item:has(.active-card) .timeline-date-above::after,
+.timeline-item:has(.active-card) .timeline-date-above::before {
+  background: var(--accent);
 }
 
 /* Timeline Card: Sleek, compact height when closed */
@@ -418,7 +467,7 @@ svg {
   background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 0.85rem 1.25rem;
+  padding: 0.75rem 1.1rem;
   cursor: pointer;
   transition: all 0.18s ease;
   box-shadow: 0 1px 4px rgba(11, 19, 43, 0.02);
@@ -437,8 +486,8 @@ svg {
 
 /* Logo: Borderless, cleanly integrated, vertically centered */
 .card-logo-wrap {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,83 +503,96 @@ svg {
   height: 100%;
   object-fit: contain;
   display: block;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
-/* Left Card Header Layout (Logo Right -> nearest to spine) */
+/* Caret: SVG Chevron */
+.timeline-caret {
+  width: 13px;
+  height: 13px;
+  color: #94A3B8;
+  transition: transform 0.25s ease, color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.timeline-card:hover .timeline-caret {
+  color: var(--accent);
+}
+
+.active-card .timeline-caret {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+/* Left Card Header Layout: [Caret] [Text right-aligned] [Logo near spine] */
 .card-header-left {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.85rem;
   width: 100%;
+}
+
+.card-header-left .timeline-caret {
+  order: 0;
 }
 
 .card-header-left .timeline-header-text {
   flex: 1;
   text-align: right;
   min-width: 0;
+  order: 1;
 }
 
-.card-header-left .timeline-role-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
+.card-header-left .card-logo-wrap {
+  order: 2;
 }
 
-.card-header-left .timeline-meta-line {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 2px;
-}
-
-/* Right Card Header Layout (Logo Left -> nearest to spine) */
+/* Right Card Header Layout: [Logo near spine] [Text left-aligned] [Caret] */
 .card-header-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.85rem;
   width: 100%;
+}
+
+.card-header-right .card-logo-wrap {
+  order: 0;
 }
 
 .card-header-right .timeline-header-text {
   flex: 1;
   text-align: left;
   min-width: 0;
+  order: 1;
 }
 
-.card-header-right .timeline-role-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
-}
-
-.card-header-right .timeline-meta-line {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 2px;
+.card-header-right .timeline-caret {
+  order: 2;
 }
 
 /* Role Title */
 .timeline-role {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 0.93rem;
   font-weight: 700;
   color: var(--primary);
-  letter-spacing: -0.01em;
-  line-height: 1.3;
+  letter-spacing: -0.015em;
+  line-height: 1.32;
+  margin: 0;
 }
 
 .text-accent {
   color: var(--accent);
+}
+
+.timeline-place {
+  font-size: 0.77rem;
+  color: var(--text-light);
+  font-weight: 500;
+  line-height: 1.35;
+  margin-top: 2px;
 }
 
 /* Integrated Date & Meta Styles */
@@ -1178,18 +1240,39 @@ svg {
     left: 0;
     width: 100%;
     padding-right: 0;
-    padding-left: 48px;
+    padding-left: 44px;
     margin-bottom: 1.25rem;
   }
 
   .timeline-item.item-left .timeline-dot,
   .timeline-item.item-right .timeline-dot {
-    left: -33px;
+    left: 16px;
     right: auto;
-    top: 20px;
+    top: 4px;
   }
 
-  /* On mobile: standard left-to-right header for all cards */
+  .timeline-item.item-left .timeline-date-above,
+  .timeline-item.item-right .timeline-date-above {
+    justify-content: flex-start !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 5px;
+  }
+
+  .timeline-item.item-left .timeline-date-above::after {
+    display: none !important;
+  }
+
+  .timeline-item.item-left .timeline-date-above::before,
+  .timeline-item.item-right .timeline-date-above::before {
+    content: '' !important;
+    display: inline-block !important;
+    width: 12px !important;
+    height: 1.5px !important;
+    background: #CBD5E1 !important;
+  }
+
+  /* On mobile: standard unified order for all cards: [Logo (order 0)] [Text (order 1)] [Caret (order 2)] */
   .card-header-left,
   .card-header-right {
     flex-direction: row;
@@ -1197,36 +1280,31 @@ svg {
     gap: 0.75rem;
   }
 
+  .card-header-left .card-logo-wrap,
+  .card-header-right .card-logo-wrap {
+    order: 0 !important;
+  }
+
   .card-header-left .timeline-header-text,
   .card-header-right .timeline-header-text {
-    text-align: left;
+    order: 1 !important;
+    text-align: left !important;
   }
 
-  .card-header-left .timeline-role-row,
-  .card-header-right .timeline-role-row {
-    justify-content: flex-start;
-  }
-
-  .card-header-left .timeline-meta-line,
-  .card-header-right .timeline-meta-line {
-    justify-content: flex-start;
-  }
-
-  .card-header-left .card-logo-wrap {
-    order: -1;
+  .card-header-left .timeline-caret,
+  .card-header-right .timeline-caret {
+    order: 2 !important;
   }
 
   .card-logo-wrap {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
   }
 
   .timeline-card {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.95rem;
   }
-}
 
-@media (max-width: 640px) {
   .section-header-row {
     flex-direction: column;
     align-items: flex-start;
@@ -1262,6 +1340,44 @@ svg {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-inner,
+  .hero-inner {
+    padding: 0 1rem;
+  }
+
+  .timeline-center-spine {
+    left: 14px;
+  }
+
+  .timeline-item.item-left,
+  .timeline-item.item-right {
+    padding-left: 36px;
+  }
+
+  .timeline-item.item-left .timeline-dot,
+  .timeline-item.item-right .timeline-dot {
+    left: 10px;
+  }
+
+  .timeline-card {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .timeline-role {
+    font-size: 0.88rem;
+  }
+
+  .timeline-place {
+    font-size: 0.74rem;
+  }
+
+  .card-logo-wrap {
+    width: 28px;
+    height: 28px;
   }
 
   .footer-buttons {

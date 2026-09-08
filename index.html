@@ -66,7 +66,7 @@
     </div>
   </section>
 
-  <!-- TRAJECTÒRIA / TIMELINE SECTION (CENTER-SPINE SYMMETRICAL) -->
+  <!-- TRAJECTÒRIA / TIMELINE SECTION -->
   <section id="trajectoria" class="section-block bg-white">
     <div class="section-inner max-w-timeline">
       
@@ -88,25 +88,42 @@
       <div class="timeline-center-wrapper">
         <div class="timeline-center-spine"></div>
 
-        <!-- ITEM 1: CALYU (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
-        <div class="timeline-item item-left" data-category="feina">
-          <div class="timeline-dot dot-active"></div>
-          <div class="timeline-card active-card" onclick="toggleTimeline(this)">
+        <!-- ITEM 1: MÀSTER ENGINYERIA INDUSTRIAL (LEFT CARD) -->
+        <div class="timeline-item item-left" data-category="academica">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date-above">Gener 2027 (En curs)</div>
+          <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header card-header-left">
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Co-Fundador &amp; Cap de Producte · <span class="text-accent">CALYU</span></h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Feb 2026 – Actualitat</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">Terrassa (Híbrid) · Startup de gestió per a pisos compartits</span>
-                </div>
+                <h3 class="timeline-role">Graduat en Màster en Enginyeria Industrial · <span class="text-accent">UPC ESEIAAT</span></h3>
+                <div class="timeline-place">Terrassa · Especialització en Gestió, Organització i Tecnologia</div>
               </div>
+              <div class="card-logo-wrap">
+                <img src="assets/logo_upc.png" alt="UPC" class="card-logo-img">
+              </div>
+            </div>
+
+            <div class="timeline-drawer">
+              <p class="drawer-paragraph">Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2: CALYU (RIGHT CARD) -->
+        <div class="timeline-item item-right" data-category="feina">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date-above">Feb 2026 – Actualitat</div>
+          <div class="timeline-card" onclick="toggleTimeline(this)">
+            <div class="timeline-card-header card-header-right">
               <div class="card-logo-wrap">
                 <img src="assets/logo_calyu.png" alt="CALYU" class="card-logo-img">
               </div>
+              <div class="timeline-header-text">
+                <h3 class="timeline-role">Co-Fundador &amp; Cap de Producte · <span class="text-accent">CALYU</span></h3>
+                <div class="timeline-place">Terrassa (Híbrid) · Startup de gestió per a pisos compartits</div>
+              </div>
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </div>
 
             <div class="timeline-drawer">
@@ -124,24 +141,19 @@
           </div>
         </div>
 
-        <!-- ITEM 2: LOUIS VUITTON (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
-        <div class="timeline-item item-right" data-category="feina">
-          <div class="timeline-dot dot-active"></div>
+        <!-- ITEM 3: LOUIS VUITTON (LEFT CARD) -->
+        <div class="timeline-item item-left" data-category="feina">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date-above">Maig 2025 – Feb 2026</div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header card-header-right">
+            <div class="timeline-card-header card-header-left">
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <div class="timeline-header-text">
+                <h3 class="timeline-role">Enginyer de Millora Contínua (Pràctiques) · <span class="text-accent">Louis Vuitton</span></h3>
+                <div class="timeline-place">Santa Perpètua de Mogoda · Manufactura de marroquineria de luxe</div>
+              </div>
               <div class="card-logo-wrap">
                 <img src="assets/logo_lv.png" alt="Louis Vuitton" class="card-logo-img">
-              </div>
-              <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Enginyer de Millora Contínua (Pràctiques) · <span class="text-accent">Louis Vuitton</span></h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Maig 2025 – Feb 2026</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">Santa Perpètua de Mogoda · Manufactura marroquineria de luxe</span>
-                </div>
               </div>
             </div>
 
@@ -156,87 +168,72 @@
           </div>
         </div>
 
-        <!-- ITEM 3: MÀSTER UPC (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
-        <div class="timeline-item item-left" data-category="academica">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header card-header-left">
-              <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Màster en Enginyeria Industrial · <span class="text-accent">UPC ESEIAAT</span></h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Graduació: Gen 2027 (En curs)</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">Terrassa · Gestió, Organització i Tecnologia</span>
-                </div>
-              </div>
-              <div class="card-logo-wrap">
-                <img src="assets/logo_upc.png" alt="UPC" class="card-logo-img">
-              </div>
-            </div>
-
-            <div class="timeline-drawer">
-              <p class="drawer-paragraph">Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- ITEM 4: GRAU DISSENY INDUSTRIAL + TFG CARGO (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
+        <!-- ITEM 4: CARGO - TFG MATRÍCULA D'HONOR (RIGHT CARD) -->
         <div class="timeline-item item-right" data-category="academica">
           <div class="timeline-dot"></div>
+          <div class="timeline-date-above">2024 · Matrícula d'Honor</div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header card-header-right">
               <div class="card-logo-wrap">
-                <img src="assets/logo_upc.png" alt="UPC" class="card-logo-img">
+                <img src="assets/logo_cargo.png" alt="CarGo" class="card-logo-img">
               </div>
               <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Grau en Enginyeria de Disseny Industrial &amp; Desenv. de Producte</h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Graduació: 2024</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">UPC ESEIAAT · TFG CarGo (Matrícula d'Honor)</span>
-                </div>
+                <h3 class="timeline-role">Presentació TFG: CarGo · <span class="text-accent">Matrícula d'Honor</span></h3>
+                <div class="timeline-place">UPC ESEIAAT · Logística col·laborativa de mitjana distància (Crowdshipping)</div>
               </div>
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </div>
 
             <div class="timeline-drawer">
               <ul class="detail-list">
-                <li><strong>Treball de Fi de Grau (TFG) — Matrícula d'Honor (CarGo)</strong>: Concepció, disseny i desenvolupament integral de <strong>CarGo</strong>, una plataforma de logística col·laborativa (*crowdshipping*) que aprofita els desplaçaments habituals que les persones ja han de realitzar per transportar paquets a mitjanes distàncies a través de punts de conveniència.</li>
-                <li><strong>Formació troncal completa de 4 anys</strong>: Fusió d'enginyeria mecànica, modelat 3D CAD/CAM (SolidWorks), selecció de materials metàl·lics i polimèrics, processos de manufactura, ergonomia, disseny per a fabricació (DFM) i prototipatge ràpid.</li>
+                <li><strong>Concepció i model de negoci</strong>: Plataforma de crowdshipping que aprofita els desplaçaments habituals que les persones ja han de fer per transportar paqueteria a mitjanes distàncies a través de xarxa de punts de conveniència.</li>
+                <li><strong>Màxima qualificació acadèmica</strong>: Guardonat amb <strong>Matrícula d'Honor</strong> pel tribunal d'avaluació de la UPC per la seva viabilitat tècnica, impacte ambiental reduint emissions de CO₂ i optimització de costos logístics.</li>
               </ul>
               <div class="timeline-actions">
                 <a href="#projectes" class="link-btn-text">
-                  <span>Veure el projecte CarGo als Projectes Destacats ↓</span>
+                  <span>Veure detalls a Projectes Destacats ↓</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- ITEM 5: CELO (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
-        <div class="timeline-item item-left" data-category="feina">
+        <!-- ITEM 5: GRAU DISSENY INDUSTRIAL (LEFT CARD) -->
+        <div class="timeline-item item-left" data-category="academica">
           <div class="timeline-dot"></div>
+          <div class="timeline-date-above">2020 – 2024 (Graduació)</div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
             <div class="timeline-card-header card-header-left">
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Enginyer en Pràctiques (Oficina Tècnica) · <span class="text-accent">CELO S.A.</span></h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Set 2023 – Gen 2024</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">Castellar del Vallès · Fixació i caragoleria tècnica</span>
-                </div>
+                <h3 class="timeline-role">Graduat en Enginyeria de Disseny Industrial &amp; Desenv. de Producte</h3>
+                <div class="timeline-place">UPC – ESEIAAT (Terrassa)</div>
               </div>
+              <div class="card-logo-wrap">
+                <img src="assets/logo_upc.png" alt="UPC" class="card-logo-img">
+              </div>
+            </div>
+
+            <div class="timeline-drawer">
+              <p class="drawer-paragraph">Formació troncal completa de 4 anys que fusiona enginyeria mecànica, modelat 3D CAD/CAM (SolidWorks), selecció de materials plàstics i metàl·lics, processos de manufactura, ergonomia, disseny per a fabricació (DFM) i prototipatge ràpid.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 6: CELO (RIGHT CARD) -->
+        <div class="timeline-item item-right" data-category="feina">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date-above">Set 2023 – Gen 2024</div>
+          <div class="timeline-card" onclick="toggleTimeline(this)">
+            <div class="timeline-card-header card-header-right">
               <div class="card-logo-wrap">
                 <img src="assets/logo_celo.png" alt="CELO" class="card-logo-img">
               </div>
+              <div class="timeline-header-text">
+                <h3 class="timeline-role">Enginyer en Pràctiques (Oficina Tècnica) · <span class="text-accent">CELO S.A.</span></h3>
+                <div class="timeline-place">Castellar del Vallès · Fixació i caragoleria tècnica industrial</div>
+              </div>
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </div>
 
             <div class="timeline-drawer">
@@ -248,24 +245,19 @@
           </div>
         </div>
 
-        <!-- ITEM 6: INCASA (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
-        <div class="timeline-item item-right" data-category="feina">
+        <!-- ITEM 7: INCASA (LEFT CARD) -->
+        <div class="timeline-item item-left" data-category="feina">
           <div class="timeline-dot"></div>
+          <div class="timeline-date-above">Jul 2022</div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header card-header-right">
+            <div class="timeline-card-header card-header-left">
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <div class="timeline-header-text">
+                <h3 class="timeline-role">Operari de Línia de Producció · <span class="text-accent">Industrias Català (Incasa)</span></h3>
+                <div class="timeline-place">Vilafranca del Penedès · Sector químic i higiènic</div>
+              </div>
               <div class="card-logo-wrap">
                 <img src="assets/logo_incasa.png" alt="Incasa" class="card-logo-img">
-              </div>
-              <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Operari de Línia de Producció · <span class="text-accent">Industrias Català (Incasa)</span></h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Jul 2022</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">Vilafranca del Penedès · Sector químic i higiènic</span>
-                </div>
               </div>
             </div>
 
@@ -275,25 +267,20 @@
           </div>
         </div>
 
-        <!-- ITEM 7: HOTEL ESTEL (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
-        <div class="timeline-item item-left" data-category="feina">
+        <!-- ITEM 8: HOTEL ESTEL (RIGHT CARD) -->
+        <div class="timeline-item item-right" data-category="feina">
           <div class="timeline-dot"></div>
+          <div class="timeline-date-above">Jul – Ago 2021</div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header card-header-left">
-              <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Ajudant de Recepció i Cambrer · <span class="text-accent">Hotel Estel</span></h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Jul – Ago 2021</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">Berga · Sector hoteler i restauració</span>
-                </div>
-              </div>
+            <div class="timeline-card-header card-header-right">
               <div class="card-logo-wrap">
                 <img src="assets/logo_estel.png" alt="Hotel Estel" class="card-logo-img">
               </div>
+              <div class="timeline-header-text">
+                <h3 class="timeline-role">Ajudant de Recepció i Cambrer · <span class="text-accent">Hotel Estel</span></h3>
+                <div class="timeline-place">Berga · Sector hoteler i restauració</div>
+              </div>
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </div>
 
             <div class="timeline-drawer">
@@ -302,24 +289,19 @@
           </div>
         </div>
 
-        <!-- ITEM 8: B2 ANGLÈS (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
-        <div class="timeline-item item-right" data-category="academica">
+        <!-- ITEM 9: B2 ANGLÈS (LEFT CARD) -->
+        <div class="timeline-item item-left" data-category="academica">
           <div class="timeline-dot"></div>
+          <div class="timeline-date-above">Juny 2019</div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header card-header-right">
+            <div class="timeline-card-header card-header-left">
+              <svg class="timeline-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <div class="timeline-header-text">
+                <h3 class="timeline-role">Certificació d'Anglès B2 · <span class="text-accent">Cambridge</span></h3>
+                <div class="timeline-place">Cambridge Assessment English · First Certificate (Professional)</div>
+              </div>
               <div class="card-logo-wrap">
                 <img src="assets/logo_cambridge.png" alt="Cambridge English B2" class="card-logo-img">
-              </div>
-              <div class="timeline-header-text">
-                <div class="timeline-role-row">
-                  <h3 class="timeline-role">Certificació d'Anglès B2 · <span class="text-accent">Cambridge</span></h3>
-                  <span class="timeline-caret">▼</span>
-                </div>
-                <div class="timeline-meta-line">
-                  <span class="timeline-date-inline">Obtenció: Juny 2019</span>
-                  <span class="meta-sep">·</span>
-                  <span class="timeline-place">First Certificate in English · Nivell B2 Professional</span>
-                </div>
               </div>
             </div>
 
