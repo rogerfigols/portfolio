@@ -413,43 +413,48 @@ svg {
   transform: scale(1.25);
 }
 
-/* Date Display Above Card - Anchored to Spine with Schematic Connector Line */
+/* Date Display Above Card - Aligned with Card, Line bridges gap to spine */
 .timeline-date-above {
   font-family: var(--font-mono);
   font-size: 0.73rem;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.03em;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   line-height: 1.2;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .timeline-item.item-left .timeline-date-above {
-  justify-content: flex-end;
-  padding-right: 2px;
+  position: relative;
+  text-align: right;
+  padding-right: 0;
 }
 
 .timeline-item.item-left .timeline-date-above::after {
   content: '';
-  display: inline-block;
-  width: 14px;
+  position: absolute;
+  right: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 31px;
   height: 1.5px;
   background: #CBD5E1;
   transition: background 0.2s ease;
 }
 
 .timeline-item.item-right .timeline-date-above {
-  justify-content: flex-start;
-  padding-left: 2px;
+  position: relative;
+  text-align: left;
+  padding-left: 0;
 }
 
 .timeline-item.item-right .timeline-date-above::before {
   content: '';
-  display: inline-block;
-  width: 14px;
+  position: absolute;
+  left: -36px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 31px;
   height: 1.5px;
   background: #CBD5E1;
   transition: background 0.2s ease;
@@ -588,11 +593,16 @@ svg {
 }
 
 .timeline-place {
-  font-size: 0.77rem;
+  font-size: 0.78rem;
   color: var(--text-light);
   font-weight: 500;
   line-height: 1.35;
   margin-top: 2px;
+}
+
+.timeline-place .entity-name {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 /* Integrated Date & Meta Styles */
@@ -1253,10 +1263,11 @@ svg {
 
   .timeline-item.item-left .timeline-date-above,
   .timeline-item.item-right .timeline-date-above {
-    justify-content: flex-start !important;
+    text-align: left !important;
+    position: relative !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
   }
 
   .timeline-item.item-left .timeline-date-above::after {
@@ -1266,8 +1277,11 @@ svg {
   .timeline-item.item-left .timeline-date-above::before,
   .timeline-item.item-right .timeline-date-above::before {
     content: '' !important;
-    display: inline-block !important;
-    width: 12px !important;
+    position: absolute !important;
+    left: -28px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 23px !important;
     height: 1.5px !important;
     background: #CBD5E1 !important;
   }
