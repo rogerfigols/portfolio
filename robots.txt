@@ -1,0 +1,4 @@
+# Bloquejar tots els robots de cerca (Google, Bing, Yahoo, etc.)
+# Només accessible via enllaç directe
+User-agent: *
+Disallow: /
