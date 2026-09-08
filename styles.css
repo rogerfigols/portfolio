@@ -342,7 +342,7 @@ svg {
 }
 
 #trajectoria.section-block {
-  padding-top: 2.5rem;
+  padding-top: 0;
 }
 
 /* 4. TIMELINE COMPONENT (CENTER-SPINE SYMMETRICAL & COMPACT) */
@@ -350,14 +350,14 @@ svg {
   position: relative;
   width: 100%;
   margin-top: 0;
-  padding: 0.5rem 0 2rem;
+  padding: 3rem 0 2rem;
 }
 
-/* Central spine */
+/* Central spine - extends to touch top separator border */
 .timeline-center-spine {
   position: absolute;
   left: 50%;
-  top: 10px;
+  top: 0;
   bottom: 20px;
   width: 2px;
   background: #CBD5E1;
