@@ -16,12 +16,19 @@
 </head>
 <body>
 
-  <!-- HERO SECTION (CLEAN & MINIMALIST - NO TOP BAR) -->
+  <!-- HERO SECTION (PHOTO ON LEFT, BIO ON RIGHT) -->
   <section class="hero-section">
     <div class="hero-inner">
       
       <div class="hero-grid">
-        <!-- Left / Presentation & Bio -->
+        <!-- Left / Portrait (Photo Only) -->
+        <div class="hero-portrait-col">
+          <div class="portrait-wrap">
+            <img src="assets/photo.jpg" alt="Roger Fígols Soler" class="portrait-img">
+          </div>
+        </div>
+
+        <!-- Right / Presentation & Bio -->
         <div class="hero-content">
           <h1 class="hero-name">Roger Fígols Soler</h1>
           
@@ -54,19 +61,12 @@
             </a>
           </div>
         </div>
-
-        <!-- Right / Portrait (Clean Photo Only) -->
-        <div class="hero-portrait-col">
-          <div class="portrait-wrap">
-            <img src="assets/photo.jpg" alt="Roger Fígols Soler" class="portrait-img">
-          </div>
-        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- TRAJECTÒRIA / TIMELINE SECTION (CENTER-SPINE ALTERNATING) -->
+  <!-- TRAJECTÒRIA / TIMELINE SECTION (CENTER-SPINE SYMMETRICAL) -->
   <section id="trajectoria" class="section-block bg-white">
     <div class="section-inner max-w-timeline">
       
@@ -84,27 +84,25 @@
         </div>
       </div>
 
-      <!-- Alternating Center-Spine Timeline Structure -->
+      <!-- Symmetrical Center-Spine Timeline Structure -->
       <div class="timeline-center-wrapper">
         <div class="timeline-center-spine"></div>
 
-        <!-- ITEM 1: CALYU (LEFT) -->
+        <!-- ITEM 1: CALYU (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
         <div class="timeline-item item-left" data-category="feina">
-          <div class="timeline-node">
-            <!-- Calyu Monogram Logo Mark -->
-            <div class="entity-badge badge-calyu" title="CALYU">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M15 9a4.5 4.5 0 1 0 0 6"/></svg>
-            </div>
-          </div>
+          <div class="timeline-dot dot-active"></div>
           <div class="timeline-card active-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-left">
+              <div class="timeline-date-wrap">
+                <span class="timeline-date-tag">Feb 2026 – Actualitat</span>
+                <span class="timeline-caret">▼</span>
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Co-Fundador &amp; Cap de Producte · <span class="text-accent">CALYU</span></h3>
                 <div class="timeline-place">Terrassa (Híbrid) · Startup de gestió per a pisos compartits</div>
               </div>
-              <div class="timeline-date-wrap">
-                <span class="timeline-date-tag">Feb 2026 – Actualitat</span>
-                <span class="timeline-caret">▼</span>
+              <div class="card-logo-wrap">
+                <img src="assets/logo_calyu.png" alt="CALYU" class="card-logo-img">
               </div>
             </div>
 
@@ -123,16 +121,14 @@
           </div>
         </div>
 
-        <!-- ITEM 2: LOUIS VUITTON (RIGHT) -->
+        <!-- ITEM 2: LOUIS VUITTON (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
         <div class="timeline-item item-right" data-category="feina">
-          <div class="timeline-node">
-            <!-- Louis Vuitton Monogram Mark -->
-            <div class="entity-badge badge-lv" title="Louis Vuitton">
-              <span class="badge-text-mono">LV</span>
-            </div>
-          </div>
+          <div class="timeline-dot dot-active"></div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-right">
+              <div class="card-logo-wrap">
+                <img src="assets/logo_lv.png" alt="Louis Vuitton" class="card-logo-img">
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Enginyer de Millora Contínua (Pràctiques) · <span class="text-accent">Louis Vuitton</span></h3>
                 <div class="timeline-place">Santa Perpètua de Mogoda · Planta de manufactura de marroquineria de luxe</div>
@@ -154,23 +150,21 @@
           </div>
         </div>
 
-        <!-- ITEM 3: MÀSTER UPC (LEFT) -->
+        <!-- ITEM 3: MÀSTER UPC (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
         <div class="timeline-item item-left" data-category="academica">
-          <div class="timeline-node">
-            <!-- UPC Logo Emblem -->
-            <div class="entity-badge badge-upc" title="UPC">
-              <span class="badge-text-upc">UPC</span>
-            </div>
-          </div>
+          <div class="timeline-dot"></div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-left">
+              <div class="timeline-date-wrap">
+                <span class="timeline-date-tag">2024 – Gen 2027</span>
+                <span class="timeline-caret">▼</span>
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Màster en Enginyeria Industrial · <span class="text-accent">UPC ESEIAAT</span></h3>
                 <div class="timeline-place">Terrassa · Especialització en Gestió, Organització i Tecnologia</div>
               </div>
-              <div class="timeline-date-wrap">
-                <span class="timeline-date-tag">2024 – Gen 2027</span>
-                <span class="timeline-caret">▼</span>
+              <div class="card-logo-wrap">
+                <img src="assets/logo_upc.svg" alt="UPC" class="card-logo-img">
               </div>
             </div>
 
@@ -180,16 +174,14 @@
           </div>
         </div>
 
-        <!-- ITEM 4: GRAU DISSENY INDUSTRIAL + TFG CARGO (RIGHT) -->
+        <!-- ITEM 4: GRAU DISSENY INDUSTRIAL + TFG CARGO (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
         <div class="timeline-item item-right" data-category="academica">
-          <div class="timeline-node">
-            <!-- Graduation Cap Icon -->
-            <div class="entity-badge badge-grad" title="Graduació UPC">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
-            </div>
-          </div>
+          <div class="timeline-dot"></div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-right">
+              <div class="card-logo-wrap">
+                <img src="assets/logo_upc.svg" alt="UPC" class="card-logo-img">
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Grau en Enginyeria de Disseny Industrial &amp; Desenv. de Producte</h3>
                 <div class="timeline-place">UPC – ESEIAAT (Terrassa)</div>
@@ -214,23 +206,21 @@
           </div>
         </div>
 
-        <!-- ITEM 5: CELO (LEFT) -->
+        <!-- ITEM 5: CELO (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
         <div class="timeline-item item-left" data-category="feina">
-          <div class="timeline-node">
-            <!-- CELO Bolt / Tech Mark -->
-            <div class="entity-badge badge-celo" title="CELO S.A.">
-              <span class="badge-text-mono">CELO</span>
-            </div>
-          </div>
+          <div class="timeline-dot"></div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-left">
+              <div class="timeline-date-wrap">
+                <span class="timeline-date-tag">Set 2023 – Gen 2024</span>
+                <span class="timeline-caret">▼</span>
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Enginyer en Pràctiques (Oficina Tècnica) · <span class="text-accent">CELO S.A.</span></h3>
                 <div class="timeline-place">Castellar del Vallès · Sistemes de fixació i caragoleria tècnica industrial</div>
               </div>
-              <div class="timeline-date-wrap">
-                <span class="timeline-date-tag">Set 2023 – Gen 2024</span>
-                <span class="timeline-caret">▼</span>
+              <div class="card-logo-wrap">
+                <img src="assets/logo_celo.png" alt="CELO" class="card-logo-img">
               </div>
             </div>
 
@@ -243,16 +233,14 @@
           </div>
         </div>
 
-        <!-- ITEM 6: INCASA (RIGHT) -->
+        <!-- ITEM 6: INCASA (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
         <div class="timeline-item item-right" data-category="feina">
-          <div class="timeline-node">
-            <!-- Incasa Factory Mark -->
-            <div class="entity-badge badge-incasa" title="Incasa">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M6 20V10l6-6 6 6v10M9 20v-6h6v6"/></svg>
-            </div>
-          </div>
+          <div class="timeline-dot"></div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-right">
+              <div class="card-logo-wrap">
+                <img src="assets/logo_incasa.png" alt="Incasa" class="card-logo-img">
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Operari de Línia de Producció · <span class="text-accent">Industrias Català (Incasa)</span></h3>
                 <div class="timeline-place">Vilafranca del Penedès · Sector químic i higiènic</div>
@@ -269,23 +257,21 @@
           </div>
         </div>
 
-        <!-- ITEM 7: HOTEL ESTEL (LEFT) -->
+        <!-- ITEM 7: HOTEL ESTEL (LEFT CARD -> LOGO ON RIGHT FACING SPINE) -->
         <div class="timeline-item item-left" data-category="feina">
-          <div class="timeline-node">
-            <!-- Hotel Mark -->
-            <div class="entity-badge badge-hotel" title="Hotel Estel">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
-            </div>
-          </div>
+          <div class="timeline-dot"></div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-left">
+              <div class="timeline-date-wrap">
+                <span class="timeline-date-tag">Jul – Ago 2021</span>
+                <span class="timeline-caret">▼</span>
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Ajudant de Recepció i Cambrer · <span class="text-accent">Hotel Estel</span></h3>
                 <div class="timeline-place">Berga · Sector hoteler i restauració</div>
               </div>
-              <div class="timeline-date-wrap">
-                <span class="timeline-date-tag">Jul – Ago 2021</span>
-                <span class="timeline-caret">▼</span>
+              <div class="card-logo-wrap">
+                <img src="assets/logo_estel.png" alt="Hotel Estel" class="card-logo-img">
               </div>
             </div>
 
@@ -295,16 +281,14 @@
           </div>
         </div>
 
-        <!-- ITEM 8: B2 ANGLÈS (RIGHT) -->
+        <!-- ITEM 8: B2 ANGLÈS (RIGHT CARD -> LOGO ON LEFT FACING SPINE) -->
         <div class="timeline-item item-right" data-category="academica">
-          <div class="timeline-node">
-            <!-- Certificate / Globe Mark -->
-            <div class="entity-badge badge-lang" title="Certificació Anglès B2">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </div>
-          </div>
+          <div class="timeline-dot"></div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
-            <div class="timeline-card-header">
+            <div class="timeline-card-header card-header-right">
+              <div class="card-logo-wrap">
+                <img src="assets/logo_b2.svg" alt="Anglès B2" class="card-logo-img">
+              </div>
               <div class="timeline-header-main">
                 <h3 class="timeline-role">Certificació d'Anglès B2 · <span class="text-accent">First Certificate in English</span></h3>
                 <div class="timeline-place">Cambridge Assessment English · Nivell B2 Professional</div>

@@ -1,7 +1,7 @@
 /* ==========================================================================
    ROGER FÍGOLS SOLER — PORTFOLIO & CV INTERACTIU
    Design Style: Swiss Industrial / Minimal Technical (Direction 1)
-   Mobile First, Ultra-Responsive, Center-Spine Alternating Timeline
+   Photo Left / Bio Right, Symmetrical Center-Spine Timeline, Logos Inward
    ========================================================================== */
 
 :root {
@@ -62,9 +62,9 @@ svg {
   to { opacity: 1; transform: scale(1) translateY(0); }
 }
 
-/* 2. HERO SECTION */
+/* 2. HERO SECTION (PHOTO LEFT, BIO RIGHT) */
 .hero-section {
-  background: radial-gradient(circle at 85% 15%, #EBF4FA 0%, #F8FAFC 60%);
+  background: radial-gradient(circle at 15% 20%, #EBF4FA 0%, #F8FAFC 60%);
   border-bottom: 1px solid var(--border-color);
   padding: 4.5rem 0 4rem;
 }
@@ -77,11 +77,41 @@ svg {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.55fr 1fr;
+  grid-template-columns: 290px 1fr;
   gap: 3.5rem;
   align-items: center;
 }
 
+/* Photo Wrap */
+.hero-portrait-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.portrait-wrap {
+  width: 100%;
+  max-width: 290px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 14px 34px rgba(11, 19, 43, 0.09);
+  transition: transform 0.25s ease;
+}
+
+.portrait-wrap:hover {
+  transform: translateY(-3px);
+}
+
+.portrait-img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center 10%;
+  display: block;
+}
+
+/* Content */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -97,7 +127,7 @@ svg {
   margin-bottom: 0.75rem;
 }
 
-/* Titles: both lines starting with 'Enginyer' aligned to left */
+/* Stacked Titles: Both start with 'Enginyer' from left */
 .hero-titles {
   display: flex;
   flex-direction: column;
@@ -229,35 +259,6 @@ svg {
   transform: translateY(-1px);
 }
 
-/* Portrait (Photo Only) */
-.hero-portrait-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portrait-wrap {
-  width: 100%;
-  max-width: 290px;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 12px 30px rgba(11, 19, 43, 0.08);
-  transition: transform 0.25s ease;
-}
-
-.portrait-wrap:hover {
-  transform: translateY(-3px);
-}
-
-.portrait-img {
-  width: 100%;
-  height: 330px;
-  object-fit: cover;
-  object-position: center 10%;
-  display: block;
-}
-
 /* 3. SECTION GENERIC STYLES */
 .section-block {
   padding: 4.5rem 0;
@@ -339,7 +340,7 @@ svg {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-/* 4. TIMELINE COMPONENT (CENTER-SPINE ALTERNATING) */
+/* 4. TIMELINE COMPONENT (SYMMETRICAL CENTER-SPINE) */
 .timeline-center-wrapper {
   position: relative;
   width: 100%;
@@ -347,7 +348,7 @@ svg {
   padding: 1rem 0 2rem;
 }
 
-/* Central spine on desktop */
+/* Central spine */
 .timeline-center-spine {
   position: absolute;
   left: 50%;
@@ -382,66 +383,34 @@ svg {
   padding-left: 48px;
 }
 
-/* Timeline Node / Badge on Spine */
-.timeline-node {
+/* Precision Dots on Central Spine */
+.timeline-dot {
   position: absolute;
-  top: 14px;
-  z-index: 5;
-}
-
-.timeline-item.item-left .timeline-node {
-  right: -21px;
-}
-
-.timeline-item.item-right .timeline-node {
-  left: -21px;
-}
-
-/* Entity Badges */
-.entity-badge {
-  width: 42px;
-  height: 42px;
+  top: 24px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #FFFFFF;
-  border: 2px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(11, 19, 43, 0.08);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  border: 2.5px solid #94A3B8;
+  z-index: 4;
+  transition: all 0.2s ease;
 }
 
-.timeline-item:hover .entity-badge {
-  transform: scale(1.1);
+.timeline-item.item-left .timeline-dot {
+  right: -6px;
+}
+
+.timeline-item.item-right .timeline-dot {
+  left: -6px;
+}
+
+.timeline-dot.dot-active,
+.timeline-item:hover .timeline-dot {
+  background: var(--accent);
   border-color: var(--accent);
-  box-shadow: 0 6px 16px rgba(15, 76, 129, 0.18);
+  box-shadow: 0 0 0 4px rgba(15, 76, 129, 0.16);
+  transform: scale(1.2);
 }
-
-.badge-text-mono {
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 0.74rem;
-  color: var(--primary);
-  letter-spacing: -0.02em;
-}
-
-.badge-text-upc {
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 0.68rem;
-  color: #0072CE;
-  letter-spacing: -0.02em;
-}
-
-.badge-calyu svg { width: 20px; height: 20px; color: var(--accent); }
-.badge-lv { background: #2D1810; border-color: #78350F; }
-.badge-lv .badge-text-mono { color: #F59E0B; }
-.badge-grad svg { width: 20px; height: 20px; color: #166534; }
-.badge-celo { background: #0F172A; border-color: #2563EB; }
-.badge-celo .badge-text-mono { color: #60A5FA; font-size: 0.62rem; }
-.badge-incasa svg { width: 19px; height: 19px; color: #B45309; }
-.badge-hotel svg { width: 19px; height: 19px; color: var(--text-muted); }
-.badge-lang svg { width: 19px; height: 19px; color: #0284C7; }
 
 /* Timeline Card */
 .timeline-card {
@@ -465,15 +434,66 @@ svg {
   box-shadow: 0 6px 20px rgba(15, 76, 129, 0.09);
 }
 
-.timeline-card-header {
+/* Logo Box Inside Card */
+.card-logo-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  padding: 4px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
 }
 
-.timeline-header-main {
+.timeline-card:hover .card-logo-wrap {
+  border-color: var(--accent);
+  box-shadow: 0 4px 10px rgba(15, 76, 129, 0.12);
+}
+
+.card-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Left Card Header Layout: [Date] [Content -> Text Right] [Logo Right -> closest to spine] */
+.card-header-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.85rem;
+}
+
+.card-header-left .timeline-header-main {
   flex: 1;
+  text-align: right;
+}
+
+.card-header-left .timeline-date-wrap {
+  order: -1;
+}
+
+/* Right Card Header Layout: [Logo Left -> closest to spine] [Content -> Text Left] [Date] */
+.card-header-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.85rem;
+}
+
+.card-header-right .timeline-header-main {
+  flex: 1;
+  text-align: left;
+}
+
+.card-header-right .timeline-date-wrap {
+  order: 2;
 }
 
 .timeline-role {
@@ -549,6 +569,7 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  text-align: left !important;
 }
 
 .detail-list li {
@@ -575,10 +596,12 @@ svg {
   font-size: 0.86rem;
   color: var(--text-muted);
   line-height: 1.58;
+  text-align: left !important;
 }
 
 .timeline-actions {
   margin-top: 0.85rem;
+  text-align: left !important;
 }
 
 .link-btn-text {
@@ -1097,11 +1120,12 @@ svg {
 @media (max-width: 960px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 2.25rem;
+    gap: 2rem;
   }
 
   .hero-portrait-col {
-    order: -1;
+    justify-content: center;
+    margin-bottom: 0.5rem;
   }
 
   .portrait-wrap {
@@ -1135,25 +1159,44 @@ svg {
     left: 0;
     width: 100%;
     padding-right: 0;
-    padding-left: 52px;
+    padding-left: 48px;
     margin-bottom: 1.5rem;
   }
 
-  .timeline-item.item-left .timeline-node,
-  .timeline-item.item-right .timeline-node {
-    left: 0;
+  .timeline-item.item-left .timeline-dot,
+  .timeline-item.item-right .timeline-dot {
+    left: -34px;
     right: auto;
-    top: 12px;
+    top: 24px;
   }
 
-  .entity-badge {
+  /* On mobile: standard left-to-right header for all cards */
+  .card-header-left,
+  .card-header-right {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .card-header-left .timeline-header-main {
+    text-align: left;
+  }
+
+  .card-header-left .card-logo-wrap {
+    order: -2;
+  }
+
+  .card-header-left .timeline-date-wrap {
+    order: 3;
+    align-self: flex-start;
+  }
+
+  .card-header-right .timeline-date-wrap {
+    align-self: flex-start;
+  }
+
+  .card-logo-wrap {
     width: 38px;
     height: 38px;
-  }
-
-  .entity-badge svg {
-    width: 18px !important;
-    height: 18px !important;
   }
 
   .timeline-card {
@@ -1193,15 +1236,6 @@ svg {
 
   .hero-actions .btn-social-icon {
     width: 100%;
-  }
-
-  .timeline-card-header {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .timeline-date-wrap {
-    align-self: flex-start;
   }
 
   .projects-grid {
