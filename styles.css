@@ -150,9 +150,8 @@ svg {
 .hero-summary {
   background: #FFFFFF;
   border: 1px solid var(--border-color);
-  border-left: 3.5px solid var(--accent);
-  border-radius: 0 10px 10px 0;
-  padding: 1.25rem 1.4rem;
+  border-radius: 12px;
+  padding: 1.3rem 1.45rem;
   font-size: 0.92rem;
   color: var(--text-muted);
   line-height: 1.65;
@@ -168,6 +167,7 @@ svg {
 .hero-actions {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 0.85rem;
 }
@@ -387,7 +387,7 @@ svg {
 /* Precision Dots on Central Spine - 100% Uniform Minimal Technical */
 .timeline-dot {
   position: absolute;
-  top: 4px;
+  top: 3.5px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -421,7 +421,8 @@ svg {
   color: var(--accent);
   letter-spacing: 0.03em;
   margin-bottom: 6px;
-  line-height: 1.2;
+  height: 16px;
+  line-height: 16px;
 }
 
 .timeline-item.item-left .timeline-date-above {
@@ -434,7 +435,7 @@ svg {
   content: '';
   position: absolute;
   right: -36px;
-  top: 50%;
+  top: 8px;
   transform: translateY(-50%);
   width: 31px;
   height: 1.5px;
@@ -452,7 +453,7 @@ svg {
   content: '';
   position: absolute;
   left: -36px;
-  top: 50%;
+  top: 8px;
   transform: translateY(-50%);
   width: 31px;
   height: 1.5px;
@@ -593,6 +594,11 @@ svg {
 }
 
 .timeline-place {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2px;
+  column-gap: 5px;
   font-size: 0.78rem;
   color: var(--text-light);
   font-weight: 500;
@@ -600,41 +606,27 @@ svg {
   margin-top: 2px;
 }
 
+.card-header-left .timeline-place {
+  justify-content: flex-end;
+}
+
+.card-header-right .timeline-place {
+  justify-content: flex-start;
+}
+
 .timeline-place .entity-name {
   color: var(--accent);
   font-weight: 700;
 }
 
-/* Integrated Date & Meta Styles */
-.timeline-date-inline {
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: var(--accent);
-  letter-spacing: -0.01em;
-}
-
-.meta-sep {
+.timeline-place .sub-sep {
   color: #CBD5E1;
   font-size: 0.75rem;
+  user-select: none;
 }
 
-.timeline-place {
-  font-size: 0.78rem;
+.timeline-place .sub-desc {
   color: var(--text-light);
-  font-weight: 500;
-}
-
-.timeline-caret {
-  font-size: 0.62rem;
-  color: #94A3B8;
-  transition: transform 0.25s ease, color 0.2s ease;
-  flex-shrink: 0;
-}
-
-.active-card .timeline-caret {
-  transform: rotate(180deg);
-  color: var(--accent);
 }
 
 /* Accordion Drawer */
@@ -1258,7 +1250,7 @@ svg {
   .timeline-item.item-right .timeline-dot {
     left: 16px;
     right: auto;
-    top: 4px;
+    top: 3.5px !important;
   }
 
   .timeline-item.item-left .timeline-date-above,
@@ -1267,7 +1259,9 @@ svg {
     position: relative !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-bottom: 5px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    margin-bottom: 6px !important;
   }
 
   .timeline-item.item-left .timeline-date-above::after {
@@ -1279,7 +1273,7 @@ svg {
     content: '' !important;
     position: absolute !important;
     left: -28px !important;
-    top: 50% !important;
+    top: 8px !important;
     transform: translateY(-50%) !important;
     width: 23px !important;
     height: 1.5px !important;
@@ -1307,6 +1301,23 @@ svg {
 
   .card-header-left .timeline-caret,
   .card-header-right .timeline-caret {
+    order: 2 !important;
+  }
+
+  .card-header-left .timeline-place,
+  .card-header-right .timeline-place {
+    justify-content: flex-start !important;
+  }
+
+  .timeline-place .entity-name {
+    order: 0 !important;
+  }
+
+  .timeline-place .sub-sep {
+    order: 1 !important;
+  }
+
+  .timeline-place .sub-desc {
     order: 2 !important;
   }
 
@@ -1375,6 +1386,15 @@ svg {
   .timeline-item.item-left .timeline-dot,
   .timeline-item.item-right .timeline-dot {
     left: 10px;
+    top: 3.5px !important;
+  }
+
+  .timeline-item.item-left .timeline-date-above::before,
+  .timeline-item.item-right .timeline-date-above::before {
+    left: -22px !important;
+    width: 17px !important;
+    top: 8px !important;
+    transform: translateY(-50%) !important;
   }
 
   .timeline-card {
