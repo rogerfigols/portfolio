@@ -22,6 +22,17 @@
   <section class="hero-section">
     <div class="hero-inner">
       
+      <!-- Subtle Technical Language Switcher -->
+      <div class="lang-switch-wrap">
+        <div class="lang-switch" role="group" aria-label="Selector d'idioma">
+          <button class="lang-btn active" data-lang="ca">CA</button>
+          <span class="lang-sep">/</span>
+          <button class="lang-btn" data-lang="es">ES</button>
+          <span class="lang-sep">/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+
       <div class="hero-grid">
         <!-- Left / Portrait (Photo Only) -->
         <div class="hero-portrait-col">
@@ -35,32 +46,36 @@
           <h1 class="hero-name">Roger Fígols Soler</h1>
           
           <div class="hero-titles">
-            <div class="hero-title-line">Enginyer Industrial</div>
-            <div class="hero-title-line">Enginyer de Disseny Industrial &amp; Desenvolupament de Producte</div>
+            <div class="hero-title-line" data-i18n="hero_title_1">Enginyer Industrial</div>
+            <div class="hero-title-line" data-i18n="hero_title_2">Enginyer de Disseny Industrial &amp; Desenvolupament de Producte</div>
           </div>
           
           <div class="hero-summary">
-            <p>
+            <p data-i18n="hero_bio">
               <strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos i metodologia Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de projectes propis (<strong>CALYU</strong>). Amb caràcter emprenedor i visió de producte, treballo especialment bé per projectes, bolcant-m'hi al màxim quan m'apassiona el repte i hi crec fermament. Especialitzat en l'aplicació d'<strong>Intel·ligència Artificial per optimitzar processos</strong>, automatitzant fluxos i accelerant la velocitat d'iteració tècnica.
             </p>
           </div>
 
           <!-- CTAs & Contact: Justified to right corner, Explorar Projectes at far right -->
           <div class="hero-actions">
-            <a href="mailto:r.figols.soler@gmail.com" class="btn-social-icon" title="Enviar correu">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/roger-f-8a282818b" target="_blank" rel="noreferrer" class="btn-social-icon" title="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <button class="btn-secondary open-cv-modal-trigger">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span>Descarregar CV (PDF)</span>
-            </button>
-            <a href="#projectes" class="btn-primary">
-              <span>Explorar Projectes</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
+            <div class="hero-actions-social">
+              <a href="mailto:r.figols.soler@gmail.com" class="btn-social-icon" title="Enviar correu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/roger-f-8a282818b" target="_blank" rel="noreferrer" class="btn-social-icon" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+            <div class="hero-actions-main">
+              <button class="btn-secondary open-cv-modal-trigger">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-i18n="btn_cv">Descarregar CV (PDF)</span>
+              </button>
+              <a href="#projectes" class="btn-primary">
+                <span data-i18n="btn_projects">Explorar Projectes</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -308,12 +323,127 @@
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="competencies" class="section-block bg-slate-50">
+  <!-- PROJECTS SECTION (Directly after Trajectòria) -->
+  <section id="projectes" class="section-block bg-slate-50">
+    <div class="section-inner max-w-wide">
+      
+      <div class="section-header-block">
+        <h2 class="section-heading" data-i18n="projects_heading">Projectes</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- P1: CARGO -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/project_cargo.png" alt="CarGo - Logística Col·laborativa" class="project-thumb-img">
+          </div>
+          <div class="project-body">
+            <span class="project-category" data-i18n="p1_cat">TFG · Matrícula d'Honor UPC</span>
+            <h3 class="project-title">CarGo</h3>
+            <p class="project-text" data-i18n="p1_desc">Concepció i model de negoci d'una plataforma de crowdshipping per aprofitar trajectes habituals en transport de paqueteria a mitjana distància mitjançant xarxa de punts de conveniència.</p>
+            <div class="project-tags">
+              <span class="project-tag">Disseny de Producte</span>
+              <span class="project-tag">Logística Col·laborativa</span>
+              <span class="project-tag">UX / UI</span>
+            </div>
+            <div class="project-footer">
+              <a href="#trajectoria" class="project-link">
+                <span data-i18n="more_info">Més informació</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- P2: XPLORE -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/project_xplore.png" alt="Xplore - Ulleres FPV Drons" class="project-thumb-img">
+          </div>
+          <div class="project-body">
+            <span class="project-category" data-i18n="p2_cat">Modelat 3D CAD &amp; Renders CMF</span>
+            <h3 class="project-title">Xplore</h3>
+            <p class="project-text" data-i18n="p2_desc">Disseny d'ulleres FPV per a pilots de drons. Treball d'ergonomia formal, estudi de particions complexes i renders d'alta fidelitat explorant textures i materials en components.</p>
+            <div class="project-tags">
+              <span class="project-tag">SolidWorks</span>
+              <span class="project-tag">Keyshot</span>
+              <span class="project-tag">CMF &amp; Textures</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://www.behance.net" target="_blank" class="project-link">
+                <span data-i18n="more_info">Més informació</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- P3: BREVILLE MIXER -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/project_breville.png" alt="Breville Mixer - Delineació & Guia d'Usuari" class="project-thumb-img">
+          </div>
+          <div class="project-body">
+            <span class="project-category" data-i18n="p3_cat">Delineació Tècnica &amp; Redisseny</span>
+            <h3 class="project-title">Breville Mixer</h3>
+            <p class="project-text" data-i18n="p3_desc">Redisseny estètic del robot de cuina i creació del manual tècnic d'instruccions d'ús, amb delineació esquemàtica i desglossament vectorial dels components i batedors.</p>
+            <div class="project-tags">
+              <span class="project-tag">Il·lustració Vectorial</span>
+              <span class="project-tag">Delineació CAD</span>
+              <span class="project-tag">Guia d'Usuari</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://www.behance.net" target="_blank" class="project-link">
+                <span data-i18n="more_info">Més informació</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- P4: CALYU -->
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/project_calyu.png" alt="CALYU - Startup de gestió per a pisos compartits" class="project-thumb-img">
+          </div>
+          <div class="project-body">
+            <span class="project-category" data-i18n="p4_cat">Startup per a Pisos Compartits · Co-Fundador</span>
+            <h3 class="project-title">CALYU</h3>
+            <p class="project-text" data-i18n="p4_desc">Desenvolupament integral de producte i arquitectura UX per a la gestió de convivència en pisos compartits. Validat amb Lean Startup i incubat a Emprèn UPC.</p>
+            <div class="project-tags">
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">FlutterFlow</span>
+              <span class="project-tag">Lean Startup</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://calyu.app" target="_blank" class="project-link">
+                <span data-i18n="visit_calyu">Visitar Web App</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Behance Footer Link Banner -->
+      <div class="projects-more-cta">
+        <span data-i18n="behance_prompt">Vols explorar més projectes de disseny industrial i modelat 3D?</span>
+        <a href="https://www.behance.net" target="_blank" class="btn-secondary">
+          <span data-i18n="behance_btn">Veure portafoli complet a Behance ↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS / COMPETÈNCIES SECTION (Following Projectes) -->
+  <section id="competencies" class="section-block bg-white">
     <div class="section-inner">
       
       <div class="section-header-block">
-        <h2 class="section-heading">Competències</h2>
+        <h2 class="section-heading" data-i18n="skills_heading">Competències</h2>
       </div>
 
       <div class="skills-grid">
@@ -323,7 +453,7 @@
           <div class="skill-card-top">
             <div>
               <h3 class="skill-card-title">CAD / CAM &amp; Modelat 3D</h3>
-              <p class="skill-card-sub">Enginyeria de precisió, plànols i fabricació</p>
+              <p class="skill-card-sub" data-i18n="skill_sub_1">Enginyeria de precisió, plànols i fabricació</p>
             </div>
           </div>
           <div class="skill-tag-group">
@@ -341,7 +471,7 @@
           <div class="skill-card-top">
             <div>
               <h3 class="skill-card-title">IA &amp; Eines Digitals</h3>
-              <p class="skill-card-sub">Acceleració de codi i optimització de processos</p>
+              <p class="skill-card-sub" data-i18n="skill_sub_2">Acceleració de codi i optimització de processos</p>
             </div>
           </div>
           <div class="skill-tag-group">
@@ -361,7 +491,7 @@
           <div class="skill-card-top">
             <div>
               <h3 class="skill-card-title">Metodologia Industrial</h3>
-              <p class="skill-card-sub">Cultura Lean aplicada a planta i startup</p>
+              <p class="skill-card-sub" data-i18n="skill_sub_3">Cultura Lean aplicada a planta i startup</p>
             </div>
           </div>
           <div class="skill-tag-group">
@@ -378,7 +508,7 @@
           <div class="skill-card-top">
             <div>
               <h3 class="skill-card-title">Prototipatge &amp; Idiomes</h3>
-              <p class="skill-card-sub">Validació física i comunicació internacional</p>
+              <p class="skill-card-sub" data-i18n="skill_sub_4">Validació física i comunicació internacional</p>
             </div>
           </div>
           <div class="skill-tag-group">
@@ -395,170 +525,11 @@
     </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projectes" class="section-block bg-white">
-    <div class="section-inner max-w-wide">
-      
-      <div class="section-header-block">
-        <h2 class="section-heading">Projectes</h2>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- P1: CARGO (TFG · MATRÍCULA D'HONOR) -->
-        <div class="project-card highlight-card">
-          <div class="project-art bg-cargo">
-            <div class="project-blur-glass"></div>
-            <span class="project-badge">TFG · Matrícula d'Honor</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">CarGo</h3>
-            <p class="project-subtitle">Logística Col·laborativa de Mitjana Distància · UPC 2024</p>
-            <p class="project-text">Plataforma que connecta trajectes habituals de viatgers per transportar paqueteria a mitjanes distàncies a través de xarxa de punts de conveniència, reduint la petjada de carboni i els costos d'enviament.</p>
-            <div class="project-tags">
-              <span>Disseny de Servei</span>
-              <span>Model de Negoci</span>
-              <span>UPC ESEIAAT</span>
-            </div>
-            <div class="project-footer">
-              <span class="status-honor">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 15l-3.5 2 1-4-3-3 4-.5L12 6l1.5 3.5 4 .5-3 3 1 4z"/></svg>
-                Qualificació: Matrícula d'Honor
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- P2: CALYU -->
-        <div class="project-card">
-          <div class="project-art bg-calyu">
-            <div class="project-blur-glass"></div>
-            <span class="project-badge">App &amp; Startup</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">CALYU</h3>
-            <p class="project-subtitle">Co-Fundador &amp; Cap de Producte · 2026</p>
-            <p class="project-text">Plataforma per a la gestió de convivència en pisos compartits. Definició de funcionalitats, gamificació, testeig amb +100 usuaris i incubada a Emprèn UPC.</p>
-            <div class="project-tags">
-              <span>Figma</span>
-              <span>FlutterFlow</span>
-              <span>Lean Startup</span>
-            </div>
-            <div class="project-footer">
-              <a href="https://calyu.app" target="_blank" class="project-link">
-                <span>Visitar Web App</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- P3: LV AUTOMATION -->
-        <div class="project-card">
-          <div class="project-art bg-lv">
-            <div class="project-blur-glass"></div>
-            <span class="project-badge">Eficiència Industrial</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Automatització de Planta amb IA</h3>
-            <p class="project-subtitle">Louis Vuitton · Iniciativa Pròpia · 2025</p>
-            <p class="project-text">Desenvolupament d'un sistema automatitzat amb macros i IA per generar documentació tècnica d'auditories amb un sol clic, reduint el temps un 75% (x4 més ràpid).</p>
-            <div class="project-tags">
-              <span>IA Generativa</span>
-              <span>Macros / VBA</span>
-              <span>Lean 5S</span>
-            </div>
-            <div class="project-footer">
-              <a href="#trajectoria" class="project-link">
-                <span>Veure a Trajectòria</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- P4: BEHANCE -->
-        <div class="project-card">
-          <div class="project-art bg-behance">
-            <div class="project-blur-glass"></div>
-            <span class="project-badge">Behance · 3D &amp; CAD</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Projectes de Disseny de Producte</h3>
-            <p class="project-subtitle">Behance Portfolio · UPC 2020–2024</p>
-            <p class="project-text">Col·lecció de models físics, renders d'alta fidelitat, esbossos de concepte i memòries de disseny industrial desenvolupats durant el grau.</p>
-            <div class="project-tags">
-              <span>SolidWorks</span>
-              <span>Renders 3D</span>
-              <span>Prototipatge</span>
-            </div>
-            <div class="project-footer">
-              <a href="https://www.behance.net" target="_blank" class="project-link">
-                <span>Explorar a Behance</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- P5: TFM -->
-        <div class="project-card">
-          <div class="project-art bg-tfm">
-            <div class="project-blur-glass"></div>
-            <span class="project-badge">Enginyeria Industrial</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Treball de Fi de Màster (TFM)</h3>
-            <p class="project-subtitle">UPC – ESEIAAT · 2025–2027</p>
-            <p class="project-text">Projecte integral d'enginyeria industrial centrat en innovació de producte, viabilitat tecnològica i optimització de processos de manufactura.</p>
-            <div class="project-tags">
-              <span>R+D</span>
-              <span>Enginyeria</span>
-              <span>En Progrés</span>
-            </div>
-            <div class="project-footer">
-              <span class="status-in-progress">
-                <span class="pulse-dot-blue"></span>
-                En curs de desenvolupament
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- P6: CELO -->
-        <div class="project-card">
-          <div class="project-art bg-celo">
-            <div class="project-blur-glass"></div>
-            <span class="project-badge">Oficina Tècnica</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Delineació Tècnica &amp; Fixació</h3>
-            <p class="project-subtitle">CELO S.A. · 2023–2024</p>
-            <p class="project-text">Desenvolupament de plànols de fabricació i modelat de peces de precisió, aplicant toleràncies geomètriques i criteris de mecanitzat.</p>
-            <div class="project-tags">
-              <span>SolidWorks</span>
-              <span>GD&amp;T</span>
-              <span>Plànols 2D/3D</span>
-            </div>
-            <div class="project-footer">
-              <a href="#trajectoria" class="project-link">
-                <span>Veure a Trajectòria</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
   <!-- FOOTER & CONTACT -->
   <footer id="contacte" class="site-footer">
     <div class="footer-inner">
-      <h2 class="footer-title">Contacte</h2>
-      <p class="footer-desc">Tens un projecte o iniciativa d'enginyeria on vulguis sumar? Parlem-ne.</p>
+      <h2 class="footer-title" data-i18n="contact_heading">Contacte</h2>
+      <p class="footer-desc" data-i18n="contact_desc">Tens un projecte o iniciativa d'enginyeria on vulguis sumar? Parlem-ne.</p>
 
       <div class="footer-buttons">
         <a href="mailto:r.figols.soler@gmail.com" class="btn-primary">
@@ -572,8 +543,8 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <div>© 2026 Roger Fígols Soler · Enginyer Industrial &amp; Disseny de Producte</div>
-        <a href="#" class="back-to-top">Dalt ↑</a>
+        <div data-i18n="footer_rights">© 2026 Roger Fígols Soler · Enginyer Industrial &amp; Disseny de Producte</div>
+        <a href="#" class="back-to-top" data-i18n="back_to_top">Dalt ↑</a>
       </div>
     </div>
   </footer>
@@ -584,12 +555,12 @@
       <div class="modal-header">
         <div class="modal-title-row">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          <h3 class="modal-title">Descarregar CV Oficial</h3>
+          <h3 class="modal-title" data-i18n="modal_title">Descarregar CV Oficial</h3>
         </div>
         <button id="close-cv-modal" class="modal-close-btn" aria-label="Tancar">&times;</button>
       </div>
 
-      <p class="modal-subtitle">Format estàndard 1 pàgina A4 d'alta precisió. Tria el teu idioma:</p>
+      <p class="modal-subtitle" data-i18n="modal_subtitle">Format estàndard 1 pàgina A4 d'alta precisió. Tria el teu idioma:</p>
 
       <div class="modal-lang-list">
         <a href="assets/cv_ca.pdf" target="_blank" download="CV_Roger_Figols_CA.pdf" class="modal-download-row">
