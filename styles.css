@@ -891,18 +891,14 @@ svg {
 .project-thumb-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(11, 19, 43, 0.38);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  background: rgba(11, 19, 43, 0.50);
+  transition: background 0.28s ease;
   pointer-events: none;
   z-index: 2;
 }
 
 .project-card:hover .project-thumb-overlay {
-  background: rgba(11, 19, 43, 0.12);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
+  background: rgba(11, 19, 43, 0.06);
 }
 
 .project-card:hover .project-thumb-img {
