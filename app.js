@@ -15,7 +15,7 @@ const translations = {
   ca: {
     hero_title_1: "Enginyer Industrial",
     hero_title_2: "Enginyer de Disseny Industrial & Desenvolupament de Producte",
-    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos i metodologia Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de projectes propis (<strong>CALYU</strong>). Amb caràcter emprenedor i visió de producte, treballo especialment bé per projectes, bolcant-m'hi al màxim quan m'apassiona el repte i hi crec fermament. Especialitzat en l'aplicació d'<strong>Intel·ligència Artificial per optimitzar processos</strong>, automatitzant fluxos i accelerant la velocitat d'iteració tècnica.",
+    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos i metodologia Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de projectes propis com <strong>CALYU</strong>. Amb caràcter emprenedor i visió de producte, treballo especialment bé per projectes, <strong>abocant-m'hi al màxim</strong> quan m'apassiona el repte i hi crec fermament. Especialitzat en l'aplicació d'<strong>Intel·ligència Artificial per optimitzar processos</strong>, automatitzant fluxos i accelerant la velocitat d'iteració tècnica.",
     btn_cv: "Descarregar CV (PDF)",
     btn_projects: "Explorar Projectes",
 
@@ -23,7 +23,7 @@ const translations = {
     t1_date: "Gener 2027",
     t1_role: "Graduat en Màster en Enginyeria Industrial",
     t1_sub: "Especialitat en Organització Industrial",
-    t1_drawer: "<strong>Ubicació</strong>: Terrassa (UPC ESEIAAT). Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).",
+    t1_drawer: "<strong>Ubicació</strong>: Terrassa (UPC ESEIAAT).<br><br>Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).",
 
     t2_date: "Feb 2026 – Actualitat",
     t2_role: "Co-Fundador &amp; Cap de Producte",
@@ -38,7 +38,7 @@ const translations = {
 
     t4_date: "Setembre 2024",
     t4_role: "Graduat en Enginyeria de Disseny Industrial &amp; Desenv. de Producte",
-    t4_drawer: "<strong>Ubicació</strong>: Terrassa (Universitat Politècnica de Catalunya). Formació troncal completa de 4 anys (2020–2024) que fusiona enginyeria mecànica, modelat 3D CAD/CAM (SolidWorks), selecció de materials plàstics i metàl·lics, processos de manufactura, ergonomia, disseny per a fabricació (DFM) i prototipatge ràpid.",
+    t4_drawer: "<strong>Ubicació</strong>: Terrassa (Universitat Politècnica de Catalunya).<br><br>Formació troncal completa de 4 anys (2020–2024) que fusiona enginyeria mecànica, modelat 3D CAD/CAM (SolidWorks), selecció de materials plàstics i metàl·lics, processos de manufactura, ergonomia, disseny per a fabricació (DFM) i prototipatge ràpid.",
 
     t5_date: "Setembre 2024",
     t5_role: "Presentació TFG: CarGo (Matrícula d'Honor)",
@@ -54,15 +54,15 @@ const translations = {
     t7_date: "Jul 2022",
     t7_role: "Operari de Línia de Producció",
     t7_sub: "Sector químic i higiènic",
-    t7_drawer: "<strong>Ubicació</strong>: Vilafranca del Penedès. Control de procés, envasament automatitzat, verificació de qualitat en línia i paletització en una planta industrial d'alt ritme de fabricació continu.",
+    t7_drawer: "<strong>Ubicació</strong>: Vilafranca del Penedès.<br><br>Control de procés, envasament automatitzat, verificació de qualitat en línia i paletització en una planta industrial d'alt ritme de fabricació continu.",
 
     t8_date: "Jul – Ago 2021",
     t8_role: "Ajudant de Recepció i Cambrer",
     t8_sub: "Sector hoteler i restauració",
-    t8_drawer: "<strong>Ubicació</strong>: Berga. Atenció directa al client, gestió àgil de reserves en recepció i coordinació de servei en torns de restaurant.",
+    t8_drawer: "<strong>Ubicació</strong>: Berga.<br><br>Atenció directa al client, gestió àgil de reserves en recepció i coordinació de servei en torns de restaurant.",
 
     t9_date: "Novembre 2019",
-    t9_role: "Treball de Recerca: Reforma Hotel Estel (Qualificació: 10)",
+    t9_role: "Treball de Recerca: Reforma Hotel Estel",
     t9_sub: "Estudi de viabilitat i normativa",
     t9_drawer: "<li><strong>Qualificació &amp; Distinció</strong>: Qualificat amb un <strong>10 / 10</strong> pel tribunal d'avaluació de Batxillerat.</li><li><strong>Compliment normatiu &amp; Viabilitat</strong>: Estudi tècnic de la normativa turística vigent per determinar els requisits legals d'espais, accessibilitat i serveis per elevar l'hotel de 2 a 4 estrelles.</li><li><strong>Delineació i redisseny arquitectònic</strong>: Modificació completa dels plànols arquitectònics: cotes d'habitacions, redistribució de banys, ampliació de zones comunes i integració de nous ascensors.</li>",
     t9_action: "Veure plànol a Projectes ↓",
@@ -75,7 +75,7 @@ const translations = {
     // Projects Section
     projects_heading: "Projectes",
     p1_cat: "Startup / TFM",
-    p1_origin: "UPC",
+    p1_origin: "Personal / UPC",
     p1_desc: "Plataforma per a la gestió de convivència i despeses compartides en pisos d'estudiants.",
 
     p2_cat: "Disseny de Producte",
@@ -88,31 +88,27 @@ const translations = {
 
     p4_cat: "Impressió 3D",
     p4_origin: "Personal",
-    p4_desc: "Fabricació additiva FDM de components mecànics i caragoleria funcional.",
+    p4_desc: "Repositori de projectes d'impressió 3D FDM: utillatges industrials, enginyeria inversa i peces funcionals.",
 
     p5_cat: "Modelat 3D",
     p5_origin: "UPC",
-    p5_desc: "Ulleres FPV per a drons amb modelat ergonòmic i aplicació de textures CMF a Keyshot.",
+    p5_desc: "Presentació de producte per a ulleres de drons FPV explorant diversos motors de render i textures CMF.",
 
     p6_cat: "Redisseny",
     p6_origin: "UPC",
     p6_desc: "Redisseny estètic de robot de cuina i manual d'usuari amb desglossament vectorial.",
 
-    p7_cat: "Packaging",
-    p7_origin: "UPC",
-    p7_desc: "Packaging per a perfum creat d'un únic full de cartolina amb doblecs i tapa encunyada.",
+    p7_cat: "Arquitectura & Normativa",
+    p7_origin: "Batxillerat",
+    p7_desc: "Estudi tècnic i redisseny de plànols per elevar l'hotel de 2 a 4 estrelles (Qualificació: 10/10).",
 
-    p8_cat: "Arquitectura & Normativa",
-    p8_origin: "Batxillerat",
-    p8_desc: "Estudi tècnic i redisseny de plànols per elevar l'hotel de 2 a 4 estrelles (Qualificació: 10/10).",
+    p8_cat: "Campanya Publicitària",
+    p8_origin: "UPC",
+    p8_desc: "Campanya digital per a festival de música: identitat visual i creativitats per a xarxes.",
 
-    p9_cat: "Campanya Publicitària",
+    p9_cat: "Disseny Editorial",
     p9_origin: "UPC",
-    p9_desc: "Campanya digital per a festival de música: identitat visual i creativitats per a xarxes.",
-
-    p10_cat: "Disseny Editorial",
-    p10_origin: "UPC",
-    p10_desc: "Disseny gràfic i maquetació editorial d'una revista d'aventures amb retícula tipogràfica.",
+    p9_desc: "Disseny gràfic i maquetació editorial d'una revista d'aventures amb retícula tipogràfica.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Competències",
@@ -130,7 +126,7 @@ const translations = {
   es: {
     hero_title_1: "Ingeniero Industrial",
     hero_title_2: "Ingeniero de Diseño Industrial y Desarrollo de Producto",
-    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos y metodología Lean en <strong>Louis Vuitton</strong>, técnico CAD en <strong>CELO</strong> y desarrollo de proyectos propios (<strong>CALYU</strong>). Con carácter emprendedor y visión de producto, trabajo especialmente bien por proyectos, volcándome al máximo cuando me apasiona el reto y creo firmemente en él. Especializado en la aplicación de <strong>Inteligencia Artificial para optimizar procesos</strong>, automatizando flujos y acelerando la velocidad de iteración técnica.",
+    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos y metodología Lean en <strong>Louis Vuitton</strong>, técnico CAD en <strong>CELO</strong> y desarrollo de proyectos propios como <strong>CALYU</strong>. Con carácter emprendedor y visión de producto, trabajo especialmente bien por proyectos, volcándome al máximo cuando me apasiona el reto y creo firmemente en él. Especializado en la aplicación de <strong>Inteligencia Artificial para optimizar procesos</strong>, automatizando flujos y acelerando la velocidad de iteración técnica.",
     btn_cv: "Descargar CV (PDF)",
     btn_projects: "Explorar Proyectos",
 
@@ -138,7 +134,7 @@ const translations = {
     t1_date: "Enero 2027",
     t1_role: "Graduado en Máster en Ingeniería Industrial",
     t1_sub: "Especialidad en Organización Industrial",
-    t1_drawer: "<strong>Ubicación</strong>: Terrassa (UPC ESEIAAT). Profundización avanzada en gestión integral de proyectos industriales, cálculo estructural, optimización de plantas, sistemas energéticos e integración tecnológica. Desarrollo en curso del Trabajo de Fin de Máster (TFM).",
+    t1_drawer: "<strong>Ubicación</strong>: Terrassa (UPC ESEIAAT).<br><br>Profundización avanzada en gestión integral de proyectos industriales, cálculo estructural, optimización de plantas, sistemas energéticos e integración tecnológica. Desarrollo en curso del Trabajo de Fin de Máster (TFM).",
 
     t2_date: "Feb 2026 – Actualidad",
     t2_role: "Co-Fundador &amp; Jefe de Producto",
@@ -153,7 +149,7 @@ const translations = {
 
     t4_date: "Septiembre 2024",
     t4_role: "Graduado en Ingeniería de Diseño Industrial y Desarr. de Producto",
-    t4_drawer: "<strong>Ubicación</strong>: Terrassa (Universitat Politècnica de Catalunya). Formación troncal completa de 4 años (2020–2024) que fusiona ingeniería mecánica, modelado 3D CAD/CAM (SolidWorks), selección de materiales plásticos y metálicos, procesos de manufactura, ergonomía, diseño para fabricación (DFM) y prototipado rápido.",
+    t4_drawer: "<strong>Ubicación</strong>: Terrassa (Universitat Politècnica de Catalunya).<br><br>Formación troncal completa de 4 años (2020–2024) que fusiona ingeniería mecánica, modelado 3D CAD/CAM (SolidWorks), selección de materiales plásticos y metálicos, procesos de manufactura, ergonomía, diseño para fabricación (DFM) y prototipado rápido.",
 
     t5_date: "Septiembre 2024",
     t5_role: "Presentación TFG: CarGo (Matrícula de Honor)",
@@ -169,15 +165,15 @@ const translations = {
     t7_date: "Jul 2022",
     t7_role: "Operario de Línea de Producción",
     t7_sub: "Sector químico e higiénico",
-    t7_drawer: "<strong>Ubicación</strong>: Vilafranca del Penedès. Control de proceso, envasado automatizado, verificación de calidad en línea y paletización en una planta industrial de alto ritmo de fabricación continuo.",
+    t7_drawer: "<strong>Ubicación</strong>: Vilafranca del Penedès.<br><br>Control de proceso, envasado automatizado, verificación de calidad en línea y paletización en una planta industrial de alto ritmo de fabricación continuo.",
 
     t8_date: "Jul – Ago 2021",
     t8_role: "Ayudante de Recepción y Camarero",
     t8_sub: "Sector hostelero y restauración",
-    t8_drawer: "<strong>Ubicación</strong>: Berga. Atención directa al cliente, gestión ágil de reservas en recepción y coordinación de servicio en turnos de restaurante.",
+    t8_drawer: "<strong>Ubicación</strong>: Berga.<br><br>Atención directa al cliente, gestión ágil de reservas en recepción y coordinación de servicio en turnos de restaurante.",
 
     t9_date: "Noviembre 2019",
-    t9_role: "Trabajo de Investigación: Reforma Hotel Estel (Calificación: 10)",
+    t9_role: "Trabajo de Investigación: Reforma Hotel Estel",
     t9_sub: "Estudio de viabilidad y normativa",
     t9_drawer: "<li><strong>Calificación &amp; Distinción</strong>: Calificado con un <strong>10 / 10</strong> por el tribunal de evaluación de Bachillerato.</li><li><strong>Cumplimiento normativo &amp; Viabilidad</strong>: Estudio técnico de la normativa turística vigente para determinar los requisitos legales de espacios, accesibilidad y servicios para elevar el hotel de 2 a 4 estrellas.</li><li><strong>Delineación y rediseño arquitectónico</strong>: Modificación completa de los planos arquitectónicos: cotas de habitaciones, redistribución de baños, ampliación de zonas comunes e integración de nuevos ascensores.</li>",
     t9_action: "Ver plano en Proyectos ↓",
@@ -190,7 +186,7 @@ const translations = {
     // Projects Section
     projects_heading: "Proyectos",
     p1_cat: "Startup / TFM",
-    p1_origin: "UPC",
+    p1_origin: "Personal / UPC",
     p1_desc: "Plataforma para la gestión de convivencia y gastos compartidos en pisos de estudiantes.",
 
     p2_cat: "Diseño de Producto",
@@ -203,31 +199,27 @@ const translations = {
 
     p4_cat: "Impresión 3D",
     p4_origin: "Personal",
-    p4_desc: "Fabricación aditiva FDM de componentes mecánicos y tornillería funcional.",
+    p4_desc: "Repositorio de proyectos de impresión 3D FDM: utillajes industriales, ingeniería inversa y piezas funcionales.",
 
     p5_cat: "Modelado 3D",
     p5_origin: "UPC",
-    p5_desc: "Gafas FPV para drones con modelado ergonómico y aplicación de texturas CMF en Keyshot.",
+    p5_desc: "Presentación de producto para gafas de drones FPV explorando diversos motores de render y texturas CMF.",
 
     p6_cat: "Rediseño",
     p6_origin: "UPC",
     p6_desc: "Rediseño estético de robot de cocina y manual de usuario con despiece vectorial.",
 
-    p7_cat: "Packaging",
-    p7_origin: "UPC",
-    p7_desc: "Packaging para perfume creado a partir de una única cartulina con pliegues y tapa troquelada.",
+    p7_cat: "Arquitectura & Normativa",
+    p7_origin: "Bachillerato",
+    p7_desc: "Estudio técnico y rediseño de planos para elevar el hotel de 2 a 4 estrellas (Calificación: 10/10).",
 
-    p8_cat: "Arquitectura & Normativa",
-    p8_origin: "Bachillerato",
-    p8_desc: "Estudio técnico y rediseño de planos para elevar el hotel de 2 a 4 estrellas (Calificación: 10/10).",
+    p8_cat: "Campaña Publicitaria",
+    p8_origin: "UPC",
+    p8_desc: "Campaña digital para festival de música: identidad visual y creatividades para redes.",
 
-    p9_cat: "Campaña Publicitaria",
+    p9_cat: "Diseño Editorial",
     p9_origin: "UPC",
-    p9_desc: "Campaña digital para festival de música: identidad visual y creatividades para redes.",
-
-    p10_cat: "Diseño Editorial",
-    p10_origin: "UPC",
-    p10_desc: "Diseño gráfico y maquetación editorial de una revista de aventuras con retícula tipográfica.",
+    p9_desc: "Diseño gráfico y maquetación editorial de una revista de aventuras con retícula tipográfica.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Competencias",
@@ -245,7 +237,7 @@ const translations = {
   en: {
     hero_title_1: "Industrial Engineer",
     hero_title_2: "Industrial Design & Product Development Engineer",
-    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, with hands-on experience in process optimization and Lean methodology at <strong>Louis Vuitton</strong>, CAD engineering at <strong>CELO</strong>, and product ventures (<strong>CALYU</strong>). Entrepreneurial mindset and product vision, thriving in project-driven environments where passion meets high technical standards. Specialized in applying <strong>Artificial Intelligence to process engineering</strong>, streamlining workflows and accelerating technical iteration cycles.",
+    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, with hands-on experience in process optimization and Lean methodology at <strong>Louis Vuitton</strong>, CAD engineering at <strong>CELO</strong>, and product ventures such as <strong>CALYU</strong>. Entrepreneurial mindset and product vision, thriving in project-driven environments where passion meets high technical standards. Specialized in applying <strong>Artificial Intelligence to process engineering</strong>, streamlining workflows and accelerating technical iteration cycles.",
     btn_cv: "Download CV (PDF)",
     btn_projects: "Explore Projects",
 
@@ -253,7 +245,7 @@ const translations = {
     t1_date: "January 2027",
     t1_role: "Master's Degree in Industrial Engineering",
     t1_sub: "Major in Industrial Management",
-    t1_drawer: "<strong>Location</strong>: Terrassa (UPC ESEIAAT). Advanced focus on industrial project management, structural analysis, plant optimization, energy systems, and technology integration. Ongoing Master's Thesis (TFM).",
+    t1_drawer: "<strong>Location</strong>: Terrassa (UPC ESEIAAT).<br><br>Advanced focus on industrial project management, structural analysis, plant optimization, energy systems, and technology integration. Ongoing Master's Thesis (TFM).",
 
     t2_date: "Feb 2026 – Present",
     t2_role: "Co-Founder &amp; Head of Product",
@@ -268,7 +260,7 @@ const translations = {
 
     t4_date: "September 2024",
     t4_role: "B.Sc. in Industrial Design &amp; Product Development Engineering",
-    t4_drawer: "<strong>Location</strong>: Terrassa (Universitat Politècnica de Catalunya). Comprehensive 4-year curriculum (2020–2024) combining mechanical engineering, 3D CAD/CAM (SolidWorks), plastics and metals material selection, manufacturing processes, ergonomics, design for manufacturing (DFM), and rapid prototyping.",
+    t4_drawer: "<strong>Location</strong>: Terrassa (Universitat Politècnica de Catalunya).<br><br>Comprehensive 4-year curriculum (2020–2024) combining mechanical engineering, 3D CAD/CAM (SolidWorks), plastics and metals material selection, manufacturing processes, ergonomics, design for manufacturing (DFM), and rapid prototyping.",
 
     t5_date: "September 2024",
     t5_role: "Bachelor Thesis: CarGo (Honors Mark)",
@@ -284,15 +276,15 @@ const translations = {
     t7_date: "Jul 2022",
     t7_role: "Production Line Operator",
     t7_sub: "Chemical and hygiene sector",
-    t7_drawer: "<strong>Location</strong>: Vilafranca del Penedès. Process monitoring, automated packaging, line quality inspection, and palletizing in a high-throughput industrial continuous manufacturing facility.",
+    t7_drawer: "<strong>Location</strong>: Vilafranca del Penedès.<br><br>Process monitoring, automated packaging, line quality inspection, and palletizing in a high-throughput industrial continuous manufacturing facility.",
 
     t8_date: "Jul – Aug 2021",
     t8_role: "Front Desk &amp; Hospitality Assistant",
     t8_sub: "Hospitality and dining sector",
-    t8_drawer: "<strong>Location</strong>: Berga. Direct guest communication, front-desk booking management, and high-tempo hospitality service coordination.",
+    t8_drawer: "<strong>Location</strong>: Berga.<br><br>Direct guest communication, front-desk booking management, and high-tempo hospitality service coordination.",
 
     t9_date: "November 2019",
-    t9_role: "High School Research Thesis: Hotel Estel Renovation (Grade: 10/10)",
+    t9_role: "High School Research Thesis: Hotel Estel Renovation",
     t9_sub: "Feasibility study & building code",
     t9_drawer: "<li><strong>Distinction &amp; Grade</strong>: Graded <strong>10 / 10 (Highest Honors)</strong> by the academic evaluation board.</li><li><strong>Regulatory Compliance &amp; Feasibility</strong>: Comprehensive technical study of hospitality building regulations to meet requirements for upgrading hotel classification from 2 to 4 stars.</li><li><strong>Architectural Drafting &amp; Redesign</strong>: Full CAD redesign of floor plans: room dimensions, bathroom layouts, accessibility compliance, expanded shared facilities, and elevator core integration.</li>",
     t9_action: "View blueprint in Projects ↓",
@@ -305,7 +297,7 @@ const translations = {
     // Projects Section
     projects_heading: "Projects",
     p1_cat: "Startup / Master's Thesis",
-    p1_origin: "UPC",
+    p1_origin: "Personal / UPC",
     p1_desc: "Coliving management platform for shared expenses and household tasks in student flats.",
 
     p2_cat: "Product Design",
@@ -318,31 +310,27 @@ const translations = {
 
     p4_cat: "3D Printing",
     p4_origin: "Personal",
-    p4_desc: "FDM additive manufacturing of functional mechanical parts, fasteners, and assemblies.",
+    p4_desc: "Repository of FDM 3D printing projects: industrial tooling, reverse engineering, and functional parts.",
 
     p5_cat: "3D Modeling",
     p5_origin: "UPC",
-    p5_desc: "FPV drone goggles featuring ergonomic modeling and advanced CMF material texturing.",
+    p5_desc: "Product presentation for FPV drone goggles exploring different rendering engines and CMF texturing.",
 
     p6_cat: "Redesign",
     p6_origin: "UPC",
     p6_desc: "Aesthetic kitchen mixer redesign and illustrated technical user guide.",
 
-    p7_cat: "Packaging",
-    p7_origin: "UPC",
-    p7_desc: "Perfume packaging engineered entirely from a single folding cardstock sheet with die-cut lid.",
+    p7_cat: "Architecture & Regulations",
+    p7_origin: "High School",
+    p7_desc: "Technical feasibility and CAD blueprint redesign to upgrade hotel from 2 to 4 stars (Grade: 10/10).",
 
-    p8_cat: "Architecture & Regulations",
-    p8_origin: "High School",
-    p8_desc: "Technical feasibility and CAD blueprint redesign to upgrade hotel from 2 to 4 stars (Grade: 10/10).",
+    p8_cat: "Advertising Campaign",
+    p8_origin: "UPC",
+    p8_desc: "Digital campaign for a music festival: visual brand identity and social media creatives.",
 
-    p9_cat: "Advertising Campaign",
+    p9_cat: "Editorial Design",
     p9_origin: "UPC",
-    p9_desc: "Digital campaign for a music festival: visual brand identity and social media creatives.",
-
-    p10_cat: "Editorial Design",
-    p10_origin: "UPC",
-    p10_desc: "Graphic design and editorial layout of an adventure magazine using structured typographic grids.",
+    p9_desc: "Graphic design and editorial layout of an adventure magazine using structured typographic grids.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Skills & Expertise",
