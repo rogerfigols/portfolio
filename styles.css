@@ -891,7 +891,7 @@ svg {
 .project-thumb-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(11, 19, 43, 0.50);
+  background: rgba(11, 19, 43, 0.60);
   transition: background 0.28s ease;
   pointer-events: none;
   z-index: 2;
@@ -906,7 +906,7 @@ svg {
 }
 
 .project-body {
-  padding: 1.25rem 1.35rem 1.35rem;
+  padding: 1.15rem 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -942,7 +942,7 @@ svg {
   font-size: 0.84rem;
   color: var(--text-muted);
   line-height: 1.52;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   flex: 1;
 }
 
