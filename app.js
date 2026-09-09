@@ -61,29 +61,58 @@ const translations = {
     t8_sub: "Sector hoteler i restauració",
     t8_drawer: "<strong>Ubicació</strong>: Berga. Atenció directa al client, gestió àgil de reserves en recepció i coordinació de servei en torns de restaurant.",
 
-    t9_date: "Juny 2019",
-    t9_role: "Certificació d'Anglès B2",
-    t9_sub: "First Certificate (Professional)",
-    t9_drawer: "Competència comunicativa sòlida per a entorns professionals internacionals, documentació tècnica, redacció d'informes d'enginyeria i presentacions de projecte.",
+    t9_date: "Novembre 2019",
+    t9_role: "Treball de Recerca: Reforma Hotel Estel (Qualificació: 10)",
+    t9_sub: "Estudi de viabilitat i normativa",
+    t9_drawer: "<li><strong>Qualificació &amp; Distinció</strong>: Qualificat amb un <strong>10 / 10</strong> pel tribunal d'avaluació de Batxillerat.</li><li><strong>Compliment normatiu &amp; Viabilitat</strong>: Estudi tècnic de la normativa turística vigent per determinar els requisits legals d'espais, accessibilitat i serveis per elevar l'hotel de 2 a 4 estrelles.</li><li><strong>Delineació i redisseny arquitectònic</strong>: Modificació completa dels plànols arquitectònics: cotes d'habitacions, redistribució de banys, ampliació de zones comunes i integració de nous ascensors.</li>",
+    t9_action: "Veure plànol a Projectes ↓",
+
+    t10_date: "Juny 2019",
+    t10_role: "Certificació d'Anglès B2",
+    t10_sub: "First Certificate (Professional)",
+    t10_drawer: "Competència comunicativa sòlida per a entorns professionals internacionals, documentació tècnica, redacció d'informes d'enginyeria i presentacions de projecte.",
 
     // Projects Section
     projects_heading: "Projectes",
     p1_cat: "Startup / TFM",
+    p1_origin: "UPC",
     p1_desc: "Plataforma per a la gestió de convivència i despeses compartides en pisos d'estudiants.",
+
     p2_cat: "Disseny de Producte",
+    p2_origin: "Concurs",
     p2_desc: "Concepció d'un topall de porta i delineació de plànols tècnics de fabricació.",
+
     p3_cat: "TFG",
+    p3_origin: "UPC",
     p3_desc: "Plataforma de crowdshipping guardonada amb Matrícula d'Honor pel tribunal UPC.",
-    p4_cat: "Projecte Personal / Impressió 3D",
+
+    p4_cat: "Impressió 3D",
+    p4_origin: "Personal",
     p4_desc: "Fabricació additiva FDM de components mecànics i caragoleria funcional.",
+
     p5_cat: "Modelat 3D",
+    p5_origin: "UPC",
     p5_desc: "Ulleres FPV per a drons amb modelat ergonòmic i aplicació de textures CMF a Keyshot.",
+
     p6_cat: "Redisseny",
+    p6_origin: "UPC",
     p6_desc: "Redisseny estètic de robot de cuina i manual d'usuari amb desglossament vectorial.",
-    p7_cat: "Campanya Publicitària",
-    p7_desc: "Campanya digital per a festival de música: identitat visual i creativitats per a xarxes.",
-    p8_cat: "Disseny Editorial",
-    p8_desc: "Disseny gràfic i maquetació editorial d'una revista d'aventures amb retícula tipogràfica.",
+
+    p7_cat: "Packaging",
+    p7_origin: "UPC",
+    p7_desc: "Packaging per a perfum creat d'un únic full de cartolina amb doblecs i tapa encunyada.",
+
+    p8_cat: "Arquitectura & Normativa",
+    p8_origin: "Batxillerat",
+    p8_desc: "Estudi tècnic i redisseny de plànols per elevar l'hotel de 2 a 4 estrelles (Qualificació: 10/10).",
+
+    p9_cat: "Campanya Publicitària",
+    p9_origin: "UPC",
+    p9_desc: "Campanya digital per a festival de música: identitat visual i creativitats per a xarxes.",
+
+    p10_cat: "Disseny Editorial",
+    p10_origin: "UPC",
+    p10_desc: "Disseny gràfic i maquetació editorial d'una revista d'aventures amb retícula tipogràfica.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Competències",
@@ -147,29 +176,58 @@ const translations = {
     t8_sub: "Sector hostelero y restauración",
     t8_drawer: "<strong>Ubicación</strong>: Berga. Atención directa al cliente, gestión ágil de reservas en recepción y coordinación de servicio en turnos de restaurante.",
 
-    t9_date: "Junio 2019",
-    t9_role: "Certificación de Inglés B2",
-    t9_sub: "First Certificate (Profesional)",
-    t9_drawer: "Competencia comunicativa sólida para entornos profesionales internacionales, documentación técnica, redacción de informes de ingeniería y presentaciones de proyecto.",
+    t9_date: "Noviembre 2019",
+    t9_role: "Trabajo de Investigación: Reforma Hotel Estel (Calificación: 10)",
+    t9_sub: "Estudio de viabilidad y normativa",
+    t9_drawer: "<li><strong>Calificación &amp; Distinción</strong>: Calificado con un <strong>10 / 10</strong> por el tribunal de evaluación de Bachillerato.</li><li><strong>Cumplimiento normativo &amp; Viabilidad</strong>: Estudio técnico de la normativa turística vigente para determinar los requisitos legales de espacios, accesibilidad y servicios para elevar el hotel de 2 a 4 estrellas.</li><li><strong>Delineación y rediseño arquitectónico</strong>: Modificación completa de los planos arquitectónicos: cotas de habitaciones, redistribución de baños, ampliación de zonas comunes e integración de nuevos ascensores.</li>",
+    t9_action: "Ver plano en Proyectos ↓",
+
+    t10_date: "Junio 2019",
+    t10_role: "Certificación de Inglés B2",
+    t10_sub: "First Certificate (Profesional)",
+    t10_drawer: "Competencia comunicativa sólida para entornos profesionales internacionales, documentación técnica, redacción de informes de ingeniería y presentaciones de proyecto.",
 
     // Projects Section
     projects_heading: "Proyectos",
     p1_cat: "Startup / TFM",
+    p1_origin: "UPC",
     p1_desc: "Plataforma para la gestión de convivencia y gastos compartidos en pisos de estudiantes.",
+
     p2_cat: "Diseño de Producto",
+    p2_origin: "Concurso",
     p2_desc: "Concepción de un tope de puerta y delineación de planos técnicos de fabricación.",
+
     p3_cat: "TFG",
+    p3_origin: "UPC",
     p3_desc: "Plataforma de crowdshipping galardonada con Matrícula de Honor por el tribunal UPC.",
-    p4_cat: "Proyecto Personal / Impresión 3D",
+
+    p4_cat: "Impresión 3D",
+    p4_origin: "Personal",
     p4_desc: "Fabricación aditiva FDM de componentes mecánicos y tornillería funcional.",
+
     p5_cat: "Modelado 3D",
+    p5_origin: "UPC",
     p5_desc: "Gafas FPV para drones con modelado ergonómico y aplicación de texturas CMF en Keyshot.",
+
     p6_cat: "Rediseño",
+    p6_origin: "UPC",
     p6_desc: "Rediseño estético de robot de cocina y manual de usuario con despiece vectorial.",
-    p7_cat: "Campaña Publicitaria",
-    p7_desc: "Campaña digital para festival de música: identidad visual y creatividades para redes.",
-    p8_cat: "Diseño Editorial",
-    p8_desc: "Diseño gráfico y maquetación editorial de una revista de aventuras con retícula tipográfica.",
+
+    p7_cat: "Packaging",
+    p7_origin: "UPC",
+    p7_desc: "Packaging para perfume creado a partir de una única cartulina con pliegues y tapa troquelada.",
+
+    p8_cat: "Arquitectura & Normativa",
+    p8_origin: "Bachillerato",
+    p8_desc: "Estudio técnico y rediseño de planos para elevar el hotel de 2 a 4 estrellas (Calificación: 10/10).",
+
+    p9_cat: "Campaña Publicitaria",
+    p9_origin: "UPC",
+    p9_desc: "Campaña digital para festival de música: identidad visual y creatividades para redes.",
+
+    p10_cat: "Diseño Editorial",
+    p10_origin: "UPC",
+    p10_desc: "Diseño gráfico y maquetación editorial de una revista de aventuras con retícula tipográfica.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Competencias",
@@ -233,29 +291,58 @@ const translations = {
     t8_sub: "Hospitality and dining sector",
     t8_drawer: "<strong>Location</strong>: Berga. Direct guest communication, front-desk booking management, and high-tempo hospitality service coordination.",
 
-    t9_date: "June 2019",
-    t9_role: "B2 English Certification (First Certificate)",
-    t9_sub: "First Certificate (Professional)",
-    t9_drawer: "Solid working English proficiency for international engineering teams, technical documentation, design specifications, and project presentations.",
+    t9_date: "November 2019",
+    t9_role: "High School Research Thesis: Hotel Estel Renovation (Grade: 10/10)",
+    t9_sub: "Feasibility study & building code",
+    t9_drawer: "<li><strong>Distinction &amp; Grade</strong>: Graded <strong>10 / 10 (Highest Honors)</strong> by the academic evaluation board.</li><li><strong>Regulatory Compliance &amp; Feasibility</strong>: Comprehensive technical study of hospitality building regulations to meet requirements for upgrading hotel classification from 2 to 4 stars.</li><li><strong>Architectural Drafting &amp; Redesign</strong>: Full CAD redesign of floor plans: room dimensions, bathroom layouts, accessibility compliance, expanded shared facilities, and elevator core integration.</li>",
+    t9_action: "View blueprint in Projects ↓",
+
+    t10_date: "June 2019",
+    t10_role: "B2 English Certification (First Certificate)",
+    t10_sub: "First Certificate (Professional)",
+    t10_drawer: "Solid working English proficiency for international engineering teams, technical documentation, design specifications, and project presentations.",
 
     // Projects Section
     projects_heading: "Projects",
     p1_cat: "Startup / Master's Thesis",
+    p1_origin: "UPC",
     p1_desc: "Coliving management platform for shared expenses and household tasks in student flats.",
+
     p2_cat: "Product Design",
+    p2_origin: "Competition",
     p2_desc: "Functional concept of a door stopper and technical drafting of manufacturing blueprints.",
+
     p3_cat: "Bachelor's Thesis",
+    p3_origin: "UPC",
     p3_desc: "Crowdshipping logistics platform awarded Highest Honors by the UPC faculty committee.",
-    p4_cat: "Personal Project / 3D Printing",
+
+    p4_cat: "3D Printing",
+    p4_origin: "Personal",
     p4_desc: "FDM additive manufacturing of functional mechanical parts, fasteners, and assemblies.",
+
     p5_cat: "3D Modeling",
+    p5_origin: "UPC",
     p5_desc: "FPV drone goggles featuring ergonomic modeling and advanced CMF material texturing.",
+
     p6_cat: "Redesign",
+    p6_origin: "UPC",
     p6_desc: "Aesthetic kitchen mixer redesign and illustrated technical user guide.",
-    p7_cat: "Advertising Campaign",
-    p7_desc: "Digital campaign for a music festival: visual brand identity and social media creatives.",
-    p8_cat: "Editorial Design",
-    p8_desc: "Graphic design and editorial layout of an adventure magazine using structured typographic grids.",
+
+    p7_cat: "Packaging",
+    p7_origin: "UPC",
+    p7_desc: "Perfume packaging engineered entirely from a single folding cardstock sheet with die-cut lid.",
+
+    p8_cat: "Architecture & Regulations",
+    p8_origin: "High School",
+    p8_desc: "Technical feasibility and CAD blueprint redesign to upgrade hotel from 2 to 4 stars (Grade: 10/10).",
+
+    p9_cat: "Advertising Campaign",
+    p9_origin: "UPC",
+    p9_desc: "Digital campaign for a music festival: visual brand identity and social media creatives.",
+
+    p10_cat: "Editorial Design",
+    p10_origin: "UPC",
+    p10_desc: "Graphic design and editorial layout of an adventure magazine using structured typographic grids.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Skills & Expertise",

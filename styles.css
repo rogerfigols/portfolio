@@ -905,11 +905,23 @@ svg {
   transform: scale(1.03);
 }
 
+.project-card-static {
+  cursor: default;
+}
+
 .project-body {
   padding: 1.15rem 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.project-header-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 0.35rem;
 }
 
 .project-category {
@@ -919,8 +931,17 @@ svg {
   color: var(--accent);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 0.35rem;
-  display: block;
+  display: inline-block;
+}
+
+.project-origin {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: #94A3B8;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .project-title {
