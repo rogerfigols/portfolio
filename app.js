@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTimeline();
   initFilters();
   initModal();
+  initHashScroll();
 });
 
 // 1. MULTILINGUAL SWITCHER (CA / ES / EN)
@@ -15,7 +16,7 @@ const translations = {
   ca: {
     hero_title_1: "Enginyer Industrial",
     hero_title_2: "Enginyer de Disseny Industrial & Desenvolupament de Producte",
-    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos i metodologia Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de projectes propis com <strong>CALYU</strong>. Amb caràcter emprenedor i visió de producte, treballo especialment bé per projectes, <strong>abocant-m'hi al màxim</strong> quan m'apassiona el repte i hi crec fermament. Especialitzat en l'aplicació d'<strong>Intel·ligència Artificial per optimitzar processos</strong>, automatitzant fluxos i accelerant la velocitat d'iteració tècnica.",
+    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de producte a <strong>CALYU</strong>. Amb caràcter emprenedor i resolutiu, m'especialitzo en l'aplicació d'<strong>Intel·ligència Artificial per optimitzar processos</strong>, automatitzant fluxos de treball i accelerant la iteració tècnica.",
     btn_cv: "Descarregar CV (PDF)",
     btn_projects: "Explorar Projectes",
 
@@ -147,7 +148,7 @@ const translations = {
   es: {
     hero_title_1: "Ingeniero Industrial",
     hero_title_2: "Ingeniero de Diseño Industrial y Desarrollo de Producto",
-    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos y metodología Lean en <strong>Louis Vuitton</strong>, técnico CAD en <strong>CELO</strong> y desarrollo de proyectos propios como <strong>CALYU</strong>. Con carácter emprendedor y visión de producto, trabajo especialmente bien por proyectos, volcándome al máximo cuando me apasiona el reto y creo firmemente en él. Especializado en la aplicación de <strong>Inteligencia Artificial para optimizar procesos</strong>, automatizando flujos y acelerando la velocidad de iteración técnica.",
+    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos Lean en <strong>Louis Vuitton</strong>, técnico CAD en <strong>CELO</strong> y desarrollo de producto en <strong>CALYU</strong>. Con carácter emprendedor y resolutivo, me especializo en la aplicación de <strong>Inteligencia Artificial para optimizar procesos</strong>, automatizando flujos de trabajo y acelerando la iteración técnica.",
     btn_cv: "Descargar CV (PDF)",
     btn_projects: "Explorar Proyectos",
 
@@ -279,7 +280,7 @@ const translations = {
   en: {
     hero_title_1: "Industrial Engineer",
     hero_title_2: "Industrial Design & Product Development Engineer",
-    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, with hands-on experience in process optimization and Lean methodology at <strong>Louis Vuitton</strong>, CAD engineering at <strong>CELO</strong>, and product ventures such as <strong>CALYU</strong>. Entrepreneurial mindset and product vision, thriving in project-driven environments where passion meets high technical standards. Specialized in applying <strong>Artificial Intelligence to process engineering</strong>, streamlining workflows and accelerating technical iteration cycles.",
+    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong>, CAD design at <strong>CELO</strong>, and product development at <strong>CALYU</strong>. Entrepreneurial and solutions-driven, specialized in applying <strong>Artificial Intelligence to process engineering</strong>, automating workflows, and accelerating technical iteration cycles.",
     btn_cv: "Download CV (PDF)",
     btn_projects: "Explore Projects",
 
@@ -453,17 +454,34 @@ function initLanguage() {
     });
   });
 
-  // Restore saved language or default to 'ca'
+  // URL param override (?lang=es or ?lang=en) or restore saved language or default to 'ca'
   let initialLang = 'ca';
   try {
-    const saved = localStorage.getItem('roger_portfolio_lang');
-    if (saved && translations[saved]) {
-      initialLang = saved;
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam && translations[langParam]) {
+      initialLang = langParam;
+    } else {
+      const saved = localStorage.getItem('roger_portfolio_lang');
+      if (saved && translations[saved]) {
+        initialLang = saved;
+      }
     }
   } catch (e) {}
 
   if (initialLang !== 'ca') {
     switchLanguage(initialLang);
+  }
+}
+
+function initHashScroll() {
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    }
   }
 }
 
