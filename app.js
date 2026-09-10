@@ -16,7 +16,7 @@ const translations = {
   ca: {
     hero_title_1: "Enginyer Industrial",
     hero_title_2: "Enginyer de Disseny Industrial & Desenvolupament de Producte",
-    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de producte a <strong>CALYU</strong>. Amb caràcter emprenedor i resolutiu, m'especialitzo en l'aplicació d'<strong>Intel·ligència Artificial per optimitzar processos</strong>, automatitzant fluxos de treball i accelerant la iteració tècnica.",
+    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de producte a <strong>CALYU</strong>. Treballo especialment bé per projectes i m'agrada optimitzar processos amb <strong>Intel·ligència Artificial</strong>.",
     btn_cv: "Descarregar CV (PDF)",
     btn_projects: "Explorar Projectes",
 
@@ -148,7 +148,7 @@ const translations = {
   es: {
     hero_title_1: "Ingeniero Industrial",
     hero_title_2: "Ingeniero de Diseño Industrial y Desarrollo de Producto",
-    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos Lean en <strong>Louis Vuitton</strong>, técnico CAD en <strong>CELO</strong> y desarrollo de producto en <strong>CALYU</strong>. Con carácter emprendedor y resolutivo, me especializo en la aplicación de <strong>Inteligencia Artificial para optimizar procesos</strong>, automatizando flujos de trabajo y acelerando la iteración técnica.",
+    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos Lean en <strong>Louis Vuitton</strong>, técnico CAD en <strong>CELO</strong> y desarrollo de producto en <strong>CALYU</strong>. Trabajo especialmente bien por proyectos y me gusta optimizar procesos con <strong>Inteligencia Artificial</strong>.",
     btn_cv: "Descargar CV (PDF)",
     btn_projects: "Explorar Proyectos",
 
@@ -280,7 +280,7 @@ const translations = {
   en: {
     hero_title_1: "Industrial Engineer",
     hero_title_2: "Industrial Design & Product Development Engineer",
-    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong>, CAD design at <strong>CELO</strong>, and product development at <strong>CALYU</strong>. Entrepreneurial and solutions-driven, specialized in applying <strong>Artificial Intelligence to process engineering</strong>, automating workflows, and accelerating technical iteration cycles.",
+    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong>, CAD design at <strong>CELO</strong>, and product development at <strong>CALYU</strong>. I thrive in project-driven environments and enjoy optimizing processes with <strong>Artificial Intelligence</strong>.",
     btn_cv: "Download CV (PDF)",
     btn_projects: "Explore Projects",
 
