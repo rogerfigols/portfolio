@@ -26,7 +26,7 @@ const translations = {
     t1_sub: "Especialitat en Organització Industrial",
     t1_drawer: "<strong>Ubicació</strong>: Terrassa (UPC ESEIAAT).<br><br>Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).",
 
-    t2_date: "Feb 2026 – Actualitat",
+    t2_date: "Feb – Jul 2026",
     t2_role: "Co-Fundador &amp; Cap de Producte",
     t2_sub: "Startup de gestió per a pisos compartits",
     t2_drawer: "<li><strong>Ubicació &amp; Entorn</strong>: Terrassa (Model Híbrid). Projecte incubat al prestigiós programa <strong>Emprèn UPC</strong> i seleccionat com a finalista per presentar al <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desenvolupament integral de producte</strong>: Definició de l'arquitectura de funcionalitats, fluxos d'usuari per a despeses compartides, tasques domèstiques i gamificació (iOS i Android).</li><li><strong>Metodologia Lean Startup (Eric Ries)</strong>: Validació àgil mitjançant el bucle <em>Construir-Mesurar-Aprendre</em>, testeig continu d'usabilitat i llançament amb més de 100 <em>early adopters</em>.</li>",
@@ -158,7 +158,7 @@ const translations = {
     t1_sub: "Especialidad en Organización Industrial",
     t1_drawer: "<strong>Ubicación</strong>: Terrassa (UPC ESEIAAT).<br><br>Profundización avanzada en gestión integral de proyectos industriales, cálculo estructural, optimización de plantas, sistemas energéticos e integración tecnológica. Desarrollo en curso del Trabajo de Fin de Máster (TFM).",
 
-    t2_date: "Feb 2026 – Actualidad",
+    t2_date: "Feb – Jul 2026",
     t2_role: "Co-Fundador &amp; Jefe de Producto",
     t2_sub: "Startup de gestión para pisos compartidos",
     t2_drawer: "<li><strong>Ubicación &amp; Entorno</strong>: Terrassa (Modelo Híbrido). Proyecto incubado en el prestigioso programa <strong>Emprèn UPC</strong> y seleccionado como finalista para presentar en el <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desarrollo integral de producto</strong>: Definición de la arquitectura de funcionalidades, flujos de usuario para gastos compartidos, tareas domésticas y gamificación (iOS y Android).</li><li><strong>Metodología Lean Startup (Eric Ries)</strong>: Validación ágil mediante el bucle <em>Construir-Medir-Aprender</em>, testeo continuo de usabilidad y lanzamiento con más de 100 <em>early adopters</em>.</li>",
@@ -290,7 +290,7 @@ const translations = {
     t1_sub: "Major in Industrial Management",
     t1_drawer: "<strong>Location</strong>: Terrassa (UPC ESEIAAT).<br><br>Advanced focus on industrial project management, structural analysis, plant optimization, energy systems, and technology integration. Ongoing Master's Thesis (TFM).",
 
-    t2_date: "Feb 2026 – Present",
+    t2_date: "Feb – Jul 2026",
     t2_role: "Co-Founder &amp; Head of Product",
     t2_sub: "Flatmate management startup",
     t2_drawer: "<li><strong>Location &amp; Ecosystem</strong>: Terrassa (Hybrid). Incubated at the prestigious <strong>Emprèn UPC</strong> startup program and selected as finalist for the <strong>Santander X Explorer UPC Demo Day</strong>.</li><li><strong>End-to-end Product Development</strong>: Feature architecture, user journey mapping for shared expenses, household chores, and gamification (iOS &amp; Android).</li><li><strong>Lean Startup Methodology (Eric Ries)</strong>: Rapid hypothesis testing through <em>Build-Measure-Learn</em> cycles, continuous usability feedback, and onboarding of 100+ <em>early adopters</em>.</li>",
