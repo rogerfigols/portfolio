@@ -16,7 +16,7 @@ const translations = {
   ca: {
     hero_title_1: "Enginyer Industrial",
     hero_title_2: "Enginyer de Disseny Industrial & Desenvolupament de Producte",
-    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos Lean a <strong>Louis Vuitton</strong>, tècnic CAD a <strong>CELO</strong> i desenvolupament de producte a <strong>CALYU</strong>. Treballo especialment bé per projectes i m'agrada optimitzar processos amb <strong>Intel·ligència Artificial</strong>.",
+    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos Lean a <strong>Louis Vuitton</strong> i disseny tècnic CAD a <strong>CELO</strong>. Perfil proactiu enfocat a la resolució de reptes tècnics, el <strong>desenvolupament de projectes personals</strong> i l'optimització de processos amb <strong>Intel·ligència Artificial</strong>.",
     btn_cv: "Descarregar CV (PDF)",
     btn_projects: "Explorar Projectes",
 
@@ -27,9 +27,9 @@ const translations = {
     t1_drawer: "<strong>Ubicació</strong>: Terrassa (UPC ESEIAAT).<br><br>Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).",
 
     t2_date: "Feb – Jul 2026",
-    t2_role: "Co-Fundador &amp; Cap de Producte",
-    t2_sub: "Startup de gestió per a pisos compartits",
-    t2_drawer: "<li><strong>Ubicació &amp; Entorn</strong>: Terrassa (Model Híbrid). Projecte incubat al prestigiós programa <strong>Emprèn UPC</strong> i seleccionat com a finalista per presentar al <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desenvolupament integral de producte</strong>: Definició de l'arquitectura de funcionalitats, fluxos d'usuari per a despeses compartides, tasques domèstiques i gamificació (iOS i Android).</li><li><strong>Metodologia Lean Startup (Eric Ries)</strong>: Validació àgil mitjançant el bucle <em>Construir-Mesurar-Aprendre</em>, testeig continu d'usabilitat i llançament amb més de 100 <em>early adopters</em>.</li>",
+    t2_role: "Projecte Propi &amp; Product Lead",
+    t2_sub: "CALYU · Iniciativa emprenedora per a pisos compartits",
+    t2_drawer: "<li><strong>Tipus d'iniciativa</strong>: Projecte personal / emprenedor desenvolupat a Terrassa (Model Híbrid). Incubador al programa <strong>Emprèn UPC</strong> i seleccionat com a finalista per presentar al <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desenvolupament integral de producte</strong>: Definició de l'arquitectura de funcionalitats, fluxos d'usuari per a despeses compartides, tasques domèstiques i gamificació (iOS i Android).</li><li><strong>Metodologia Lean Startup (Eric Ries)</strong>: Validació àgil mitjançant el bucle <em>Construir-Mesurar-Aprendre</em>, testeig continu d'usabilitat i llançament amb més de 100 <em>early adopters</em>.</li>",
     visit_calyu_app: "Visitar calyu.app ↗",
 
     t3_date: "Maig 2025 – Feb 2026",
@@ -75,7 +75,7 @@ const translations = {
 
     // Projects Section
     projects_heading: "Projectes",
-    p1_cat: "Startup / TFM",
+    p1_cat: "Projecte Personal / App",
     p1_origin: "Personal / UPC",
     p1_desc: "Plataforma per a la gestió de convivència i despeses compartides en pisos d'estudiants.",
 
@@ -148,7 +148,7 @@ const translations = {
   es: {
     hero_title_1: "Ingeniero Industrial",
     hero_title_2: "Ingeniero de Diseño Industrial y Desarrollo de Producto",
-    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos Lean en <strong>Louis Vuitton</strong>, técnico CAD en <strong>CELO</strong> y desarrollo de producto en <strong>CALYU</strong>. Trabajo especialmente bien por proyectos y me gusta optimizar procesos con <strong>Inteligencia Artificial</strong>.",
+    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos Lean en <strong>Louis Vuitton</strong> y diseño técnico CAD en <strong>CELO</strong>. Perfil proactivo enfocado a la resolución de retos técnicos, el <strong>desarrollo de proyectos personales</strong> y la optimización de procesos con <strong>Inteligencia Artificial</strong>.",
     btn_cv: "Descargar CV (PDF)",
     btn_projects: "Explorar Proyectos",
 
@@ -159,9 +159,9 @@ const translations = {
     t1_drawer: "<strong>Ubicación</strong>: Terrassa (UPC ESEIAAT).<br><br>Profundización avanzada en gestión integral de proyectos industriales, cálculo estructural, optimización de plantas, sistemas energéticos e integración tecnológica. Desarrollo en curso del Trabajo de Fin de Máster (TFM).",
 
     t2_date: "Feb – Jul 2026",
-    t2_role: "Co-Fundador &amp; Jefe de Producto",
-    t2_sub: "Startup de gestión para pisos compartidos",
-    t2_drawer: "<li><strong>Ubicación &amp; Entorno</strong>: Terrassa (Modelo Híbrido). Proyecto incubado en el prestigioso programa <strong>Emprèn UPC</strong> y seleccionado como finalista para presentar en el <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desarrollo integral de producto</strong>: Definición de la arquitectura de funcionalidades, flujos de usuario para gastos compartidos, tareas domésticas y gamificación (iOS y Android).</li><li><strong>Metodología Lean Startup (Eric Ries)</strong>: Validación ágil mediante el bucle <em>Construir-Medir-Aprender</em>, testeo continuo de usabilidad y lanzamiento con más de 100 <em>early adopters</em>.</li>",
+    t2_role: "Proyecto Propio &amp; Product Lead",
+    t2_sub: "CALYU · Iniciativa emprendedora para pisos compartidos",
+    t2_drawer: "<li><strong>Tipo de iniciativa</strong>: Proyecto personal / emprendedor desarrollado en Terrassa (Modelo Híbrido). Incubado en el programa <strong>Emprèn UPC</strong> y seleccionado como finalista para presentar en el <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desarrollo integral de producto</strong>: Definición de la arquitectura de funcionalidades, flujos de usuario para gastos compartidos, tareas domésticas y gamificación (iOS y Android).</li><li><strong>Metodología Lean Startup (Eric Ries)</strong>: Validación ágil mediante el bucle <em>Construir-Medir-Aprender</em>, testeo continuo de usabilidad y lanzamiento con más de 100 <em>early adopters</em>.</li>",
     visit_calyu_app: "Visitar calyu.app ↗",
 
     t3_date: "Mayo 2025 – Feb 2026",
@@ -207,7 +207,7 @@ const translations = {
 
     // Projects Section
     projects_heading: "Proyectos",
-    p1_cat: "Startup / TFM",
+    p1_cat: "Proyecto Personal / App",
     p1_origin: "Personal / UPC",
     p1_desc: "Plataforma para la gestión de convivencia y gastos compartidos en pisos de estudiantes.",
 
@@ -280,7 +280,7 @@ const translations = {
   en: {
     hero_title_1: "Industrial Engineer",
     hero_title_2: "Industrial Design & Product Development Engineer",
-    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong>, CAD design at <strong>CELO</strong>, and product development at <strong>CALYU</strong>. I thrive in project-driven environments and enjoy optimizing processes with <strong>Artificial Intelligence</strong>.",
+    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong> and CAD design at <strong>CELO</strong>. Proactive mindset with strong initiative in <strong>personal engineering projects</strong> and hands-on integration of <strong>Artificial Intelligence</strong>.",
     btn_cv: "Download CV (PDF)",
     btn_projects: "Explore Projects",
 
@@ -291,9 +291,9 @@ const translations = {
     t1_drawer: "<strong>Location</strong>: Terrassa (UPC ESEIAAT).<br><br>Advanced focus on industrial project management, structural analysis, plant optimization, energy systems, and technology integration. Ongoing Master's Thesis (TFM).",
 
     t2_date: "Feb – Jul 2026",
-    t2_role: "Co-Founder &amp; Head of Product",
-    t2_sub: "Flatmate management startup",
-    t2_drawer: "<li><strong>Location &amp; Ecosystem</strong>: Terrassa (Hybrid). Incubated at the prestigious <strong>Emprèn UPC</strong> startup program and selected as finalist for the <strong>Santander X Explorer UPC Demo Day</strong>.</li><li><strong>End-to-end Product Development</strong>: Feature architecture, user journey mapping for shared expenses, household chores, and gamification (iOS &amp; Android).</li><li><strong>Lean Startup Methodology (Eric Ries)</strong>: Rapid hypothesis testing through <em>Build-Measure-Learn</em> cycles, continuous usability feedback, and onboarding of 100+ <em>early adopters</em>.</li>",
+    t2_role: "Personal Venture &amp; Product Lead",
+    t2_sub: "CALYU · Entrepreneurial initiative for flatmates",
+    t2_drawer: "<li><strong>Type of Initiative</strong>: Self-driven venture developed in Terrassa (Hybrid). Incubated at the prestigious <strong>Emprèn UPC</strong> startup program and selected as finalist for the <strong>Santander X Explorer UPC Demo Day</strong>.</li><li><strong>End-to-end Product Development</strong>: Feature architecture, user journey mapping for shared expenses, household chores, and gamification (iOS &amp; Android).</li><li><strong>Lean Startup Methodology (Eric Ries)</strong>: Rapid hypothesis testing through <em>Build-Measure-Learn</em> cycles, continuous usability feedback, and onboarding of 100+ <em>early adopters</em>.</li>",
     visit_calyu_app: "Visit calyu.app ↗",
 
     t3_date: "May 2025 – Feb 2026",
@@ -339,7 +339,7 @@ const translations = {
 
     // Projects Section
     projects_heading: "Projects",
-    p1_cat: "Startup / Master's Thesis",
+    p1_cat: "Personal Project / App",
     p1_origin: "Personal / UPC",
     p1_desc: "Coliving management platform for shared expenses and household tasks in student flats.",
 
