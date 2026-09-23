@@ -280,7 +280,7 @@ const translations = {
   en: {
     hero_title_1: "Industrial Engineer",
     hero_title_2: "Industrial Design & Product Development Engineer",
-    hero_bio: "<strong>Dual-degree Engineer from UPC Barcelona</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong> and CAD design at <strong>CELO</strong>. Proactive mindset with strong initiative in <strong>personal engineering projects</strong> and hands-on integration of <strong>Artificial Intelligence</strong>.",
+    hero_bio: "<strong>Dual-degree Engineer from UPC</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong> and CAD design at <strong>CELO</strong>. Proactive mindset with strong initiative in <strong>personal engineering projects</strong> and hands-on integration of <strong>Artificial Intelligence</strong>.",
     btn_cv: "Download CV (PDF)",
     btn_projects: "Explore Projects",
 
