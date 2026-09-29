@@ -30,7 +30,6 @@ const translations = {
     t2_role: "Projecte Propi &amp; Product Lead",
     t2_sub: "CALYU · Iniciativa emprenedora per a pisos compartits",
     t2_drawer: "<li><strong>Tipus d'iniciativa</strong>: Projecte personal / emprenedor desenvolupat a Terrassa (Model Híbrid). Incubador al programa <strong>Emprèn UPC</strong> i seleccionat com a finalista per presentar al <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desenvolupament integral de producte</strong>: Definició de l'arquitectura de funcionalitats, fluxos d'usuari per a despeses compartides, tasques domèstiques i gamificació (iOS i Android).</li><li><strong>Metodologia Lean Startup (Eric Ries)</strong>: Validació àgil mitjançant el bucle <em>Construir-Mesurar-Aprendre</em>, testeig continu d'usabilitat i llançament amb més de 100 <em>early adopters</em>.</li>",
-    visit_calyu_app: "Visitar calyu.app ↗",
 
     t3_date: "Maig 2025 – Feb 2026",
     t3_role: "Enginyer de Millora Contínua (Pràctiques)",
@@ -162,7 +161,6 @@ const translations = {
     t2_role: "Proyecto Propio &amp; Product Lead",
     t2_sub: "CALYU · Iniciativa emprendedora para pisos compartidos",
     t2_drawer: "<li><strong>Tipo de iniciativa</strong>: Proyecto personal / emprendedor desarrollado en Terrassa (Modelo Híbrido). Incubado en el programa <strong>Emprèn UPC</strong> y seleccionado como finalista para presentar en el <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desarrollo integral de producto</strong>: Definición de la arquitectura de funcionalidades, flujos de usuario para gastos compartidos, tareas domésticas y gamificación (iOS y Android).</li><li><strong>Metodología Lean Startup (Eric Ries)</strong>: Validación ágil mediante el bucle <em>Construir-Medir-Aprender</em>, testeo continuo de usabilidad y lanzamiento con más de 100 <em>early adopters</em>.</li>",
-    visit_calyu_app: "Visitar calyu.app ↗",
 
     t3_date: "Mayo 2025 – Feb 2026",
     t3_role: "Ingeniero de Mejora Continua (Prácticas)",
@@ -294,7 +292,6 @@ const translations = {
     t2_role: "Personal Venture &amp; Product Lead",
     t2_sub: "CALYU · Entrepreneurial initiative for flatmates",
     t2_drawer: "<li><strong>Type of Initiative</strong>: Self-driven venture developed in Terrassa (Hybrid). Incubated at the prestigious <strong>Emprèn UPC</strong> startup program and selected as finalist for the <strong>Santander X Explorer UPC Demo Day</strong>.</li><li><strong>End-to-end Product Development</strong>: Feature architecture, user journey mapping for shared expenses, household chores, and gamification (iOS &amp; Android).</li><li><strong>Lean Startup Methodology (Eric Ries)</strong>: Rapid hypothesis testing through <em>Build-Measure-Learn</em> cycles, continuous usability feedback, and onboarding of 100+ <em>early adopters</em>.</li>",
-    visit_calyu_app: "Visit calyu.app ↗",
 
     t3_date: "May 2025 – Feb 2026",
     t3_role: "Continuous Improvement Engineer (Internship)",
