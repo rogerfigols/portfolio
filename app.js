@@ -16,7 +16,7 @@ const translations = {
   ca: {
     hero_title_1: "Enginyer Industrial",
     hero_title_2: "Enginyer de Disseny Industrial & Desenvolupament de Producte",
-    hero_bio: "<strong>Enginyer amb doble titulació per la UPC</strong>, amb experiència en optimització de processos Lean a <strong>Louis Vuitton</strong> i disseny tècnic CAD a <strong>CELO</strong>. Perfil proactiu enfocat a la resolució de reptes tècnics, el <strong>desenvolupament de projectes personals</strong> i l'optimització de processos amb <strong>Intel·ligència Artificial</strong>.",
+    hero_bio: "<strong>Enginyer de Producte</strong> amb doble titulació en Disseny Industrial i Enginyeria Industrial per la UPC. Especialitzat en el desenvolupament integral de producte físic (CAD, electrònica PCB i prototipatge ràpid) i en l'acceleració de processos mitjançant Intel·ligència Artificial.",
     btn_cv: "Descarregar CV (PDF)",
     btn_projects: "Explorar Projectes",
 
@@ -26,15 +26,14 @@ const translations = {
     t1_sub: "Especialitat en Organització Industrial",
     t1_drawer: "<strong>Ubicació</strong>: Terrassa (UPC ESEIAAT).<br><br>Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).",
 
-    t2_date: "Feb – Jul 2026",
-    t2_role: "Projecte Propi &amp; Product Lead",
-    t2_sub: "CALYU · Iniciativa emprenedora per a pisos compartits",
-    t2_drawer: "<li><strong>Tipus d'iniciativa</strong>: Projecte personal / emprenedor desenvolupat a Terrassa (Model Híbrid). Incubador al programa <strong>Emprèn UPC</strong> i seleccionat com a finalista per presentar al <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desenvolupament integral de producte</strong>: Definició de l'arquitectura de funcionalitats, fluxos d'usuari per a despeses compartides, tasques domèstiques i gamificació (iOS i Android).</li><li><strong>Metodologia Lean Startup (Eric Ries)</strong>: Validació àgil mitjançant el bucle <em>Construir-Mesurar-Aprendre</em>, testeig continu d'usabilitat i llançament amb més de 100 <em>early adopters</em>.</li>",
+    t2_date: "Feb 2026 – Actualitat",
+    t2_role: "Desenvolupament de Producte",
+    t2_company: "Projectes Propis",
+    t2_drawer: "<li><strong>Quicklap</strong>: Desenvolupament d'un dispositiu de control per a simulació de conducció: disseny integral des del modelat CAD fins a la placa electrònica (PCB) i prototipatge 3D.</li><li><strong>Automatització de processos amb IA</strong>: Desenvolupament i integració de fluxos de treball automatitzats amb IA per a empreses.</li><li><strong>CALYU</strong>: Concepció i desenvolupament d'una aplicació mòbil per a la convivència en pisos compartits, impulsada amb el suport del programa Emprèn UPC.</li>",
 
     t3_date: "Maig 2025 – Feb 2026",
-    t3_role: "Enginyer de Millora Contínua (Pràctiques)",
-    t3_sub: "Manufactura de marroquineria de luxe",
-    t3_drawer: "<li><strong>Ubicació</strong>: Santa Perpètua de Mogoda · Planta de manufactura artesanal d'alta gamma de marroquineria.</li><li><strong>Metodologies Lean Manufacturing &amp; 5S</strong>: Implementació pràctica d'eines d'estandardització, ordre i eficiència operativa directament a línia de manufactura.</li><li><strong>Automatització de processos &amp; IA (Iniciativa pròpia)</strong>: Desenvolupament en paral·lel d'una eina interna basada en <strong>macros i IA</strong> per generar documentació tècnica recurrent amb un sol clic, <strong>reduint el temps de dedicació en un 75% (un procés x4 més ràpid)</strong>.</li><li><strong>Optimització de processos &amp; Temps de cicle</strong>: Anàlisi de colls d'ampolla i desaprofitaments per elevar la productivitat respectant els exigents estàndards artesanals.</li><li><strong>Treball interdisciplinari &amp; Planta</strong>: Coordinació transversal diària amb els departaments de producció, manteniment, control de qualitat i operaris de línia.</li>",
+    t3_role: "Enginyer Lean (Pràctiques)",
+    t3_drawer: "<li><strong>Metodologies Lean Manufacturing &amp; 5S</strong>: Implementació pràctica d'eines d'organització, estandardització i eficiència operativa directament a línia de producció.</li><li><strong>Optimització de processos</strong>: Anàlisi de colls d'ampolla i desaprofitaments per elevar la productivitat respectant els estàndards de luxe artesanal.</li><li><strong>Treball interdisciplinari</strong>: Coordinació transversal diària amb els equips de producció, manteniment, control de qualitat i operaris de línia per aplicar millores operatives duradores.</li><li><strong>Automatització de processos &amp; IA (Iniciativa pròpia)</strong>: Desenvolupament en paral·lel d'una eina basada en macros i IA per generar documentació tècnica recurrent amb un sol clic, reduint el temps dedicat a la tasca en un 75%.</li>",
 
     t4_date: "Setembre 2024",
     t4_role: "Graduat en Enginyeria de Disseny Industrial &amp; Desenv. de Producte",
@@ -47,9 +46,8 @@ const translations = {
     t5_action: "Veure detalls a Projectes Destacats ↓",
 
     t6_date: "Set 2023 – Gen 2024",
-    t6_role: "Enginyer en Pràctiques (Oficina Tècnica)",
-    t6_sub: "Fixació i caragoleria tècnica industrial",
-    t6_drawer: "<li><strong>Ubicació</strong>: Castellar del Vallès · Planta industrial especialitzada en sistemes de caragoleria tècnica i estampació.</li><li><strong>Modelat 3D &amp; Delineació CAD</strong>: Generació, revisió i optimització de plànols tècnics de fabricació mitjançant <strong>SolidWorks</strong>, aplicant toleràncies geomètriques i criteris de mecanitzat.</li><li><strong>Enllaç tècnic amb producció</strong>: Comunicació diària amb els equips de manufactura per adaptar els dissenys als requeriments de maquinària i resoldre incidències tècniques.</li>",
+    t6_role: "Enginyer de Producte (Pràctiques)",
+    t6_drawer: "<li><strong>Modelat 3D &amp; Delineació CAD</strong>: Generació, revisió i optimització de plànols tècnics de fabricació mitjançant SolidWorks.</li><li><strong>Enllaç tècnic &amp; Processos</strong>: Comunicació directa amb equips de processos i oficina tècnica per adaptar els dissenys als requeriments de producció i necessitat de client.</li>",
 
     t7_date: "Jul 2022",
     t7_role: "Operari de Línia de Producció",
@@ -110,28 +108,17 @@ const translations = {
     p9_origin: "UPC",
     p9_desc: "Disseny gràfic i maquetació editorial d'una revista d'aventures amb retícula tipogràfica.",
 
-    // Skills Option 3, Contact, Footer, Modal
+    // Skills, Contact, Footer, Modal
     skills_heading: "Competències",
-    sk_panel1_title: "Software &amp; Eines Digitals",
-    sk_row1_1_title: "CAD / CAM &amp; Delineació 3D",
-    sk_row1_2_title: "Prototipatge &amp; Fabricació Additiva",
-    sk_item_3dprint: "Impressió 3D (FDM / SLA)",
-    sk_item_reverse_eng: "Enginyeria Inversa",
-    sk_row1_3_title: "IA &amp; Automatització Tècnica",
-    sk_item_doc_auto: "Automatització Documental",
-    sk_row1_4_title: "Disseny Digital &amp; UI",
+    sk_panel1_title: "Disseny Tècnic &amp; Fabricació",
+    sk_row1_1_title: "CAD / CAM &amp; Disseny Tècnic",
+    sk_row1_2_title: "Fabricació &amp; Taller",
+    sk_item_3dprint: "Impressió 3D (FDM)",
+    sk_item_cnc: "Mecanitzat &amp; Tall CNC (2 eixos i 2.5D)",
 
-    sk_panel2_title: "Metodologia &amp; Operacions",
-    sk_row2_1_title: "Lean Manufacturing",
-    sk_item_kaizen: "Kaizen (Millora Contínua)",
-    sk_item_std: "Estandardització",
-    sk_row2_2_title: "Processos &amp; Planta",
-    sk_item_bottleneck: "Anàlisi de Colls d'Ampolla",
-    sk_item_line_bal: "Equilibrat de Línies",
-    sk_item_cycle_time: "Estudis de Temps de Cicle",
-    sk_item_cross_team: "Treball Interdisciplinari",
-    sk_row2_3_title: "Enginyeria de Producte",
-    sk_row2_4_title: "Startup &amp; Validació",
+    sk_panel2_title: "Metodologia Industrial &amp; IA",
+    sk_row2_1_title: "Metodologia Industrial",
+    sk_row2_2_title: "IA &amp; Eines Digitals",
 
     sk_lang_title: "Idiomes &amp; Certificació",
     sk_lang_ca: "Natiu",
@@ -141,13 +128,15 @@ const translations = {
     contact_desc: "Tens un projecte o iniciativa d'enginyeria on vulguis sumar? Parlem-ne.",
     footer_rights: "© 2026 Roger Fígols Soler · Enginyer Industrial & Disseny de Producte",
     back_to_top: "Dalt ↑",
-    modal_title: "Descarregar CV Oficial",
-    modal_subtitle: "Format estàndard 1 pàgina A4 d'alta precisió. Tria el teu idioma:"
+    modal_title: "Descarregar CV en PDF",
+    modal_btn_ca: "Currículum en Català",
+    modal_btn_es: "Currículum en Castellà",
+    modal_btn_en: "Currículum en Anglès"
   },
   es: {
     hero_title_1: "Ingeniero Industrial",
     hero_title_2: "Ingeniero de Diseño Industrial y Desarrollo de Producto",
-    hero_bio: "<strong>Ingeniero con doble titulación por la UPC</strong>, con experiencia en optimización de procesos Lean en <strong>Louis Vuitton</strong> y diseño técnico CAD en <strong>CELO</strong>. Perfil proactivo enfocado a la resolución de retos técnicos, el <strong>desarrollo de proyectos personales</strong> y la optimización de procesos con <strong>Inteligencia Artificial</strong>.",
+    hero_bio: "<strong>Ingeniero de Producto</strong> con doble titulación en Diseño Industrial e Ingeniería Industrial por la UPC. Especializado en el desarrollo integral de producto físico (CAD, electrónica PCB y prototipado rápido) y en la aceleración de procesos mediante Inteligencia Artificial.",
     btn_cv: "Descargar CV (PDF)",
     btn_projects: "Explorar Proyectos",
 
@@ -157,15 +146,14 @@ const translations = {
     t1_sub: "Especialidad en Organización Industrial",
     t1_drawer: "<strong>Ubicación</strong>: Terrassa (UPC ESEIAAT).<br><br>Profundización avanzada en gestión integral de proyectos industriales, cálculo estructural, optimización de plantas, sistemas energéticos e integración tecnológica. Desarrollo en curso del Trabajo de Fin de Máster (TFM).",
 
-    t2_date: "Feb – Jul 2026",
-    t2_role: "Proyecto Propio &amp; Product Lead",
-    t2_sub: "CALYU · Iniciativa emprendedora para pisos compartidos",
-    t2_drawer: "<li><strong>Tipo de iniciativa</strong>: Proyecto personal / emprendedor desarrollado en Terrassa (Modelo Híbrido). Incubado en el programa <strong>Emprèn UPC</strong> y seleccionado como finalista para presentar en el <strong>Demo Day Santander X Explorer UPC</strong>.</li><li><strong>Desarrollo integral de producto</strong>: Definición de la arquitectura de funcionalidades, flujos de usuario para gastos compartidos, tareas domésticas y gamificación (iOS y Android).</li><li><strong>Metodología Lean Startup (Eric Ries)</strong>: Validación ágil mediante el bucle <em>Construir-Medir-Aprender</em>, testeo continuo de usabilidad y lanzamiento con más de 100 <em>early adopters</em>.</li>",
+    t2_date: "Feb 2026 – Actualidad",
+    t2_role: "Desarrollo de Producto",
+    t2_company: "Proyectos Propios",
+    t2_drawer: "<li><strong>Quicklap</strong>: Desarrollo de un dispositivo de control para simulación de conducción: diseño integral desde el modelado CAD hasta la placa electrónica (PCB) y prototipado 3D.</li><li><strong>Automatización de procesos con IA</strong>: Desarrollo e integración de flujos de trabajo automatizados con IA para empresas.</li><li><strong>CALYU</strong>: Concepción y desarrollo de una aplicación móvil para la convivencia en pisos compartidos, impulsada con el apoyo del programa Emprèn UPC.</li>",
 
     t3_date: "Mayo 2025 – Feb 2026",
-    t3_role: "Ingeniero de Mejora Continua (Prácticas)",
-    t3_sub: "Manufactura de marroquinería de lujo",
-    t3_drawer: "<li><strong>Ubicación</strong>: Santa Perpètua de Mogoda · Planta de manufactura artesanal de alta gama de marroquinería.</li><li><strong>Metodologías Lean Manufacturing &amp; 5S</strong>: Implementación práctica de herramientas de estandarización, orden y eficiencia operativa directamente en línea de manufactura.</li><li><strong>Automatización de procesos e IA (Iniciativa propia)</strong>: Desarrollo en paralelo de una herramienta interna basada en <strong>macros e IA</strong> para generar documentación técnica recurrente con un solo clic, <strong>reduciendo el tiempo un 75% (x4 más rápido)</strong>.</li><li><strong>Optimización de procesos &amp; Tiempos de ciclo</strong>: Análisis de cuellos de botella y desperdicios para elevar la productividad respetando los exigentes estándares artesanales.</li><li><strong>Trabajo interdisciplinar &amp; Planta</strong>: Coordinación transversal diaria con producción, mantenimiento, control de calidad y operarios.</li>",
+    t3_role: "Ingeniero Lean (Prácticas)",
+    t3_drawer: "<li><strong>Metodologías Lean Manufacturing &amp; 5S</strong>: Implementación práctica de herramientas de organización, estandarización y eficiencia operativa directamente en línea de producción.</li><li><strong>Optimización de procesos</strong>: Análisis de cuellos de botella y desperdicios para elevar la productividad respetando los estándares de calidad artesanal.</li><li><strong>Trabajo interdisciplinario</strong>: Coordinación transversal diaria con los equipos de producción, mantenimiento, control de calidad y operarios de línea para aplicar mejoras operativas duraderas.</li><li><strong>Automatización de procesos &amp; IA (Iniciativa propia)</strong>: Desarrollo en paralelo de una herramienta basada en macros e IA para generar documentación técnica recurrente con un solo clic, reduciendo el tiempo dedicado a la tarea en un 75%.</li>",
 
     t4_date: "Septiembre 2024",
     t4_role: "Graduado en Ingeniería de Diseño Industrial y Desarr. de Producto",
@@ -178,9 +166,8 @@ const translations = {
     t5_action: "Ver detalles en Proyectos Destacados ↓",
 
     t6_date: "Sep 2023 – Ene 2024",
-    t6_role: "Ingeniero en Prácticas (Oficina Técnica)",
-    t6_sub: "Fijación y tornillería técnica industrial",
-    t6_drawer: "<li><strong>Ubicación</strong>: Castellar del Vallès · Planta industrial especializada en sistemas de tornillería técnica y estampación.</li><li><strong>Modelado 3D &amp; Delineación CAD</strong>: Generación, revisión y optimización de planos técnicos de fabricación mediante <strong>SolidWorks</strong>, aplicando tolerancias geométricas y criterios de mecanizado.</li><li><strong>Enlace técnico con producción</strong>: Comunicación diaria con los equipos de manufactura para adaptar los diseños a los requerimientos de maquinaria y resolver incidencias técnicas.</li>",
+    t6_role: "Ingeniero de Producto (Prácticas)",
+    t6_drawer: "<li><strong>Modelado 3D &amp; Delineación CAD</strong>: Generación, revisión y optimización de planos técnicos de fabricación mediante SolidWorks.</li><li><strong>Enlace técnico &amp; Procesos</strong>: Comunicación directa con equipos de procesos y oficina técnica para adaptar los diseños a los requerimientos de producción y necesidad de cliente.</li>",
 
     t7_date: "Jul 2022",
     t7_role: "Operario de Línea de Producción",
@@ -241,28 +228,17 @@ const translations = {
     p9_origin: "UPC",
     p9_desc: "Diseño gráfico y maquetación editorial de una revista de aventuras con retícula tipográfica.",
 
-    // Skills Option 3, Contact, Footer, Modal
+    // Skills, Contact, Footer, Modal
     skills_heading: "Competencias",
-    sk_panel1_title: "Software &amp; Herramientas Digitales",
-    sk_row1_1_title: "CAD / CAM &amp; Delineación 3D",
-    sk_row1_2_title: "Prototipado &amp; Fabricación Aditiva",
-    sk_item_3dprint: "Impresión 3D (FDM / SLA)",
-    sk_item_reverse_eng: "Ingeniería Inversa",
-    sk_row1_3_title: "IA &amp; Automatización Técnica",
-    sk_item_doc_auto: "Automatización Documental",
-    sk_row1_4_title: "Diseño Digital &amp; UI",
+    sk_panel1_title: "Diseño Técnico &amp; Fabricación",
+    sk_row1_1_title: "CAD / CAM &amp; Diseño Técnico",
+    sk_row1_2_title: "Fabricación &amp; Taller",
+    sk_item_3dprint: "Impresión 3D (FDM)",
+    sk_item_cnc: "Mecanizado &amp; Corte CNC (2 ejes y 2.5D)",
 
-    sk_panel2_title: "Metodología &amp; Operaciones",
-    sk_row2_1_title: "Lean Manufacturing",
-    sk_item_kaizen: "Kaizen (Mejora Continua)",
-    sk_item_std: "Estandarización",
-    sk_row2_2_title: "Procesos &amp; Planta",
-    sk_item_bottleneck: "Análisis de Cuellos de Botella",
-    sk_item_line_bal: "Equilibrado de Líneas",
-    sk_item_cycle_time: "Estudios de Tiempos de Ciclo",
-    sk_item_cross_team: "Trabajo Interdisciplinar",
-    sk_row2_3_title: "Ingeniería de Producto",
-    sk_row2_4_title: "Startup &amp; Validación",
+    sk_panel2_title: "Metodología Industrial &amp; IA",
+    sk_row2_1_title: "Metodología Industrial",
+    sk_row2_2_title: "IA &amp; Herramientas Digitales",
 
     sk_lang_title: "Idiomas &amp; Certificación",
     sk_lang_ca: "Nativo",
@@ -272,13 +248,15 @@ const translations = {
     contact_desc: "¿Tienes un proyecto o iniciativa de ingeniería donde sumar? Hablemos.",
     footer_rights: "© 2026 Roger Fígols Soler · Ingeniero Industrial y Diseño de Producto",
     back_to_top: "Arriba ↑",
-    modal_title: "Descargar CV Oficial",
-    modal_subtitle: "Formato estándar 1 página A4 de alta precisión. Elige tu idioma:"
+    modal_title: "Descargar CV en PDF",
+    modal_btn_ca: "Currículum en Catalán",
+    modal_btn_es: "Currículum en Castellano",
+    modal_btn_en: "Currículum en Inglés"
   },
   en: {
     hero_title_1: "Industrial Engineer",
     hero_title_2: "Industrial Design & Product Development Engineer",
-    hero_bio: "<strong>Dual-degree Engineer from UPC</strong>, experienced in Lean process optimization at <strong>Louis Vuitton</strong> and CAD design at <strong>CELO</strong>. Proactive mindset with strong initiative in <strong>personal engineering projects</strong> and hands-on integration of <strong>Artificial Intelligence</strong>.",
+    hero_bio: "<strong>Product Engineer</strong> with a dual degree in Industrial Design and Industrial Engineering from UPC. Specialized in end-to-end physical product development (CAD, PCB electronics, and rapid prototyping) and AI-driven process acceleration.",
     btn_cv: "Download CV (PDF)",
     btn_projects: "Explore Projects",
 
@@ -288,15 +266,14 @@ const translations = {
     t1_sub: "Major in Industrial Management",
     t1_drawer: "<strong>Location</strong>: Terrassa (UPC ESEIAAT).<br><br>Advanced focus on industrial project management, structural analysis, plant optimization, energy systems, and technology integration. Ongoing Master's Thesis (TFM).",
 
-    t2_date: "Feb – Jul 2026",
-    t2_role: "Personal Venture &amp; Product Lead",
-    t2_sub: "CALYU · Entrepreneurial initiative for flatmates",
-    t2_drawer: "<li><strong>Type of Initiative</strong>: Self-driven venture developed in Terrassa (Hybrid). Incubated at the prestigious <strong>Emprèn UPC</strong> startup program and selected as finalist for the <strong>Santander X Explorer UPC Demo Day</strong>.</li><li><strong>End-to-end Product Development</strong>: Feature architecture, user journey mapping for shared expenses, household chores, and gamification (iOS &amp; Android).</li><li><strong>Lean Startup Methodology (Eric Ries)</strong>: Rapid hypothesis testing through <em>Build-Measure-Learn</em> cycles, continuous usability feedback, and onboarding of 100+ <em>early adopters</em>.</li>",
+    t2_date: "Feb 2026 – Present",
+    t2_role: "Product Development",
+    t2_company: "Personal Projects",
+    t2_drawer: "<li><strong>Quicklap</strong>: Development of a sim-racing driving control device: end-to-end design from CAD modeling to electronic PCB layout and 3D prototyping.</li><li><strong>AI Process Automation</strong>: Development and integration of automated AI workflows for business operations.</li><li><strong>CALYU</strong>: Product conception and end-to-end development of a mobile app for shared apartment living, accelerated by the Emprèn UPC startup program.</li>",
 
     t3_date: "May 2025 – Feb 2026",
-    t3_role: "Continuous Improvement Engineer (Internship)",
-    t3_sub: "Luxury leather goods manufacturing",
-    t3_drawer: "<li><strong>Location</strong>: Santa Perpètua de Mogoda · High-end luxury leather goods craftsmanship plant.</li><li><strong>Lean Manufacturing &amp; 5S</strong>: Practical implementation of visual management, standardization, and operational efficiency directly on the production lines.</li><li><strong>Process Automation &amp; AI (Personal Initiative)</strong>: Self-driven engineering of an internal system combining <strong>VBA macros and generative AI</strong> to auto-compile recurring audit reports in one click, <strong>cutting report preparation time by 75% (x4 faster)</strong>.</li><li><strong>Cycle Time &amp; Bottleneck Analysis</strong>: Identification of process wastes (Muda) to streamline throughput while safeguarding exacting artisanal standards.</li><li><strong>Cross-functional Shop Floor Leadership</strong>: Daily direct collaboration with manufacturing operators, maintenance technicians, quality inspectors, and plant leadership.</li>",
+    t3_role: "Lean Engineer (Internship)",
+    t3_drawer: "<li><strong>Lean Manufacturing &amp; 5S</strong>: Implemented workplace organization, process standardization, and operational efficiency methods directly on the assembly floor.</li><li><strong>Process Optimization</strong>: Analyzed bottlenecks and eliminated waste to boost throughput while safeguarding high artisanal luxury quality standards.</li><li><strong>Cross-functional Collaboration</strong>: Partnered daily across production, maintenance, quality control, and assembly-line operators to implement lasting operational improvements.</li><li><strong>Process Automation &amp; AI (Proactive Initiative)</strong>: Concurrently engineered an internal automation tool powered by macros and AI to generate repetitive technical documentation in a single click, cutting execution time by 75%.</li>",
 
     t4_date: "September 2024",
     t4_role: "B.Sc. in Industrial Design &amp; Product Development Engineering",
@@ -309,9 +286,8 @@ const translations = {
     t5_action: "View details in Featured Projects ↓",
 
     t6_date: "Sep 2023 – Jan 2024",
-    t6_role: "Design Engineer Intern (Technical Office)",
-    t6_sub: "Industrial fastening and technical screws",
-    t6_drawer: "<li><strong>Location</strong>: Castellar del Vallès · Manufacturing facility specialized in precision cold forming and technical fastening solutions.</li><li><strong>3D CAD Modeling &amp; Drafting</strong>: Technical drawing creation, blueprint auditing, and engineering modeling in <strong>SolidWorks</strong>, applying strict GD&amp;T geometric tolerances and machining standards.</li><li><strong>Shop Floor Engineering Interface</strong>: Daily collaboration with production supervisors and toolmakers to align CAD specs with cold-forming machinery capabilities.</li>",
+    t6_role: "Product Engineer (Internship)",
+    t6_drawer: "<li><strong>3D CAD Modeling &amp; Drafting</strong>: Generated, reviewed, and optimized 2D/3D fabrication drawings in SolidWorks.</li><li><strong>Technical Liaison &amp; Processes</strong>: Direct communication with process teams and technical office to adapt designs to production requirements and customer needs.</li>",
 
     t7_date: "Jul 2022",
     t7_role: "Production Line Operator",
@@ -372,28 +348,17 @@ const translations = {
     p9_origin: "UPC",
     p9_desc: "Graphic design and editorial layout of an adventure magazine using structured typographic grids.",
 
-    // Skills Option 3, Contact, Footer, Modal
-    skills_heading: "Skills &amp; Expertise",
-    sk_panel1_title: "Software &amp; Digital Tools",
-    sk_row1_1_title: "CAD / CAM &amp; 3D Drafting",
-    sk_row1_2_title: "Prototyping &amp; Additive Manufacturing",
-    sk_item_3dprint: "3D Printing (FDM / SLA)",
-    sk_item_reverse_eng: "Reverse Engineering",
-    sk_row1_3_title: "AI &amp; Technical Automation",
-    sk_item_doc_auto: "Document Automation",
-    sk_row1_4_title: "Digital Design &amp; UI",
+    // Skills, Contact, Footer, Modal
+    skills_heading: "Skills &amp; Toolkit",
+    sk_panel1_title: "Technical Design &amp; Manufacturing",
+    sk_row1_1_title: "CAD / CAM &amp; Technical Design",
+    sk_row1_2_title: "Prototyping &amp; Workshop",
+    sk_item_3dprint: "3D Printing (FDM)",
+    sk_item_cnc: "CNC Machining &amp; Cutting (2-Axis &amp; 2.5D)",
 
-    sk_panel2_title: "Methodology &amp; Operations",
-    sk_row2_1_title: "Lean Manufacturing",
-    sk_item_kaizen: "Kaizen (Continuous Improvement)",
-    sk_item_std: "Standardization",
-    sk_row2_2_title: "Processes &amp; Plant Floor",
-    sk_item_bottleneck: "Bottleneck Analysis",
-    sk_item_line_bal: "Line Balancing",
-    sk_item_cycle_time: "Cycle Time Studies",
-    sk_item_cross_team: "Cross-functional Collaboration",
-    sk_row2_3_title: "Product Engineering",
-    sk_row2_4_title: "Startup &amp; Validation",
+    sk_panel2_title: "Industrial Methodology &amp; AI",
+    sk_row2_1_title: "Industrial Methodologies",
+    sk_row2_2_title: "AI &amp; Digital Tools",
 
     sk_lang_title: "Languages &amp; Certification",
     sk_lang_ca: "Native",
@@ -403,8 +368,10 @@ const translations = {
     contact_desc: "Have an engineering challenge or initiative you'd like to collaborate on? Let's talk.",
     footer_rights: "© 2026 Roger Fígols Soler · Industrial & Product Design Engineer",
     back_to_top: "Top ↑",
-    modal_title: "Download Official CV",
-    modal_subtitle: "Standard 1-page high-precision A4 format. Choose your language:"
+    modal_title: "Download CV in PDF",
+    modal_btn_ca: "Curriculum in Catalan",
+    modal_btn_es: "Curriculum in Spanish",
+    modal_btn_en: "Resume in English"
   }
 };
 

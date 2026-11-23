@@ -1267,7 +1267,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
 }
 
 .modal-title-row {
@@ -1378,9 +1378,11 @@ svg {
 }
 
 .download-arrow {
-  font-size: 1.05rem;
   color: var(--accent);
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 9. RESPONSIVE / PHONE-FRIENDLY SPECIFICATIONS */
