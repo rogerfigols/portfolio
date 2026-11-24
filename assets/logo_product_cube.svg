@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Projectes Propis">
+  <rect width="64" height="64" rx="12" fill="#0B132B"/>
+  <!-- Subtle architectural face shading -->
+  <polygon points="32,13 48.5,22.5 32,32 15.5,22.5" fill="#FFFFFF" fill-opacity="0.14"/>
+  <polygon points="32,32 48.5,22.5 48.5,41.5 32,51" fill="#0F4C81" fill-opacity="0.85"/>
+  <!-- Crisp isometric wireframe -->
+  <polygon points="32,13 48.5,22.5 48.5,41.5 32,51 15.5,41.5 15.5,22.5" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+  <polyline points="15.5,22.5 32,32 48.5,22.5" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="32" y1="32" x2="32" y2="51" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>
