@@ -89,10 +89,12 @@
 
       <!-- Symmetrical Center-Spine Timeline Structure -->
       <div class="timeline-center-wrapper">
-        <div class="timeline-center-spine"></div>
+        <div class="timeline-center-spine">
+          <div class="timeline-spine-progress" aria-hidden="true"></div>
+        </div>
 
         <!-- ITEM 1: MÀSTER ENGINYERIA INDUSTRIAL (LEFT CARD) -->
-        <div class="timeline-item item-left" data-category="academica">
+        <div class="timeline-item item-left timeline-item-future" data-category="academica">
           <div class="timeline-dot"></div>
           <div class="timeline-date-above" data-i18n="t1_date">Gener 2027</div>
           <div class="timeline-card" onclick="toggleTimeline(this)">
@@ -111,6 +113,12 @@
               <p class="drawer-paragraph" data-i18n="t1_drawer"><strong>Ubicació</strong>: Terrassa (UPC ESEIAAT).<br><br>Aprofundiment avançat en gestió integral de projectes industrials, càlcul estructural, optimització de plantes, sistemes energètics i integració tecnològica. Desenvolupament en curs del Treball de Fi de Màster (TFM).</p>
             </div>
           </div>
+        </div>
+
+        <!-- PRESENT MARKER (AVUI) -->
+        <div class="timeline-now-marker" aria-label="Punt actual de la trajectòria">
+          <span class="timeline-now-label" data-i18n="timeline_now">Avui</span>
+          <span class="timeline-now-dot" aria-hidden="true"></span>
         </div>
 
         <!-- ITEM 2: DESENVOLUPAMENT DE PRODUCTE · PROJECTES PROPIS (RIGHT CARD) -->

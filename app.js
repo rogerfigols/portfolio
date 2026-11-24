@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFilters();
   initModal();
   initHashScroll();
+  initTimelineNowSpine();
 });
 
 // 1. MULTILINGUAL SWITCHER (CA / ES / EN)
@@ -21,6 +22,7 @@ const translations = {
     btn_projects: "Explorar Projectes",
 
     // Timeline Items
+    timeline_now: "Avui",
     t1_date: "Gener 2027",
     t1_role: "Graduat en Màster en Enginyeria Industrial",
     t1_sub: "Especialitat en Organització Industrial",
@@ -137,6 +139,7 @@ const translations = {
     btn_projects: "Explorar Proyectos",
 
     // Timeline Items
+    timeline_now: "Hoy",
     t1_date: "Enero 2027",
     t1_role: "Graduado en Máster en Ingeniería Industrial",
     t1_sub: "Especialidad en Organización Industrial",
@@ -253,6 +256,7 @@ const translations = {
     btn_projects: "Explore Projects",
 
     // Timeline Items
+    timeline_now: "Today",
     t1_date: "January 2027",
     t1_role: "Master's Degree in Industrial Engineering",
     t1_sub: "Major in Industrial Management",
@@ -394,6 +398,8 @@ function switchLanguage(lang) {
   } catch (e) {
     // Local storage might be blocked in private mode
   }
+
+  syncTimelineNowSpine();
 }
 
 function initLanguage() {
@@ -454,10 +460,43 @@ function toggleTimeline(card) {
   } else {
     card.classList.add('active-card');
   }
+
+  syncTimelineNowSpine();
 }
 
 function initTimeline() {
   window.toggleTimeline = toggleTimeline;
+}
+
+/**
+ * Align the top of .timeline-spine-progress with the vertical center of .timeline-now-dot
+ * so the future dashed segment transitions into the subtle painted segment right at the dot.
+ */
+function syncTimelineNowSpine() {
+  const spine = document.querySelector('.timeline-center-spine');
+  const progress = document.querySelector('.timeline-spine-progress');
+  const dot = document.querySelector('.timeline-now-dot');
+  if (!spine || !progress || !dot) return;
+  const spineRect = spine.getBoundingClientRect();
+  const dotRect = dot.getBoundingClientRect();
+  const offset = Math.max(0, (dotRect.top + dotRect.height / 2) - spineRect.top);
+  progress.style.top = `${offset}px`;
+}
+
+/**
+ * Initialize timeline present-marker alignment across layout, font load, and accordion changes.
+ */
+function initTimelineNowSpine() {
+  syncTimelineNowSpine();
+  window.addEventListener('resize', syncTimelineNowSpine);
+  const wrapper = document.querySelector('.timeline-center-wrapper');
+  if (wrapper && typeof ResizeObserver !== 'undefined') {
+    const ro = new ResizeObserver(() => syncTimelineNowSpine());
+    ro.observe(wrapper);
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(syncTimelineNowSpine);
+  }
 }
 
 // 3. TIMELINE CATEGORY FILTERS (Safe fallback)
