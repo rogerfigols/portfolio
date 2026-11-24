@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
 </head>
-<body class="p-project-page">
+<body class="p-project-page" data-project="breville-mixer">
 
   <!-- 1. COMPACT FIXED TOP NAV -->
   <header class="p-top-bar">
@@ -20,9 +20,18 @@
           <line x1="19" y1="12" x2="5" y2="12"></line>
           <polyline points="12 19 5 12 12 5"></polyline>
         </svg>
-        <span>Tornar a Projectes</span>
+        <span data-i18n="nav_back">Tornar a Projectes</span>
       </a>
-      <span class="p-nav-author">Roger Fígols Soler</span>
+      <div class="p-nav-right">
+        <div class="lang-switch p-lang-switch" role="group" aria-label="Selector d'idioma">
+          <button type="button" class="lang-btn active" data-lang="ca" aria-pressed="true">CA</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <span class="p-nav-author">Roger Fígols Soler</span>
+      </div>
     </div>
   </header>
 
@@ -42,9 +51,9 @@
 
       <div class="p-hero-content-wrap">
         <div class="p-hero-text">
-          <div class="p-hero-eyebrow">UPC ESEIAAT · DISSENY GRÀFIC &amp; UX</div>
+          <div class="p-hero-eyebrow" data-i18n="hero_eyebrow">UPC ESEIAAT · DISSENY GRÀFIC &amp; UX</div>
           <h1 class="p-hero-title">Breville Mixer</h1>
-          <p class="p-hero-summary">
+          <p class="p-hero-summary" data-i18n="hero_summary">
             Disseny gràfic i experiència d'usuari d'un manual d'instruccions pensat per facilitar la comprensió i l'ús quotidià d'una màquina batedora.
           </p>
         </div>
@@ -56,31 +65,31 @@
     <section class="p-spec-strip" aria-label="Especificacions del projecte">
       <div class="p-spec-strip-inner">
         <div class="p-spec-cell">
-          <span class="p-spec-label">Institució</span>
+          <span class="p-spec-label" data-i18n="spec1_l">Institució</span>
           <span class="p-spec-value">UPC ESEIAAT</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Disciplina</span>
-          <span class="p-spec-value">Disseny Gràfic &amp; UX</span>
+          <span class="p-spec-label" data-i18n="spec2_l">Disciplina</span>
+          <span class="p-spec-value" data-i18n="spec2_v">Disseny Gràfic &amp; UX</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Entregable</span>
-          <span class="p-spec-value">Manual d'Instruccions</span>
+          <span class="p-spec-label" data-i18n="spec3_l">Entregable</span>
+          <span class="p-spec-value" data-i18n="spec3_v">Manual d'Instruccions</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Eines</span>
-          <span class="p-spec-value">Illustrator · Disseny Editorial</span>
+          <span class="p-spec-label" data-i18n="spec4_l">Eines</span>
+          <span class="p-spec-value" data-i18n="spec4_v">Illustrator · Disseny Editorial</span>
         </div>
       </div>
     </section>
 
     <!-- 4a. SHORT EDITORIAL STATEMENT (EL CONCEPTE) -->
     <section class="p-editorial-statement">
-      <span class="p-section-eyebrow">El Concepte</span>
-      <p class="p-editorial-lead">
+      <span class="p-section-eyebrow" data-i18n="sec_concept">El Concepte</span>
+      <p class="p-editorial-lead" data-i18n="concept_lead">
         Transformar un manual tècnic d'electrodomèstic en una guia visual clara, jerarquitzada i immediata per a l'usuari final.
       </p>
-      <p class="p-editorial-copy">
+      <p class="p-editorial-copy" data-i18n="concept_copy">
         El projecte aplica principis de disseny gràfic i experiència d'usuari per fer comprensibles els controls, els accessoris i les funcions d'una batedora Breville sense sobrecarregar el lector. Cada component s'il·lustra mitjançant dibuix vectorial precís i línies d'anotació netes.
       </p>
     </section>
@@ -96,7 +105,7 @@
           loading="lazy"
         >
       </div>
-      <span class="p-gallery-caption">Doble pàgina de components: jerarquia visual de controls, bols i accessoris</span>
+      <span class="p-gallery-caption" data-i18n="spread_caption">Doble pàgina de components: jerarquia visual de controls, bols i accessoris</span>
     </section>
 
     <!-- 4c. CLEAN 2-PHOTO GALLERY ROW -->
@@ -111,7 +120,7 @@
             loading="lazy"
           >
         </div>
-        <figcaption class="p-gallery-caption">Portada del manual d'usuari amb il·lustració lineal</figcaption>
+        <figcaption class="p-gallery-caption" data-i18n="gal1_caption">Portada del manual d'usuari amb il·lustració lineal</figcaption>
       </figure>
 
       <figure class="p-gallery-item">
@@ -124,18 +133,18 @@
             loading="lazy"
           >
         </div>
-        <figcaption class="p-gallery-caption">Detall del desglossament vectorial i microtext explicatiu</figcaption>
+        <figcaption class="p-gallery-caption" data-i18n="gal2_caption">Detall del desglossament vectorial i microtext explicatiu</figcaption>
       </figure>
     </section>
 
     <!-- 4d. COMPACT CLOSING & BEHANCE LINK -->
     <section class="p-editorial-closing">
-      <span class="p-section-eyebrow">Presentació</span>
-      <p class="p-editorial-copy">
+      <span class="p-section-eyebrow" data-i18n="sec_presentation">Presentació</span>
+      <p class="p-editorial-copy" data-i18n="closing_copy">
         Projecte acadèmic orientat a unir el disseny gràfic editorial i l'experiència d'usuari per fer més accessible la documentació tècnica de producte.
       </p>
       <a href="https://www.behance.net/gallery/157330047/BREVILLE-REDESIGN" target="_blank" rel="noreferrer" class="p-btn-external">
-        <span>Veure projecte a Behance</span>
+        <span data-i18n="btn_behance">Veure projecte a Behance</span>
         <span aria-hidden="true">↗</span>
       </a>
     </section>
@@ -145,7 +154,7 @@
   <footer class="p-footer-nav">
     <nav class="p-footer-nav-inner" aria-label="Navegació entre projectes">
       <a href="door-stopper.html" class="p-footer-nav-link">← Door Stopper</a>
-      <a href="index.html#projectes" class="p-footer-nav-center">Tots els projectes</a>
+      <a href="index.html#projectes" class="p-footer-nav-center" data-i18n="footer_all">Tots els projectes</a>
       <a href="xplore.html" class="p-footer-nav-link">Xplore →</a>
     </nav>
     <div class="p-minimal-copyright">
@@ -153,5 +162,6 @@
     </div>
   </footer>
 
+  <script src="project-i18n.js"></script>
 </body>
 </html>

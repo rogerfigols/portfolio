@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
 </head>
-<body class="p-project-page">
+<body class="p-project-page" data-project="hotel-estel">
 
   <!-- 1. COMPACT FIXED TOP NAV -->
   <header class="p-top-bar">
@@ -20,9 +20,18 @@
           <line x1="19" y1="12" x2="5" y2="12"></line>
           <polyline points="12 19 5 12 12 5"></polyline>
         </svg>
-        <span>Tornar a Projectes</span>
+        <span data-i18n="nav_back">Tornar a Projectes</span>
       </a>
-      <span class="p-nav-author">Roger Fígols Soler</span>
+      <div class="p-nav-right">
+        <div class="lang-switch p-lang-switch" role="group" aria-label="Selector d'idioma">
+          <button type="button" class="lang-btn active" data-lang="ca" aria-pressed="true">CA</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <span class="p-nav-author">Roger Fígols Soler</span>
+      </div>
     </div>
   </header>
 
@@ -41,9 +50,9 @@
 
       <div class="p-hero-content-wrap">
         <div class="p-hero-text">
-          <div class="p-hero-eyebrow">TREBALL DE RECERCA · 2019</div>
-          <h1 class="p-hero-title">Reforma Hotel Estel</h1>
-          <p class="p-hero-summary">
+          <div class="p-hero-eyebrow" data-i18n="hero_eyebrow">TREBALL DE RECERCA · 2019</div>
+          <h1 class="p-hero-title" data-i18n="hero_title">Reforma Hotel Estel</h1>
+          <p class="p-hero-summary" data-i18n="hero_summary">
             Estudi de viabilitat normativa i redisseny de plànols arquitectònics per elevar la categoria d'un hotel de 2 a 4 estrelles.
           </p>
         </div>
@@ -55,31 +64,31 @@
     <section class="p-spec-strip" aria-label="Especificacions del projecte">
       <div class="p-spec-strip-inner">
         <div class="p-spec-cell">
-          <span class="p-spec-label">Qualificació</span>
+          <span class="p-spec-label" data-i18n="spec1_l">Qualificació</span>
           <span class="p-spec-value is-honors">10 / 10</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Tipus</span>
-          <span class="p-spec-value">Treball de Recerca</span>
+          <span class="p-spec-label" data-i18n="spec2_l">Tipus</span>
+          <span class="p-spec-value" data-i18n="spec2_v">Treball de Recerca</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Objectiu</span>
-          <span class="p-spec-value">De 2★ a 4★</span>
+          <span class="p-spec-label" data-i18n="spec3_l">Objectiu</span>
+          <span class="p-spec-value" data-i18n="spec3_v">De 2★ a 4★</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Eines</span>
-          <span class="p-spec-value">AutoCAD · Normativa</span>
+          <span class="p-spec-label" data-i18n="spec4_l">Eines</span>
+          <span class="p-spec-value" data-i18n="spec4_v">AutoCAD · Normativa</span>
         </div>
       </div>
     </section>
 
     <!-- 4a. SHORT EDITORIAL STATEMENT (EL CONCEPTE) -->
     <section class="p-editorial-statement">
-      <span class="p-section-eyebrow">El Concepte</span>
-      <p class="p-editorial-lead">
+      <span class="p-section-eyebrow" data-i18n="sec_concept">El Concepte</span>
+      <p class="p-editorial-lead" data-i18n="concept_lead">
         Auditar tota la normativa turística vigent per transformar un edifici existent sense comprometre'n l'estructura principal.
       </p>
-      <p class="p-editorial-copy">
+      <p class="p-editorial-copy" data-i18n="concept_copy">
         El projecte parteix d'una anàlisi exhaustiva dels requisits legals de superfícies, accessibilitat i serveis per assolir la categoria de quatre estrelles. A partir d'aquests criteris tècnics, es replanteja íntegrament la distribució interior en planta.
       </p>
     </section>
@@ -87,9 +96,9 @@
     <!-- 4b. ASYMMETRIC TEXT + PLAN ROW -->
     <section class="p-asymmetric-feature">
       <div class="p-feature-text">
-        <span class="p-section-eyebrow">Delineació Arquitectònica</span>
-        <h2 class="p-feature-heading">Redistribució en planta i compliment normatiu</h2>
-        <p class="p-editorial-copy">
+        <span class="p-section-eyebrow" data-i18n="feat1_eyebrow">Delineació Arquitectònica</span>
+        <h2 class="p-feature-heading" data-i18n="feat1_heading">Redistribució en planta i compliment normatiu</h2>
+        <p class="p-editorial-copy" data-i18n="feat1_copy">
           S'han recalculat les dimensions mínimes d'habitacions, els radis de gir adaptats als banys, l'ampliació de les zones comunes i la integració d'un nou nucli d'ascensor respectant els murs de càrrega originals.
         </p>
       </div>
@@ -116,9 +125,9 @@
         >
       </div>
       <div class="p-feature-text">
-        <span class="p-section-eyebrow">AutoCAD i Normativa</span>
-        <h2 class="p-feature-heading">Càlcul de superfícies i comparativa d'habitacions</h2>
-        <p class="p-editorial-copy">
+        <span class="p-section-eyebrow" data-i18n="feat2_eyebrow">AutoCAD i Normativa</span>
+        <h2 class="p-feature-heading" data-i18n="feat2_heading">Càlcul de superfícies i comparativa d'habitacions</h2>
+        <p class="p-editorial-copy" data-i18n="feat2_copy">
           Mitjançant delineació en AutoCAD i l'aplicació estricta de la normativa turística de 4 estrelles, es va replantejar cada unitat d'allotjament fins a garantir els mínims legals d'habitació (15 m²), bany (4,5 m²) i accessibilitat.
         </p>
       </div>
@@ -126,8 +135,8 @@
 
     <!-- 4d. COMPACT CLOSING RESULT -->
     <section class="p-editorial-closing">
-      <span class="p-section-eyebrow">Resultat</span>
-      <p class="p-editorial-copy">
+      <span class="p-section-eyebrow" data-i18n="sec_result">Resultat</span>
+      <p class="p-editorial-copy" data-i18n="closing_copy">
         Treball de Recerca qualificat amb un 10 / 10 pel tribunal de Batxillerat, reconeixent el detall tècnic de delineació en AutoCAD i el rigor normatiu aplicat al cas real.
       </p>
     </section>
@@ -137,7 +146,7 @@
   <footer class="p-footer-nav">
     <nav class="p-footer-nav-inner" aria-label="Navegació entre projectes">
       <a href="xplore.html" class="p-footer-nav-link">← Xplore</a>
-      <a href="index.html#projectes" class="p-footer-nav-center">Tots els projectes</a>
+      <a href="index.html#projectes" class="p-footer-nav-center" data-i18n="footer_all">Tots els projectes</a>
       <a href="quicklap.html" class="p-footer-nav-link">QuickLap →</a>
     </nav>
     <div class="p-minimal-copyright">
@@ -145,5 +154,6 @@
     </div>
   </footer>
 
+  <script src="project-i18n.js"></script>
 </body>
 </html>

@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 1. MULTILINGUAL SWITCHER (CA / ES / EN)
 const translations = {
   ca: {
+    page_title: "Roger Fígols Soler · Enginyer Industrial & Enginyer de Disseny Industrial",
     hero_title_1: "Enginyer Industrial",
     hero_title_2: "Enginyer de Disseny Industrial & Desenvolupament de Producte",
     hero_bio: "<strong>Enginyer de Producte</strong> amb doble titulació en Disseny Industrial i Enginyeria Industrial per la UPC. Especialitzat en el desenvolupament integral de producte físic (CAD, electrònica PCB i prototipatge ràpid) i en l'acceleració de processos mitjançant Intel·ligència Artificial.",
@@ -104,6 +105,7 @@ const translations = {
 
     p7_cat: "Arquitectura &amp; Normativa",
     p7_origin: "Batxillerat",
+    p7_title: "Reforma Hotel Estel (TR)",
     p7_desc: "Estudi tècnic i redisseny de plànols per elevar l'hotel de 2 a 4 estrelles (Qualificació: 10/10).",
 
     // Skills, Contact, Footer, Modal
@@ -116,9 +118,13 @@ const translations = {
 
     sk_panel2_title: "Metodologia Industrial &amp; IA",
     sk_row2_1_title: "Metodologia Industrial",
+    sk_item_5s: "Metodologia 5S",
     sk_row2_2_title: "IA &amp; Eines Digitals",
 
     sk_lang_title: "Idiomes &amp; Certificació",
+    sk_lang_name_ca: "Català",
+    sk_lang_name_es: "Castellà",
+    sk_lang_name_en: "Anglès",
     sk_lang_ca: "Natiu",
     sk_lang_es: "Natiu",
     sk_lang_en: "B2 First Certificate (Cambridge English)",
@@ -132,6 +138,7 @@ const translations = {
     modal_btn_en: "Currículum en Anglès"
   },
   es: {
+    page_title: "Roger Fígols Soler · Ingeniero Industrial e Ingeniero de Diseño Industrial",
     hero_title_1: "Ingeniero Industrial",
     hero_title_2: "Ingeniero de Diseño Industrial y Desarrollo de Producto",
     hero_bio: "<strong>Ingeniero de Producto</strong> con doble titulación en Diseño Industrial e Ingeniería Industrial por la UPC. Especializado en el desarrollo integral de producto físico (CAD, electrónica PCB y prototipado rápido) y en la aceleración de procesos mediante Inteligencia Artificial.",
@@ -221,6 +228,7 @@ const translations = {
 
     p7_cat: "Arquitectura &amp; Normativa",
     p7_origin: "Bachillerato",
+    p7_title: "Reforma Hotel Estel (TR)",
     p7_desc: "Estudio técnico y rediseño de planos para elevar el hotel de 2 a 4 estrellas (Calificación: 10/10).",
 
     // Skills, Contact, Footer, Modal
@@ -233,9 +241,13 @@ const translations = {
 
     sk_panel2_title: "Metodología Industrial &amp; IA",
     sk_row2_1_title: "Metodología Industrial",
+    sk_item_5s: "Metodología 5S",
     sk_row2_2_title: "IA &amp; Herramientas Digitales",
 
     sk_lang_title: "Idiomas &amp; Certificación",
+    sk_lang_name_ca: "Catalán",
+    sk_lang_name_es: "Castellano",
+    sk_lang_name_en: "Inglés",
     sk_lang_ca: "Nativo",
     sk_lang_es: "Nativo",
     sk_lang_en: "B2 First Certificate (Cambridge English)",
@@ -249,6 +261,7 @@ const translations = {
     modal_btn_en: "Currículum en Inglés"
   },
   en: {
+    page_title: "Roger Fígols Soler · Industrial & Product Design Engineer",
     hero_title_1: "Industrial Engineer",
     hero_title_2: "Industrial Design & Product Development Engineer",
     hero_bio: "<strong>Product Engineer</strong> with a dual degree in Industrial Design and Industrial Engineering from UPC. Specialized in end-to-end physical product development (CAD, PCB electronics, and rapid prototyping) and AI-driven process acceleration.",
@@ -338,6 +351,7 @@ const translations = {
 
     p7_cat: "Architecture &amp; Regulations",
     p7_origin: "High School",
+    p7_title: "Hotel Estel Renovation",
     p7_desc: "Technical feasibility and CAD blueprint redesign to upgrade hotel from 2 to 4 stars (Grade: 10/10).",
 
     // Skills, Contact, Footer, Modal
@@ -350,9 +364,13 @@ const translations = {
 
     sk_panel2_title: "Industrial Methodology &amp; AI",
     sk_row2_1_title: "Industrial Methodologies",
+    sk_item_5s: "5S Methodology",
     sk_row2_2_title: "AI &amp; Digital Tools",
 
     sk_lang_title: "Languages &amp; Certification",
+    sk_lang_name_ca: "Catalan",
+    sk_lang_name_es: "Spanish",
+    sk_lang_name_en: "English",
     sk_lang_ca: "Native",
     sk_lang_es: "Native",
     sk_lang_en: "B2 First Certificate (Cambridge English)",
@@ -370,17 +388,18 @@ const translations = {
 function switchLanguage(lang) {
   if (!translations[lang]) return;
 
-  // Update HTML lang attribute
+  // Update HTML lang attribute and document title
   document.documentElement.lang = lang;
+  if (translations[lang].page_title) {
+    document.title = translations[lang].page_title;
+  }
 
-  // Update button active classes
+  // Update button active classes and aria-pressed state
   const langBtns = document.querySelectorAll('.lang-btn');
   langBtns.forEach(btn => {
-    if (btn.getAttribute('data-lang') === lang) {
-      btn.classList.add('active');
-    } else {
-      btn.classList.remove('active');
-    }
+    const isActive = btn.getAttribute('data-lang') === lang;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
   });
 
   // Apply translations to data-i18n elements

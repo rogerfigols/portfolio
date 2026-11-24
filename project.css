@@ -77,6 +77,17 @@
   letter-spacing: 0.02em;
 }
 
+.p-nav-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+
+.p-lang-switch {
+  background: rgba(241, 245, 249, 0.85);
+  padding: 3px 8px;
+}
+
 /* 2. FULL-VIEWPORT HERO */
 .p-hero {
   position: relative;
@@ -703,6 +714,10 @@
 }
 
 @media (max-width: 560px) {
+  .p-nav-author {
+    display: none;
+  }
+
   .p-catalog-grid {
     grid-template-columns: 1fr;
   }

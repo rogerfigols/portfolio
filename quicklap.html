@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
 </head>
-<body class="p-project-page">
+<body class="p-project-page" data-project="quicklap">
 
   <!-- 1. COMPACT FIXED TOP NAV -->
   <header class="p-top-bar">
@@ -20,9 +20,18 @@
           <line x1="19" y1="12" x2="5" y2="12"></line>
           <polyline points="12 19 5 12 12 5"></polyline>
         </svg>
-        <span>Tornar a Projectes</span>
+        <span data-i18n="nav_back">Tornar a Projectes</span>
       </a>
-      <span class="p-nav-author">Roger Fígols Soler</span>
+      <div class="p-nav-right">
+        <div class="lang-switch p-lang-switch" role="group" aria-label="Selector d'idioma">
+          <button type="button" class="lang-btn active" data-lang="ca" aria-pressed="true">CA</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <span class="p-nav-author">Roger Fígols Soler</span>
+      </div>
     </div>
   </header>
 
@@ -42,9 +51,9 @@
 
       <div class="p-hero-content-wrap">
         <div class="p-hero-text">
-          <div class="p-hero-eyebrow">PROJECTE PROPI · 2026</div>
+          <div class="p-hero-eyebrow" data-i18n="hero_eyebrow">PROJECTE PROPI · 2026</div>
           <h1 class="p-hero-title">QuickLap</h1>
-          <p class="p-hero-summary">
+          <p class="p-hero-summary" data-i18n="hero_summary">
             Controlador compacte de sim-racing per a escriptori: direcció analògica i pedals progressius llestos en segons, sense muntatges complexos.
           </p>
         </div>
@@ -56,19 +65,19 @@
     <section class="p-spec-strip" aria-label="Especificacions del projecte">
       <div class="p-spec-strip-inner">
         <div class="p-spec-cell">
-          <span class="p-spec-label">Rol</span>
-          <span class="p-spec-value">Disseny Integral</span>
+          <span class="p-spec-label" data-i18n="spec1_l">Rol</span>
+          <span class="p-spec-value" data-i18n="spec1_v">Disseny Integral</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Hardware</span>
+          <span class="p-spec-label" data-i18n="spec2_l">Hardware</span>
           <span class="p-spec-value">SolidWorks · KiCad · FDM</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Àmbit</span>
-          <span class="p-spec-value">Sim-Racing / Producte</span>
+          <span class="p-spec-label" data-i18n="spec3_l">Àmbit</span>
+          <span class="p-spec-value" data-i18n="spec3_v">Sim-Racing / Producte</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Web</span>
+          <span class="p-spec-label" data-i18n="spec4_l">Web</span>
           <span class="p-spec-value">
             <a href="https://quicklap.pro" target="_blank" rel="noreferrer" class="p-spec-link">quicklap.pro ↗</a>
           </span>
@@ -78,11 +87,11 @@
 
     <!-- 4a. SHORT EDITORIAL STATEMENT (EL CONCEPTE) -->
     <section class="p-editorial-statement">
-      <span class="p-section-eyebrow">El Concepte</span>
-      <p class="p-editorial-lead">
+      <span class="p-section-eyebrow" data-i18n="sec_concept">El Concepte</span>
+      <p class="p-editorial-lead" data-i18n="concept_lead">
         Gaudir de la simulació de conducció amb precisió real sense necessitat d'un cockpit ni temps de muntatge.
       </p>
-      <p class="p-editorial-copy">
+      <p class="p-editorial-copy" data-i18n="concept_copy">
         QuickLap neix amb l'objectiu de condensar el control analògic en un dispositiu d'escriptori net i immediat. El desenvolupament cobreix el cicle complet de producte: des de l'ergonomia i el modelat mecànic CAD fins al disseny de la placa electrònica PCB i els prototips funcionals impresos en 3D.
       </p>
     </section>
@@ -90,22 +99,22 @@
     <!-- 4b. MINIMAL 3-COLUMN ENGINEERING TRIAD -->
     <section class="p-triad" aria-label="Fases de desenvolupament">
       <div class="p-triad-item">
-        <h2 class="p-triad-title">Disseny Mecànic CAD</h2>
-        <p class="p-triad-text">Geometria compacta, allotjaments interns i ergonomia de conducció modelada íntegrament amb SolidWorks.</p>
+        <h2 class="p-triad-title" data-i18n="triad_1_t">Disseny Mecànic CAD</h2>
+        <p class="p-triad-text" data-i18n="triad_1_c">Geometria compacta, allotjaments interns i ergonomia de conducció modelada íntegrament amb SolidWorks.</p>
       </div>
       <div class="p-triad-item">
-        <h2 class="p-triad-title">Electrònica PCB</h2>
-        <p class="p-triad-text">Disseny d'esquemàtic i rutatge de placa electrònica a mida amb KiCad per a lectura precisa d'entrades analògiques.</p>
+        <h2 class="p-triad-title" data-i18n="triad_2_t">Electrònica PCB</h2>
+        <p class="p-triad-text" data-i18n="triad_2_c">Disseny d'esquemàtic i rutatge de placa electrònica a mida amb KiCad per a lectura precisa d'entrades analògiques.</p>
       </div>
       <div class="p-triad-item">
-        <h2 class="p-triad-title">Prototipatge 3D</h2>
-        <p class="p-triad-text">Iteració ràpida en impressió 3D FDM per validar toleràncies mecàniques, recorreguts i muntatge funcional.</p>
+        <h2 class="p-triad-title" data-i18n="triad_3_t">Prototipatge 3D</h2>
+        <p class="p-triad-text" data-i18n="triad_3_c">Iteració ràpida en impressió 3D FDM per validar toleràncies mecàniques, recorreguts i muntatge funcional.</p>
       </div>
     </section>
 
     <!-- 4c. PROTOTYPE EVOLUTION VIDEO SHOWCASE -->
     <section class="p-video-showcase" aria-label="Evolució dels prototips funcionals">
-      <span class="p-section-eyebrow">Evolució dels Prototips</span>
+      <span class="p-section-eyebrow" data-i18n="sec_videos">Evolució dels Prototips</span>
       <div class="p-video-pair">
         <figure class="p-video-card">
           <div class="p-video-frame">
@@ -124,8 +133,8 @@
             </video>
           </div>
           <figcaption>
-            <div class="p-video-title">Prototip 01 · Primera versió funcional</div>
-            <div class="p-video-caption">Validació inicial de mecànica, sensors i resposta en simulador.</div>
+            <div class="p-video-title" data-i18n="vid1_t">Prototip 01 · Primera versió funcional</div>
+            <div class="p-video-caption" data-i18n="vid1_c">Validació inicial de mecànica, sensors i resposta en simulador.</div>
           </figcaption>
         </figure>
 
@@ -146,8 +155,8 @@
             </video>
           </div>
           <figcaption>
-            <div class="p-video-title">Prototip 02 · Segona iteració i demostració</div>
-            <div class="p-video-caption">Evolució ergonòmica, electrònica integrada i prova real en conducció.</div>
+            <div class="p-video-title" data-i18n="vid2_t">Prototip 02 · Segona iteració i demostració</div>
+            <div class="p-video-caption" data-i18n="vid2_c">Evolució ergonòmica, electrònica integrada i prova real en conducció.</div>
           </figcaption>
         </figure>
       </div>
@@ -155,12 +164,12 @@
 
     <!-- 4e. COMPACT CLOSING STATUS + EXTERNAL LINK -->
     <section class="p-editorial-closing">
-      <span class="p-section-eyebrow">Estat Actual</span>
-      <p class="p-editorial-copy">
+      <span class="p-section-eyebrow" data-i18n="sec_status">Estat Actual</span>
+      <p class="p-editorial-copy" data-i18n="closing_copy">
         Projecte en fase de desenvolupament actiu, combinant validació física de prototips, calibratge de sensors i millores iteratives de producte.
       </p>
       <a href="https://quicklap.pro" target="_blank" rel="noreferrer" class="p-btn-external">
-        <span>Visitar quicklap.pro</span>
+        <span data-i18n="btn_visit">Visitar quicklap.pro</span>
         <span aria-hidden="true">↗</span>
       </a>
     </section>
@@ -169,8 +178,8 @@
   <!-- 5. MINIMALIST PROJECT FOOTER NAVIGATION -->
   <footer class="p-footer-nav">
     <nav class="p-footer-nav-inner" aria-label="Navegació entre projectes">
-      <a href="hotel-estel.html" class="p-footer-nav-link">← Reforma Hotel Estel</a>
-      <a href="index.html#projectes" class="p-footer-nav-center">Tots els projectes</a>
+      <a href="hotel-estel.html" class="p-footer-nav-link" data-i18n="nav_hotel_prev">← Reforma Hotel Estel</a>
+      <a href="index.html#projectes" class="p-footer-nav-center" data-i18n="footer_all">Tots els projectes</a>
       <a href="calyu.html" class="p-footer-nav-link">CALYU →</a>
     </nav>
     <div class="p-minimal-copyright">
@@ -178,5 +187,6 @@
     </div>
   </footer>
 
+  <script src="project-i18n.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
 </head>
-<body class="p-project-page">
+<body class="p-project-page" data-project="cargo">
 
   <!-- 1. COMPACT FIXED TOP NAV -->
   <header class="p-top-bar">
@@ -20,9 +20,18 @@
           <line x1="19" y1="12" x2="5" y2="12"></line>
           <polyline points="12 19 5 12 12 5"></polyline>
         </svg>
-        <span>Tornar a Projectes</span>
+        <span data-i18n="nav_back">Tornar a Projectes</span>
       </a>
-      <span class="p-nav-author">Roger Fígols Soler</span>
+      <div class="p-nav-right">
+        <div class="lang-switch p-lang-switch" role="group" aria-label="Selector d'idioma">
+          <button type="button" class="lang-btn active" data-lang="ca" aria-pressed="true">CA</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <span class="p-nav-author">Roger Fígols Soler</span>
+      </div>
     </div>
   </header>
 
@@ -41,9 +50,9 @@
 
       <div class="p-hero-content-wrap">
         <div class="p-hero-text">
-          <div class="p-hero-eyebrow">TREBALL DE FI DE GRAU · 2024</div>
+          <div class="p-hero-eyebrow" data-i18n="hero_eyebrow">TREBALL DE FI DE GRAU · 2024</div>
           <h1 class="p-hero-title">CarGo</h1>
-          <p class="p-hero-summary">
+          <p class="p-hero-summary" data-i18n="hero_summary">
             Plataforma de logística col·laborativa que aprofita els desplaçaments quotidians per enviar paquets de forma més econòmica i sostenible.
           </p>
         </div>
@@ -55,19 +64,19 @@
     <section class="p-spec-strip" aria-label="Especificacions del projecte">
       <div class="p-spec-strip-inner">
         <div class="p-spec-cell">
-          <span class="p-spec-label">Distinció</span>
-          <span class="p-spec-value is-honors">Matrícula d'Honor</span>
+          <span class="p-spec-label" data-i18n="spec1_l">Distinció</span>
+          <span class="p-spec-value is-honors" data-i18n="spec1_v">Matrícula d'Honor</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Institució</span>
+          <span class="p-spec-label" data-i18n="spec2_l">Institució</span>
           <span class="p-spec-value">UPC ESEIAAT</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Projecte</span>
-          <span class="p-spec-value">Treball de Fi de Grau</span>
+          <span class="p-spec-label" data-i18n="spec3_l">Projecte</span>
+          <span class="p-spec-value" data-i18n="spec3_v">Treball de Fi de Grau</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Eines</span>
+          <span class="p-spec-label" data-i18n="spec4_l">Eines</span>
           <span class="p-spec-value">Figma · Illustrator</span>
         </div>
       </div>
@@ -75,11 +84,11 @@
 
     <!-- 4a. SHORT EDITORIAL STATEMENT (EL CONCEPTE) -->
     <section class="p-editorial-statement">
-      <span class="p-section-eyebrow">El Concepte</span>
-      <p class="p-editorial-lead">
+      <span class="p-section-eyebrow" data-i18n="sec_concept">El Concepte</span>
+      <p class="p-editorial-lead" data-i18n="concept_lead">
         Connectar persones que necessiten enviar un paquet amb conductors que ja fan el mateix trajecte cada dia.
       </p>
-      <p class="p-editorial-copy">
+      <p class="p-editorial-copy" data-i18n="concept_copy">
         En lloc d'afegir més furgonetes de repartiment, CarGo utilitza comerços de barri com a punts de recollida i entrega. Així es redueixen els costos d'enviament, s'eliminen els lliuraments fallits i es disminueix la petjada de CO₂.
       </p>
     </section>
@@ -95,15 +104,15 @@
           loading="lazy"
         >
       </div>
-      <span class="p-gallery-caption">Arquitectura de pantalles en Figma: cerca de trajectes, ofertes, punts de recollida i validació per QR</span>
+      <span class="p-gallery-caption" data-i18n="screens_caption">Arquitectura de pantalles en Figma: cerca de trajectes, ofertes, punts de recollida i validació per QR</span>
     </section>
 
     <!-- 4c. ASYMMETRIC UX & IDENTITY ROW -->
     <section class="p-asymmetric-feature">
       <div class="p-feature-text">
-        <span class="p-section-eyebrow">Experiència i Identitat</span>
-        <h2 class="p-feature-heading">Flux simple en 3 passos</h2>
-        <p class="p-editorial-copy">
+        <span class="p-section-eyebrow" data-i18n="feat_eyebrow">Experiència i Identitat</span>
+        <h2 class="p-feature-heading" data-i18n="feat_heading">Flux simple en 3 passos</h2>
+        <p class="p-editorial-copy" data-i18n="feat_copy">
           L'usuari indica les dimensions del paquet i selecciona l'origen i destí en un mapa interactiu que suggereix transportistes compatibles al moment. La recepció es valida amb un codi QR segur als punts d'entrega locals, sota una identitat visual neta i immediata.
         </p>
       </div>
@@ -120,8 +129,8 @@
 
     <!-- 4d. COMPACT CLOSING RESULT -->
     <section class="p-editorial-closing">
-      <span class="p-section-eyebrow">Resultat</span>
-      <p class="p-editorial-copy">
+      <span class="p-section-eyebrow" data-i18n="sec_result">Resultat</span>
+      <p class="p-editorial-copy" data-i18n="closing_copy">
         Defensat davant del tribunal de la UPC ESEIAAT el setembre de 2024 i guardonat amb Matrícula d'Honor per la seva viabilitat econòmica, simplicitat d'ús i impacte ambiental.
       </p>
     </section>
@@ -131,7 +140,7 @@
   <footer class="p-footer-nav">
     <nav class="p-footer-nav-inner" aria-label="Navegació entre projectes">
       <a href="calyu.html" class="p-footer-nav-link">← CALYU</a>
-      <a href="index.html#projectes" class="p-footer-nav-center">Tots els projectes</a>
+      <a href="index.html#projectes" class="p-footer-nav-center" data-i18n="footer_all">Tots els projectes</a>
       <a href="cup3d.html" class="p-footer-nav-link">Cup3D →</a>
     </nav>
     <div class="p-minimal-copyright">
@@ -139,5 +148,6 @@
     </div>
   </footer>
 
+  <script src="project-i18n.js"></script>
 </body>
 </html>

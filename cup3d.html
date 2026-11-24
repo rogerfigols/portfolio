@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="project.css">
 </head>
-<body class="p-project-page">
+<body class="p-project-page" data-project="cup3d">
 
   <!-- 1. COMPACT FIXED TOP NAV -->
   <header class="p-top-bar">
@@ -20,9 +20,18 @@
           <line x1="19" y1="12" x2="5" y2="12"></line>
           <polyline points="12 19 5 12 12 5"></polyline>
         </svg>
-        <span>Tornar a Projectes</span>
+        <span data-i18n="nav_back">Tornar a Projectes</span>
       </a>
-      <span class="p-nav-author">Roger Fígols Soler</span>
+      <div class="p-nav-right">
+        <div class="lang-switch p-lang-switch" role="group" aria-label="Selector d'idioma">
+          <button type="button" class="lang-btn active" data-lang="ca" aria-pressed="true">CA</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+          <span class="lang-sep">/</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <span class="p-nav-author">Roger Fígols Soler</span>
+      </div>
     </div>
   </header>
 
@@ -42,9 +51,9 @@
 
       <div class="p-hero-content-wrap">
         <div class="p-hero-text">
-          <div class="p-hero-eyebrow">PROTOTIPATGE RÀPID · TALLER PROPI</div>
+          <div class="p-hero-eyebrow" data-i18n="hero_eyebrow">PROTOTIPATGE RÀPID · TALLER PROPI</div>
           <h1 class="p-hero-title">Cup3D</h1>
-          <p class="p-hero-summary">
+          <p class="p-hero-summary" data-i18n="hero_summary">
             Galeria de peces funcionals, utillatges industrials i projectes d'enginyeria inversa fabricats mitjançant impressió 3D FDM.
           </p>
         </div>
@@ -56,19 +65,19 @@
     <section class="p-spec-strip" aria-label="Especificacions del projecte">
       <div class="p-spec-strip-inner">
         <div class="p-spec-cell">
-          <span class="p-spec-label">Tecnologia</span>
-          <span class="p-spec-value">Impressió 3D (FDM)</span>
+          <span class="p-spec-label" data-i18n="spec1_l">Tecnologia</span>
+          <span class="p-spec-value" data-i18n="spec1_v">Impressió 3D (FDM)</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Material</span>
+          <span class="p-spec-label" data-i18n="spec2_l">Material</span>
           <span class="p-spec-value">PLA</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">Enfocament</span>
-          <span class="p-spec-value">Peces Funcionals &amp; Utillatges</span>
+          <span class="p-spec-label" data-i18n="spec3_l">Enfocament</span>
+          <span class="p-spec-value" data-i18n="spec3_v">Peces Funcionals &amp; Utillatges</span>
         </div>
         <div class="p-spec-cell">
-          <span class="p-spec-label">CAD</span>
+          <span class="p-spec-label" data-i18n="spec4_l">CAD</span>
           <span class="p-spec-value">SolidWorks</span>
         </div>
       </div>
@@ -76,18 +85,18 @@
 
     <!-- 4a. SHORT EDITORIAL STATEMENT (EL CONCEPTE) -->
     <section class="p-editorial-statement">
-      <span class="p-section-eyebrow">El Concepte</span>
-      <p class="p-editorial-lead">
+      <span class="p-section-eyebrow" data-i18n="sec_concept">El Concepte</span>
+      <p class="p-editorial-lead" data-i18n="concept_lead">
         Del modelat paramètric a la peça física en poques hores per validar ajustos, toleràncies i resistència mecànica.
       </p>
-      <p class="p-editorial-copy">
+      <p class="p-editorial-copy" data-i18n="concept_copy">
         Espai dedicat a prototips propis, utillatges a mida i peces d'enginyeria inversa orientades a resoldre necessitats pràctiques reals. Cada disseny optimitza l'orientació d'impressió, els roscats funcionals i els encaixos mecànics.
       </p>
     </section>
 
     <!-- 4b. CATALOG GRID OF PRINTED PARTS -->
     <section class="p-catalog-section" aria-label="Catàleg de peces impreses en 3D">
-      <span class="p-section-eyebrow">Catàleg de Peces</span>
+      <span class="p-section-eyebrow" data-i18n="sec_catalog">Catàleg de Peces</span>
 
       <div class="p-catalog-grid">
         <!-- Item 1 -->
@@ -103,8 +112,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Utillatge per a robot</h2>
-            <p class="p-catalog-meta">Adaptador dissenyat a mida per a braç robòtic</p>
+            <h2 class="p-catalog-title" data-i18n="c1_t">Utillatge per a robot</h2>
+            <p class="p-catalog-meta" data-i18n="c1_m">Adaptador dissenyat a mida per a braç robòtic</p>
           </div>
         </article>
 
@@ -121,8 +130,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Prototip físic</h2>
-            <p class="p-catalog-meta">Assaig d'encaix mecànic per a assignatura UPC</p>
+            <h2 class="p-catalog-title" data-i18n="c2_t">Prototip físic</h2>
+            <p class="p-catalog-meta" data-i18n="c2_m">Assaig d'encaix mecànic per a assignatura UPC</p>
           </div>
         </article>
 
@@ -139,8 +148,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Carcassa de mòbil a mida</h2>
-            <p class="p-catalog-meta">Funda personalitzada amb acabat texturitzat</p>
+            <h2 class="p-catalog-title" data-i18n="c3_t">Carcassa de mòbil a mida</h2>
+            <p class="p-catalog-meta" data-i18n="c3_m">Funda personalitzada amb acabat texturitzat</p>
           </div>
         </article>
 
@@ -157,8 +166,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Prototip robòtic en proves</h2>
-            <p class="p-catalog-meta">Integració d'accessori sobre braç robòtic</p>
+            <h2 class="p-catalog-title" data-i18n="c4_t">Prototip robòtic en proves</h2>
+            <p class="p-catalog-meta" data-i18n="c4_m">Integració d'accessori sobre braç robòtic</p>
           </div>
         </article>
 
@@ -175,8 +184,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Utillatge per a robot</h2>
-            <p class="p-catalog-meta">Impressió de peça amb suports orgànics</p>
+            <h2 class="p-catalog-title" data-i18n="c5_t">Utillatge per a robot</h2>
+            <p class="p-catalog-meta" data-i18n="c5_m">Impressió de peça amb suports orgànics</p>
           </div>
         </article>
 
@@ -193,8 +202,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Caragols mètrics funcionals</h2>
-            <p class="p-catalog-meta">Enginyeria inversa i validació de roscats</p>
+            <h2 class="p-catalog-title" data-i18n="c6_t">Caragols mètrics funcionals</h2>
+            <p class="p-catalog-meta" data-i18n="c6_m">Enginyeria inversa i validació de roscats</p>
           </div>
         </article>
 
@@ -211,8 +220,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Circuit Nürburgring</h2>
-            <p class="p-catalog-meta">Silueta decorativa en dues peces</p>
+            <h2 class="p-catalog-title" data-i18n="c7_t">Circuit Nürburgring</h2>
+            <p class="p-catalog-meta" data-i18n="c7_m">Silueta decorativa en dues peces</p>
           </div>
         </article>
 
@@ -229,8 +238,8 @@
             >
           </div>
           <div>
-            <h2 class="p-catalog-title">Clauer personalitzat</h2>
-            <p class="p-catalog-meta">Acabat texturitzat de precisió</p>
+            <h2 class="p-catalog-title" data-i18n="c8_t">Clauer personalitzat</h2>
+            <p class="p-catalog-meta" data-i18n="c8_m">Acabat texturitzat de precisió</p>
           </div>
         </article>
       </div>
@@ -241,7 +250,7 @@
   <footer class="p-footer-nav">
     <nav class="p-footer-nav-inner" aria-label="Navegació entre projectes">
       <a href="cargo.html" class="p-footer-nav-link">← CarGo</a>
-      <a href="index.html#projectes" class="p-footer-nav-center">Tots els projectes</a>
+      <a href="index.html#projectes" class="p-footer-nav-center" data-i18n="footer_all">Tots els projectes</a>
       <a href="door-stopper.html" class="p-footer-nav-link">Door Stopper →</a>
     </nav>
     <div class="p-minimal-copyright">
@@ -249,5 +258,6 @@
     </div>
   </footer>
 
+  <script src="project-i18n.js"></script>
 </body>
 </html>
