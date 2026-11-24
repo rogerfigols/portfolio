@@ -72,6 +72,10 @@ const translations = {
 
     // Projects Section
     projects_heading: "Projectes",
+    p0_cat: "Producte &amp; Hardware",
+    p0_origin: "Projecte Propi",
+    p0_desc: "Controlador compacte de sim-racing: disseny integral des del modelat CAD fins a la PCB i prototipatge 3D.",
+
     p1_cat: "Projecte Personal / App",
     p1_origin: "Personal / UPC",
     p1_desc: "Plataforma per a la gestió de convivència i despeses compartides en pisos d'estudiants.",
@@ -92,21 +96,13 @@ const translations = {
     p5_origin: "UPC",
     p5_desc: "Presentació de producte per a ulleres de drons FPV explorant diversos motors de render i textures CMF.",
 
-    p6_cat: "Redisseny",
+    p6_cat: "Disseny Gràfic &amp; UX",
     p6_origin: "UPC",
-    p6_desc: "Redisseny estètic de robot de cuina i manual d'usuari amb desglossament vectorial.",
+    p6_desc: "Disseny gràfic i UX del manual d'instruccions d'una batedora per facilitar-ne la comprensió i l'ús.",
 
-    p7_cat: "Arquitectura & Normativa",
+    p7_cat: "Arquitectura &amp; Normativa",
     p7_origin: "Batxillerat",
     p7_desc: "Estudi tècnic i redisseny de plànols per elevar l'hotel de 2 a 4 estrelles (Qualificació: 10/10).",
-
-    p8_cat: "Campanya Publicitària",
-    p8_origin: "UPC",
-    p8_desc: "Campanya digital per a festival de música: identitat visual i creativitats per a xarxes.",
-
-    p9_cat: "Disseny Editorial",
-    p9_origin: "UPC",
-    p9_desc: "Disseny gràfic i maquetació editorial d'una revista d'aventures amb retícula tipogràfica.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Competències",
@@ -192,6 +188,10 @@ const translations = {
 
     // Projects Section
     projects_heading: "Proyectos",
+    p0_cat: "Producto y Hardware",
+    p0_origin: "Proyecto Propio",
+    p0_desc: "Controlador compacto de sim-racing: diseño integral desde el modelado CAD hasta la PCB y prototipado 3D.",
+
     p1_cat: "Proyecto Personal / App",
     p1_origin: "Personal / UPC",
     p1_desc: "Plataforma para la gestión de convivencia y gastos compartidos en pisos de estudiantes.",
@@ -212,21 +212,13 @@ const translations = {
     p5_origin: "UPC",
     p5_desc: "Presentación de producto para gafas de drones FPV explorando diversos motores de render y texturas CMF.",
 
-    p6_cat: "Rediseño",
+    p6_cat: "Diseño Gráfico &amp; UX",
     p6_origin: "UPC",
-    p6_desc: "Rediseño estético de robot de cocina y manual de usuario con despiece vectorial.",
+    p6_desc: "Diseño gráfico y UX del manual de instrucciones de una batidora para facilitar su comprensión y uso.",
 
-    p7_cat: "Arquitectura & Normativa",
+    p7_cat: "Arquitectura &amp; Normativa",
     p7_origin: "Bachillerato",
     p7_desc: "Estudio técnico y rediseño de planos para elevar el hotel de 2 a 4 estrellas (Calificación: 10/10).",
-
-    p8_cat: "Campaña Publicitaria",
-    p8_origin: "UPC",
-    p8_desc: "Campaña digital para festival de música: identidad visual y creatividades para redes.",
-
-    p9_cat: "Diseño Editorial",
-    p9_origin: "UPC",
-    p9_desc: "Diseño gráfico y maquetación editorial de una revista de aventuras con retícula tipográfica.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Competencias",
@@ -312,6 +304,10 @@ const translations = {
 
     // Projects Section
     projects_heading: "Projects",
+    p0_cat: "Product &amp; Hardware",
+    p0_origin: "Personal Project",
+    p0_desc: "Compact desktop sim-racing controller: end-to-end design from 3D CAD modeling to KiCad PCB and FDM prototyping.",
+
     p1_cat: "Personal Project / App",
     p1_origin: "Personal / UPC",
     p1_desc: "Coliving management platform for shared expenses and household tasks in student flats.",
@@ -332,21 +328,13 @@ const translations = {
     p5_origin: "UPC",
     p5_desc: "Product presentation for FPV drone goggles exploring different rendering engines and CMF texturing.",
 
-    p6_cat: "Redesign",
+    p6_cat: "Graphic Design &amp; UX",
     p6_origin: "UPC",
-    p6_desc: "Aesthetic kitchen mixer redesign and illustrated technical user guide.",
+    p6_desc: "Graphic design and UX of a stand mixer user guide to make operation and components easy to understand.",
 
-    p7_cat: "Architecture & Regulations",
+    p7_cat: "Architecture &amp; Regulations",
     p7_origin: "High School",
     p7_desc: "Technical feasibility and CAD blueprint redesign to upgrade hotel from 2 to 4 stars (Grade: 10/10).",
-
-    p8_cat: "Advertising Campaign",
-    p8_origin: "UPC",
-    p8_desc: "Digital campaign for a music festival: visual brand identity and social media creatives.",
-
-    p9_cat: "Editorial Design",
-    p9_origin: "UPC",
-    p9_desc: "Graphic design and editorial layout of an adventure magazine using structured typographic grids.",
 
     // Skills, Contact, Footer, Modal
     skills_heading: "Skills &amp; Toolkit",

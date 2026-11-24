@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickLap – Roger Fígols Soler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body class="p-project-page">
+
+  <!-- 1. COMPACT FIXED TOP NAV -->
+  <header class="p-top-bar">
+    <div class="p-top-bar-inner">
+      <a href="index.html#projectes" class="p-nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Tornar a Projectes</span>
+      </a>
+      <span class="p-nav-author">Roger Fígols Soler</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. FULL-VIEWPORT HERO -->
+    <section class="p-hero">
+      <img
+        src="assets/project_quicklap.jpg"
+        alt="QuickLap — Desglossament mecànic, carcassa impresa en 3D i placa PCB"
+        width="1024"
+        height="768"
+        fetchpriority="high"
+        class="p-hero-bg-img"
+        style="object-position: center 42%;"
+      >
+      <div class="p-hero-scrim" aria-hidden="true"></div>
+
+      <div class="p-hero-content-wrap">
+        <div class="p-hero-text">
+          <div class="p-hero-eyebrow">PROJECTE PROPI · 2026</div>
+          <h1 class="p-hero-title">QuickLap</h1>
+          <p class="p-hero-summary">
+            Controlador compacte de sim-racing per a escriptori: direcció analògica i pedals progressius llestos en segons, sense muntatges complexos.
+          </p>
+        </div>
+        <span class="p-scroll-hint" aria-hidden="true">Scroll ↓</span>
+      </div>
+    </section>
+
+    <!-- 3. MINIMALIST HORIZONTAL SPEC STRIP -->
+    <section class="p-spec-strip" aria-label="Especificacions del projecte">
+      <div class="p-spec-strip-inner">
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Rol</span>
+          <span class="p-spec-value">Disseny Integral</span>
+        </div>
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Hardware</span>
+          <span class="p-spec-value">SolidWorks · KiCad · FDM</span>
+        </div>
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Àmbit</span>
+          <span class="p-spec-value">Sim-Racing / Producte</span>
+        </div>
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Web</span>
+          <span class="p-spec-value">
+            <a href="https://quicklap.pro" target="_blank" rel="noreferrer" class="p-spec-link">quicklap.pro ↗</a>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4a. SHORT EDITORIAL STATEMENT (EL CONCEPTE) -->
+    <section class="p-editorial-statement">
+      <span class="p-section-eyebrow">El Concepte</span>
+      <p class="p-editorial-lead">
+        Gaudir de la simulació de conducció amb precisió real sense necessitat d'un cockpit ni temps de muntatge.
+      </p>
+      <p class="p-editorial-copy">
+        QuickLap neix amb l'objectiu de condensar el control analògic en un dispositiu d'escriptori net i immediat. El desenvolupament cobreix el cicle complet de producte: des de l'ergonomia i el modelat mecànic CAD fins al disseny de la placa electrònica PCB i els prototips funcionals impresos en 3D.
+      </p>
+    </section>
+
+    <!-- 4b. MINIMAL 3-COLUMN ENGINEERING TRIAD -->
+    <section class="p-triad" aria-label="Fases de desenvolupament">
+      <div class="p-triad-item">
+        <h2 class="p-triad-title">Disseny Mecànic CAD</h2>
+        <p class="p-triad-text">Geometria compacta, allotjaments interns i ergonomia de conducció modelada íntegrament amb SolidWorks.</p>
+      </div>
+      <div class="p-triad-item">
+        <h2 class="p-triad-title">Electrònica PCB</h2>
+        <p class="p-triad-text">Disseny d'esquemàtic i rutatge de placa electrònica a mida amb KiCad per a lectura precisa d'entrades analògiques.</p>
+      </div>
+      <div class="p-triad-item">
+        <h2 class="p-triad-title">Prototipatge 3D</h2>
+        <p class="p-triad-text">Iteració ràpida en impressió 3D FDM per validar toleràncies mecàniques, recorreguts i muntatge funcional.</p>
+      </div>
+    </section>
+
+    <!-- 4c. PROTOTYPE EVOLUTION VIDEO SHOWCASE -->
+    <section class="p-video-showcase" aria-label="Evolució dels prototips funcionals">
+      <span class="p-section-eyebrow">Evolució dels Prototips</span>
+      <div class="p-video-pair">
+        <figure class="p-video-card">
+          <div class="p-video-frame">
+            <video
+              controls
+              muted
+              loop
+              playsinline
+              loading="lazy"
+              preload="metadata"
+              width="476"
+              height="848"
+              poster="assets/quicklap_proto1_poster.jpg"
+            >
+              <source src="assets/quicklap_proto1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption>
+            <div class="p-video-title">Prototip 01 · Primera versió funcional</div>
+            <div class="p-video-caption">Validació inicial de mecànica, sensors i resposta en simulador.</div>
+          </figcaption>
+        </figure>
+
+        <figure class="p-video-card">
+          <div class="p-video-frame">
+            <video
+              controls
+              muted
+              loop
+              playsinline
+              loading="lazy"
+              preload="metadata"
+              width="1102"
+              height="1080"
+              poster="assets/quicklap_proto2_poster.jpg"
+            >
+              <source src="assets/quicklap_proto2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption>
+            <div class="p-video-title">Prototip 02 · Segona iteració i demostració</div>
+            <div class="p-video-caption">Evolució ergonòmica, electrònica integrada i prova real en conducció.</div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4e. COMPACT CLOSING STATUS + EXTERNAL LINK -->
+    <section class="p-editorial-closing">
+      <span class="p-section-eyebrow">Estat Actual</span>
+      <p class="p-editorial-copy">
+        Projecte en fase de desenvolupament actiu, combinant validació física de prototips, calibratge de sensors i millores iteratives de producte.
+      </p>
+      <a href="https://quicklap.pro" target="_blank" rel="noreferrer" class="p-btn-external">
+        <span>Visitar quicklap.pro</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- 5. MINIMALIST PROJECT FOOTER NAVIGATION -->
+  <footer class="p-footer-nav">
+    <nav class="p-footer-nav-inner" aria-label="Navegació entre projectes">
+      <a href="hotel-estel.html" class="p-footer-nav-link">← Reforma Hotel Estel</a>
+      <a href="index.html#projectes" class="p-footer-nav-center">Tots els projectes</a>
+      <a href="calyu.html" class="p-footer-nav-link">CALYU →</a>
+    </nav>
+    <div class="p-minimal-copyright">
+      © 2026 Roger Fígols Soler
+    </div>
+  </footer>
+
+</body>
+</html>

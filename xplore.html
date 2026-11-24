@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xplore – Roger Fígols Soler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body class="p-project-page">
+
+  <!-- 1. COMPACT FIXED TOP NAV -->
+  <header class="p-top-bar">
+    <div class="p-top-bar-inner">
+      <a href="index.html#projectes" class="p-nav-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Tornar a Projectes</span>
+      </a>
+      <span class="p-nav-author">Roger Fígols Soler</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. FULL-VIEWPORT HERO -->
+    <section class="p-hero">
+      <img
+        src="assets/project_xplore.png"
+        alt="Xplore — Ulleres de dron FPV modelades en 3D"
+        width="1024"
+        height="294"
+        fetchpriority="high"
+        class="p-hero-bg-img"
+        style="object-position: center center; transform: scale(1.12);"
+      >
+      <div class="p-hero-scrim" aria-hidden="true"></div>
+
+      <div class="p-hero-content-wrap">
+        <div class="p-hero-text">
+          <div class="p-hero-eyebrow">UPC ESEIAAT · MODELAT 3D &amp; CMF</div>
+          <h1 class="p-hero-title">Xplore</h1>
+          <p class="p-hero-summary">
+            Presentació de producte per a unes ulleres de drons FPV explorant modelat de superfícies, il·luminació i acabats CMF.
+          </p>
+        </div>
+        <span class="p-scroll-hint" aria-hidden="true">Scroll ↓</span>
+      </div>
+    </section>
+
+    <!-- 3. MINIMALIST HORIZONTAL SPEC STRIP -->
+    <section class="p-spec-strip" aria-label="Especificacions del projecte">
+      <div class="p-spec-strip-inner">
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Institució</span>
+          <span class="p-spec-value">UPC ESEIAAT</span>
+        </div>
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Disciplina</span>
+          <span class="p-spec-value">Modelat 3D &amp; CMF</span>
+        </div>
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Producte</span>
+          <span class="p-spec-value">Ulleres de Dron FPV</span>
+        </div>
+        <div class="p-spec-cell">
+          <span class="p-spec-label">Eines</span>
+          <span class="p-spec-value">3ds Max · SolidWorks</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4a. SHORT EDITORIAL STATEMENT (EL CONCEPTE) -->
+    <section class="p-editorial-statement">
+      <span class="p-section-eyebrow">El Concepte</span>
+      <p class="p-editorial-lead">
+        Explorar la interacció entre carcassa tècnica mat, botons ergonòmics d'alt contrast i ferratges metàl·lics mitjançant renderitzat fotorrealista.
+      </p>
+      <p class="p-editorial-copy">
+        El treball posa el focus en la comunicació visual del producte: definició precisa de línies de partició, comandaments tàctils identificables sense mirar i coherència cromàtica en condicions d'il·luminació d'estudi.
+      </p>
+    </section>
+
+    <!-- 4b. PANORAMIC TRIPTYCH -->
+    <section class="p-gallery-wide" aria-label="Tríptic de detall de producte">
+      <div class="p-photo-frame is-panoramic">
+        <img
+          src="assets/project_xplore.png"
+          alt="Tríptic de detall de les ulleres FPV Xplore"
+          width="1024"
+          height="294"
+          loading="lazy"
+        >
+      </div>
+      <span class="p-gallery-caption">Tríptic de detall: botonera tàctil, sivella metàl·lica i ergonomia frontal</span>
+    </section>
+
+    <!-- 4c. PACKAGING & PRODUCT RANGE PANORAMIC -->
+    <section class="p-gallery-wide" aria-label="Gama de producte i packaging Xplore">
+      <div class="p-photo-frame is-panoramic-4up">
+        <img
+          src="assets/xplore_packaging.jpg"
+          alt="Gama de producte i packaging Xplore: XCONTROL, XFRAME, XFLY i XVIEW"
+          width="1024"
+          height="215"
+          loading="lazy"
+        >
+      </div>
+      <span class="p-gallery-caption">Gama de producte i packaging: XCONTROL, XFRAME, XFLY i XVIEW</span>
+    </section>
+
+    <!-- 4d. COMPACT CLOSING & BEHANCE LINK -->
+    <section class="p-editorial-closing">
+      <span class="p-section-eyebrow">Presentació</span>
+      <p class="p-editorial-copy">
+        Estudi complet de representació virtual per a electrònica de consum, cuidant materials compostos, escumes ergonòmiques i reflexos controlats.
+      </p>
+      <a href="https://www.behance.net/gallery/167980509/XPLORE-Capture-your-adventures" target="_blank" rel="noreferrer" class="p-btn-external">
+        <span>Veure projecte a Behance</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- 5. MINIMALIST PROJECT FOOTER NAVIGATION -->
+  <footer class="p-footer-nav">
+    <nav class="p-footer-nav-inner" aria-label="Navegació entre projectes">
+      <a href="breville-mixer.html" class="p-footer-nav-link">← Breville Mixer</a>
+      <a href="index.html#projectes" class="p-footer-nav-center">Tots els projectes</a>
+      <a href="hotel-estel.html" class="p-footer-nav-link">Reforma Hotel Estel →</a>
+    </nav>
+    <div class="p-minimal-copyright">
+      © 2026 Roger Fígols Soler
+    </div>
+  </footer>
+
+</body>
+</html>
